@@ -1,0 +1,24 @@
+THINGS TO DO
+
+o Figure out what happened in removed.log
+
+o Some files in the Music collection are on the Internal drive rather than the Media external drive.  What does the menu item "File>Library>Organise Library"  do?  ""*Test out* Importing the Macintosh HD/timbanks/Music collection to detect and deleted files from that location.
+  A script masy be a better way to find the extent of the problem.  
+   
+o Compare the iTunes Music retired with Music Library for missing/duplicate tracks and Folder.jpg
+  For example:
+   [All checked from Ab Kloster -> Colin Davis and also multi-disk albums (Piccini operas, Christmas Oratorio)  ]
+   >********Except that Tosca has two sets of m4a files with one set suffixed "1" in the filename. These duplications are not identified by File>Library>Show Duplicate Items
+       Maybe they Can be found by the 'find' command in the terminal window using pattern matching.
+       OR BETTER - b y a nbew script to facilitate repetition of the scan.
+   >******* NOte that the original files imported from CDs can be found on the mybooklive server at /shares/Public/Shared Music/Hidden-m4a/iTunes/Media  (or something like that) 
+
+      
+o Remove empty directories on the transcoding target file system
+
+o Check that files removed from the Music app are removed from the server
+  This may require a changed to the "Safety net" setting in CCC.
+  
+o Clean up the various copies of the library  - on Mac Hard disk, Media disk and on the server at /Public/Shared Music
+
+

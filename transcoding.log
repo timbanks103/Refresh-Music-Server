@@ -1,0 +1,14 @@
+[2025-03-28 16:55:47,129] {transcoding.py:81} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-28 16:55:47,130] {transcoding.py:82} INFO - []
+[2025-03-28 16:55:47,130] {transcoding.py:84} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-28 16:55:47,130] {transcoding.py:85} INFO - []
+[2025-03-28 16:55:47,130] {transcoding.py:87} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-28 16:55:47,131] {transcoding.py:88} INFO - []
+[2025-03-28 16:55:47,192] {transcoding.py:138} INFO - No transcoding or copying needed. 
+[2025-03-28 17:03:54,759] {transcoding.py:81} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-28 17:03:54,761] {transcoding.py:82} INFO - []
+[2025-03-28 17:03:54,761] {transcoding.py:84} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-28 17:03:54,761] {transcoding.py:85} INFO - []
+[2025-03-28 17:03:54,761] {transcoding.py:87} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-28 17:03:54,761] {transcoding.py:88} INFO - []
+[2025-03-28 17:03:54,837] {transcoding.py:138} INFO - No transcoding or copying needed. 

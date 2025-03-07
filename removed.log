@@ -1,0 +1,1217 @@
+[2025-03-12 18:12:09,290] {transcoding.py:74} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-12 18:12:09,290] {transcoding.py:75} INFO - ['Music Library.musiclibrary/Application.musicdb',
+ 'Music Library.musiclibrary/sentinel',
+ "Simply Red/Stars/05 She's Got It Bad.m4a"]
+of 515
+[2025-03-12 18:12:09,290] {transcoding.py:77} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-12 18:12:09,290] {transcoding.py:78} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-12 18:12:09,290] {transcoding.py:79} INFO - of 542
+[2025-03-12 18:12:09,290] {transcoding.py:80} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-12 18:12:09,290] {transcoding.py:81} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-12 18:12:09,290] {transcoding.py:82} INFO - of 50
+[2025-03-12 18:12:09,290] {transcoding.py:87} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-12 18:12:09,296] {transcoding.py:88} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+Traceback (most recent call last):
+  File "/Users/timbanks/MyWork/Refresh Music Server/transcoding.py", line 101, in <module>
+    ffmpeg.input(input_path).output(output_path,loglevel="quiet").run(overwrite_output=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/ffmpeg/_run.py", line 325, in run
+    raise Error('ffmpeg', out, err)
+ffmpeg._run.Error: ffmpeg error (see stderr output for detail)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/timbanks/MyWork/Refresh Music Server/transcoding.py", line 106, in <module>
+    raise Exception(f"An error occurred: {e} attempting to transcode {f}")
+Exception: An error occurred: ffmpeg error (see stderr output for detail) attempting to transcode Music Library.musiclibrary/Application.musicdb
+[2025-03-13 09:54:49,931] {transcoding.py:74} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 09:54:49,931] {transcoding.py:75} INFO - ['Music Library.musiclibrary/Application.musicdb',
+ 'Music Library.musiclibrary/sentinel',
+ "Simply Red/Stars/05 She's Got It Bad.m4a"]
+[2025-03-13 09:54:49,931] {transcoding.py:77} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 09:54:49,932] {transcoding.py:78} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 09:54:49,932] {transcoding.py:79} INFO - of 542
+[2025-03-13 09:54:49,932] {transcoding.py:80} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 09:54:49,932] {transcoding.py:81} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 09:54:49,932] {transcoding.py:82} INFO - of 50
+[2025-03-13 09:54:49,932] {transcoding.py:87} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 09:54:49,940] {transcoding.py:88} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:04:17,826] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:04:17,826] {transcoding.py:74} INFO - ['Music Library.musiclibrary/Application.musicdb',
+ 'Music Library.musiclibrary/sentinel',
+ "Simply Red/Stars/05 She's Got It Bad.m4a"]
+[2025-03-13 10:04:17,826] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:04:17,827] {transcoding.py:77} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:04:17,827] {transcoding.py:78} INFO - of 542
+[2025-03-13 10:04:17,827] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:04:17,827] {transcoding.py:80} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:04:17,827] {transcoding.py:81} INFO - of 50
+[2025-03-13 10:04:17,827] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:04:17,831] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:09:13,145] {transcoding.py:75} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:09:13,146] {transcoding.py:76} INFO - ['Music Library.musiclibrary/Application.musicdb',
+ 'Music Library.musiclibrary/sentinel',
+ "Simply Red/Stars/05 She's Got It Bad.m4a"]
+[2025-03-13 10:09:13,146] {transcoding.py:78} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:09:13,146] {transcoding.py:79} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:09:13,146] {transcoding.py:80} INFO - of 542
+[2025-03-13 10:09:13,146] {transcoding.py:81} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:09:13,146] {transcoding.py:82} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:09:13,147] {transcoding.py:83} INFO - of 50
+[2025-03-13 10:09:13,147] {transcoding.py:88} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:09:13,150] {transcoding.py:89} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:09:59,715] {transcoding.py:75} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:09:59,715] {transcoding.py:76} INFO - ["Simply Red/Stars/05 She's Got It Bad.m4a",
+ 'Simply Red/Stars/06 For Your Babies.m4a',
+ 'Simply Red/Stars/07 Model.m4a']
+[2025-03-13 10:09:59,716] {transcoding.py:78} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:09:59,716] {transcoding.py:79} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:09:59,716] {transcoding.py:80} INFO - of 542
+[2025-03-13 10:09:59,716] {transcoding.py:81} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:09:59,716] {transcoding.py:82} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:09:59,716] {transcoding.py:83} INFO - of 50
+[2025-03-13 10:09:59,716] {transcoding.py:88} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:09:59,720] {transcoding.py:89} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:10:03,997] {transcoding.py:103} INFO - Successfully converted /Volumes/Media/Shared Music/Music Library/Simply Red/Stars/05 She's Got It Bad.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Simply Red/Stars/05 She's Got It Bad.mp3
+[2025-03-13 10:10:08,970] {transcoding.py:103} INFO - Successfully converted /Volumes/Media/Shared Music/Music Library/Simply Red/Stars/06 For Your Babies.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Simply Red/Stars/06 For Your Babies.mp3
+[2025-03-13 10:10:13,073] {transcoding.py:103} INFO - Successfully converted /Volumes/Media/Shared Music/Music Library/Simply Red/Stars/07 Model.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Simply Red/Stars/07 Model.mp3
+[2025-03-13 10:10:18,176] {transcoding.py:103} INFO - Successfully converted /Volumes/Media/Shared Music/Music Library/Simply Red/Stars/08 How Could I Fall.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Simply Red/Stars/08 How Could I Fall.mp3
+[2025-03-13 10:10:22,321] {transcoding.py:103} INFO - Successfully converted /Volumes/Media/Shared Music/Music Library/Simply Red/Stars/09 Freedom.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Simply Red/Stars/09 Freedom.mp3
+[2025-03-13 10:11:54,710] {transcoding.py:75} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:11:54,710] {transcoding.py:76} INFO - ['Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings',
+ 'Automatically Add to Music.localized/.localized/cs.strings']
+[2025-03-13 10:11:54,710] {transcoding.py:78} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:11:54,711] {transcoding.py:79} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:11:54,711] {transcoding.py:80} INFO - of 542
+[2025-03-13 10:11:54,711] {transcoding.py:81} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:11:54,711] {transcoding.py:82} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:11:54,711] {transcoding.py:83} INFO - of 50
+[2025-03-13 10:11:54,711] {transcoding.py:88} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:11:54,715] {transcoding.py:89} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:15:03,866] {transcoding.py:75} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:15:03,867] {transcoding.py:76} INFO - ['Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings',
+ 'Automatically Add to Music.localized/.localized/cs.strings']
+[2025-03-13 10:15:03,867] {transcoding.py:78} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:15:03,867] {transcoding.py:79} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:15:03,867] {transcoding.py:80} INFO - of 542
+[2025-03-13 10:15:03,867] {transcoding.py:81} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:15:03,867] {transcoding.py:82} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:15:03,867] {transcoding.py:83} INFO - of 50
+[2025-03-13 10:15:03,867] {transcoding.py:88} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:15:03,872] {transcoding.py:89} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:25:37,938] {transcoding.py:75} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:25:37,938] {transcoding.py:76} INFO - ['Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings',
+ 'Automatically Add to Music.localized/.localized/cs.strings']
+[2025-03-13 10:25:37,938] {transcoding.py:78} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:25:37,938] {transcoding.py:79} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:25:37,938] {transcoding.py:80} INFO - of 542
+[2025-03-13 10:25:37,938] {transcoding.py:81} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:25:37,938] {transcoding.py:82} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:25:37,938] {transcoding.py:83} INFO - of 50
+[2025-03-13 10:25:37,938] {transcoding.py:88} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:25:37,942] {transcoding.py:89} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:26:01,128] {transcoding.py:75} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:26:01,128] {transcoding.py:76} INFO - ['Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings',
+ 'Automatically Add to Music.localized/.localized/cs.strings']
+[2025-03-13 10:26:01,128] {transcoding.py:78} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:26:01,129] {transcoding.py:79} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:26:01,129] {transcoding.py:80} INFO - of 542
+[2025-03-13 10:26:01,129] {transcoding.py:81} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:26:01,129] {transcoding.py:82} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:26:01,129] {transcoding.py:83} INFO - of 50
+[2025-03-13 10:26:01,129] {transcoding.py:88} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:26:01,133] {transcoding.py:89} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:29:54,844] {transcoding.py:74} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:29:54,844] {transcoding.py:75} INFO - ['Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings',
+ 'Automatically Add to Music.localized/.localized/cs.strings']
+[2025-03-13 10:29:54,844] {transcoding.py:77} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:29:54,845] {transcoding.py:78} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:29:54,845] {transcoding.py:79} INFO - of 542
+[2025-03-13 10:29:54,845] {transcoding.py:80} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:29:54,845] {transcoding.py:81} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:29:54,845] {transcoding.py:82} INFO - of 50
+[2025-03-13 10:29:54,845] {transcoding.py:87} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:29:54,849] {transcoding.py:88} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:31:36,513] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:31:36,513] {transcoding.py:74} INFO - ['/.Media Preferences.plist',
+ 'Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings']
+[2025-03-13 10:31:36,514] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:31:36,514] {transcoding.py:77} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:31:36,514] {transcoding.py:78} INFO - of 542
+[2025-03-13 10:31:36,514] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:31:36,514] {transcoding.py:80} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:31:36,514] {transcoding.py:81} INFO - of 50
+[2025-03-13 10:31:36,514] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:31:36,516] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:35:24,895] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:35:24,895] {transcoding.py:74} INFO - ['/.Media Preferences.plist',
+ 'Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings']
+[2025-03-13 10:35:24,896] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:35:24,896] {transcoding.py:77} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:35:24,896] {transcoding.py:78} INFO - of 542
+[2025-03-13 10:35:24,896] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:35:24,896] {transcoding.py:80} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:35:24,896] {transcoding.py:81} INFO - of 50
+[2025-03-13 10:35:24,896] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:35:24,901] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:35:47,121] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:35:47,122] {transcoding.py:74} INFO - ['/.Media Preferences.plist',
+ 'Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings']
+[2025-03-13 10:35:47,122] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:35:47,122] {transcoding.py:77} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:35:47,122] {transcoding.py:78} INFO - of 542
+[2025-03-13 10:35:47,122] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:35:47,122] {transcoding.py:80} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:35:47,122] {transcoding.py:81} INFO - of 50
+[2025-03-13 10:35:47,123] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:35:47,125] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:38:17,010] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:38:17,010] {transcoding.py:74} INFO - []
+[2025-03-13 10:38:17,010] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:38:17,010] {transcoding.py:77} INFO - ["Ab Koster_ L'Archibudelli/Haydn_ The Natural Horn/01 Haydn_ Cassation In D "
+ 'For 4 Horns - 1. Allegro Moderato.mp3',
+ "Ab Koster_ L'Archibudelli/Haydn_ The Natural Horn/02 Haydn_ Cassation In D "
+ 'For 4 Horns - 2. Menuet.mp3',
+ "Ab Koster_ L'Archibudelli/Haydn_ The Natural Horn/03 Haydn_ Cassation In D "
+ 'For 4 Horns - 3. Adagio.mp3']
+[2025-03-13 10:38:17,010] {transcoding.py:78} INFO - of 3811
+[2025-03-13 10:38:17,010] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:38:17,010] {transcoding.py:80} INFO - []
+[2025-03-13 10:38:17,010] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:38:17,014] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:38:17,049] {transcoding.py:106} INFO - No transcoding needed. 
+[2025-03-13 10:38:27,619] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:38:27,619] {transcoding.py:74} INFO - ['/.Media Preferences.plist',
+ 'Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings']
+[2025-03-13 10:38:27,619] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:38:27,620] {transcoding.py:77} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:38:27,620] {transcoding.py:78} INFO - of 542
+[2025-03-13 10:38:27,620] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:38:27,620] {transcoding.py:80} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:38:27,620] {transcoding.py:81} INFO - of 50
+[2025-03-13 10:38:27,620] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:38:27,624] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:39:36,449] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:39:36,449] {transcoding.py:74} INFO - ['/.Media Preferences.plist',
+ 'Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings']
+[2025-03-13 10:39:36,449] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:39:36,450] {transcoding.py:77} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:39:36,450] {transcoding.py:78} INFO - of 542
+[2025-03-13 10:39:36,450] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:39:36,450] {transcoding.py:80} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:39:36,450] {transcoding.py:81} INFO - of 50
+[2025-03-13 10:39:36,450] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:39:36,454] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:40:03,596] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:40:03,597] {transcoding.py:74} INFO - ['/.Media Preferences.plist',
+ 'Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings']
+[2025-03-13 10:40:03,597] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:40:03,597] {transcoding.py:77} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:40:03,597] {transcoding.py:78} INFO - of 542
+[2025-03-13 10:40:03,597] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:40:03,598] {transcoding.py:80} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:40:03,598] {transcoding.py:81} INFO - of 50
+[2025-03-13 10:40:03,598] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:40:03,600] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:42:01,488] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:42:01,488] {transcoding.py:74} INFO - []
+[2025-03-13 10:42:01,488] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:42:01,489] {transcoding.py:77} INFO - ["Ab Koster_ L'Archibudelli/Haydn_ The Natural Horn/01 Haydn_ Cassation In D "
+ 'For 4 Horns - 1. Allegro Moderato.mp3',
+ "Ab Koster_ L'Archibudelli/Haydn_ The Natural Horn/02 Haydn_ Cassation In D "
+ 'For 4 Horns - 2. Menuet.mp3',
+ "Ab Koster_ L'Archibudelli/Haydn_ The Natural Horn/03 Haydn_ Cassation In D "
+ 'For 4 Horns - 3. Adagio.mp3']
+[2025-03-13 10:42:01,489] {transcoding.py:78} INFO - of 3811
+[2025-03-13 10:42:01,489] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:42:01,489] {transcoding.py:80} INFO - []
+[2025-03-13 10:42:01,489] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:42:01,492] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:42:01,518] {transcoding.py:106} INFO - No transcoding needed. 
+[2025-03-13 10:42:22,935] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:42:22,935] {transcoding.py:74} INFO - ['/.Media Preferences.plist',
+ 'Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings']
+[2025-03-13 10:42:22,935] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:42:22,935] {transcoding.py:77} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:42:22,936] {transcoding.py:78} INFO - of 542
+[2025-03-13 10:42:22,936] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:42:22,936] {transcoding.py:80} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:42:22,936] {transcoding.py:81} INFO - of 50
+[2025-03-13 10:42:22,936] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:42:22,938] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:42:45,717] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:42:45,718] {transcoding.py:74} INFO - ['/.Media Preferences.plist',
+ 'Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings']
+[2025-03-13 10:42:45,718] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:42:45,718] {transcoding.py:77} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:42:45,718] {transcoding.py:78} INFO - of 542
+[2025-03-13 10:42:45,719] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:42:45,719] {transcoding.py:80} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:42:45,719] {transcoding.py:81} INFO - of 50
+[2025-03-13 10:42:45,719] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:42:45,722] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:43:09,091] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:43:09,091] {transcoding.py:74} INFO - []
+[2025-03-13 10:43:09,091] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:43:09,091] {transcoding.py:77} INFO - ["Ab Koster_ L'Archibudelli/Haydn_ The Natural Horn/01 Haydn_ Cassation In D "
+ 'For 4 Horns - 1. Allegro Moderato.mp3',
+ "Ab Koster_ L'Archibudelli/Haydn_ The Natural Horn/02 Haydn_ Cassation In D "
+ 'For 4 Horns - 2. Menuet.mp3',
+ "Ab Koster_ L'Archibudelli/Haydn_ The Natural Horn/03 Haydn_ Cassation In D "
+ 'For 4 Horns - 3. Adagio.mp3']
+[2025-03-13 10:43:09,092] {transcoding.py:78} INFO - of 3811
+[2025-03-13 10:43:09,092] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:43:09,092] {transcoding.py:80} INFO - []
+[2025-03-13 10:43:09,092] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:43:09,096] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 10:43:09,137] {transcoding.py:106} INFO - No transcoding needed. 
+[2025-03-13 10:44:43,300] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:44:43,301] {transcoding.py:74} INFO - ['/.Media Preferences.plist',
+ 'Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings']
+[2025-03-13 10:44:43,301] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 10:44:43,302] {transcoding.py:77} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 10:44:43,302] {transcoding.py:78} INFO - of 542
+[2025-03-13 10:44:43,302] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 10:44:43,302] {transcoding.py:80} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 10:44:43,302] {transcoding.py:81} INFO - of 50
+[2025-03-13 10:44:43,302] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 10:44:43,306] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 11:04:23,669] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 11:04:23,671] {transcoding.py:74} INFO - ['Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings',
+ 'Automatically Add to Music.localized/.localized/cs.strings']
+[2025-03-13 11:04:23,671] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 11:04:23,671] {transcoding.py:77} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 11:04:23,671] {transcoding.py:78} INFO - of 542
+[2025-03-13 11:04:23,671] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 11:04:23,671] {transcoding.py:80} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 11:04:23,672] {transcoding.py:81} INFO - of 50
+[2025-03-13 11:04:23,672] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 11:04:23,678] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 11:05:45,425] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 11:05:45,425] {transcoding.py:74} INFO - ['Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings',
+ 'Automatically Add to Music.localized/.localized/cs.strings']
+[2025-03-13 11:05:45,425] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 11:05:45,425] {transcoding.py:77} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 11:05:45,425] {transcoding.py:78} INFO - of 542
+[2025-03-13 11:05:45,425] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 11:05:45,425] {transcoding.py:80} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 11:05:45,426] {transcoding.py:81} INFO - of 50
+[2025-03-13 11:05:45,426] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 11:05:45,430] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 11:09:03,893] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 11:09:03,893] {transcoding.py:74} INFO - ['Automatically Add to Music.localized/.localized/ar.strings',
+ 'Automatically Add to Music.localized/.localized/ca.strings',
+ 'Automatically Add to Music.localized/.localized/cs.strings']
+[2025-03-13 11:09:03,893] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 11:09:03,894] {transcoding.py:77} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 11:09:03,894] {transcoding.py:78} INFO - of 542
+[2025-03-13 11:09:03,894] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 11:09:03,894] {transcoding.py:80} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 11:09:03,894] {transcoding.py:81} INFO - of 50
+[2025-03-13 11:09:03,894] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 11:09:03,899] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 11:59:28,907] {transcoding.py:74} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 11:59:28,909] {transcoding.py:75} INFO - ['Simply Red/Stars/10 Wonderland.m4a',
+ 'Soft Cell/The Very Best Of/01 Memorabilia.m4a',
+ 'Soft Cell/The Very Best Of/02 Tainted Love.m4a']
+[2025-03-13 11:59:28,909] {transcoding.py:77} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 11:59:28,909] {transcoding.py:78} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 11:59:28,909] {transcoding.py:79} INFO - of 542
+[2025-03-13 11:59:28,909] {transcoding.py:80} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 11:59:28,910] {transcoding.py:81} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 11:59:28,910] {transcoding.py:82} INFO - of 50
+[2025-03-13 11:59:28,910] {transcoding.py:87} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 11:59:28,915] {transcoding.py:88} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 11:59:33,628] {transcoding.py:102} INFO - Successfully converted /Volumes/Media/Shared Music/Music Library/Simply Red/Stars/10 Wonderland.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Simply Red/Stars/10 Wonderland.mp3
+[2025-03-13 11:59:39,264] {transcoding.py:102} INFO - Successfully converted /Volumes/Media/Shared Music/Music Library/Soft Cell/The Very Best Of/01 Memorabilia.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Soft Cell/The Very Best Of/01 Memorabilia.mp3
+[2025-03-13 11:59:42,105] {transcoding.py:102} INFO - Successfully converted /Volumes/Media/Shared Music/Music Library/Soft Cell/The Very Best Of/02 Tainted Love.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Soft Cell/The Very Best Of/02 Tainted Love.mp3
+[2025-03-13 11:59:45,497] {transcoding.py:102} INFO - Successfully converted /Volumes/Media/Shared Music/Music Library/Soft Cell/The Very Best Of/03 Where Did Our Love Go_.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Soft Cell/The Very Best Of/03 Where Did Our Love Go_.mp3
+[2025-03-13 11:59:49,343] {transcoding.py:102} INFO - Successfully converted /Volumes/Media/Shared Music/Music Library/Soft Cell/The Very Best Of/04 Bedsitter.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Soft Cell/The Very Best Of/04 Bedsitter.mp3
+[2025-03-13 12:09:31,083] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 12:09:31,085] {transcoding.py:74} INFO - ['Soft Cell/The Very Best Of/05 Say Hello, Wave Goodbye.m4a',
+ 'Soft Cell/The Very Best Of/06 Sex Dwarf.m4a',
+ 'Soft Cell/The Very Best Of/07 Torch.m4a']
+[2025-03-13 12:09:31,085] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 12:09:31,086] {transcoding.py:77} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 12:09:31,086] {transcoding.py:78} INFO - of 542
+[2025-03-13 12:09:31,086] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 12:09:31,086] {transcoding.py:80} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 12:09:31,086] {transcoding.py:81} INFO - of 50
+[2025-03-13 12:09:31,086] {transcoding.py:86} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 12:09:31,091] {transcoding.py:87} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
+[2025-03-13 12:09:37,168] {transcoding.py:101} INFO - Successfully converted /Volumes/Media/Shared Music/Music Library/Soft Cell/The Very Best Of/05 Say Hello, Wave Goodbye.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Soft Cell/The Very Best Of/05 Say Hello, Wave Goodbye.mp3
+[2025-03-13 12:09:42,784] {transcoding.py:101} INFO - Successfully converted /Volumes/Media/Shared Music/Music Library/Soft Cell/The Very Best Of/06 Sex Dwarf.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Soft Cell/The Very Best Of/06 Sex Dwarf.mp3
+[2025-03-13 12:09:47,079] {transcoding.py:101} INFO - Successfully converted /Volumes/Media/Shared Music/Music Library/Soft Cell/The Very Best Of/07 Torch.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Soft Cell/The Very Best Of/07 Torch.mp3
+[2025-03-13 12:09:50,348] {transcoding.py:101} INFO - Successfully converted /Volumes/Media/Shared Music/Music Library/Soft Cell/The Very Best Of/08 Insecure Me [2002 Edit].m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Soft Cell/The Very Best Of/08 Insecure Me [2002 Edit].mp3
+[2025-03-13 12:09:55,364] {transcoding.py:101} INFO - Successfully converted /Volumes/Media/Shared Music/Music Library/Soft Cell/The Very Best Of/09 What_.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Soft Cell/The Very Best Of/09 What_.mp3
+[2025-03-13 12:23:04,031] {transcoding.py:73} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 12:23:04,031] {transcoding.py:74} INFO - ['Soft Cell/The Very Best Of/10 Where The Heart Is.m4a',
+ "Soft Cell/The Very Best Of/11 It's A Mugs Game.m4a",
+ 'Soft Cell/The Very Best Of/12 Soul Inside.m4a']
+[2025-03-13 12:23:04,031] {transcoding.py:76} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-03-13 12:23:04,032] {transcoding.py:77} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin '
+ 'and small orchestra, Op. 39_ I. Fantasia 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin '
+ 'and small orchestra, Op. 39_ II. Arioso 1.mp3',
+ 'Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 2.mp3']
+[2025-03-13 12:23:04,032] {transcoding.py:78} INFO - of 542
+[2025-03-13 12:23:04,032] {transcoding.py:79} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-03-13 12:23:04,032] {transcoding.py:80} INFO - ['Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin '
+ 'Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin '
+ 'and small orchestra, Op. 39_ III. Rondo 1.mp3',
+ 'Compilations/Celebrate Christmas/01 Gloria in Excelsis.m4a',
+ 'Compilations/Celebrate Christmas/02 In Dulce Jubilo.m4a']
+[2025-03-13 12:23:04,032] {transcoding.py:81} INFO - of 50
+[2025-03-13 12:23:04,093] {transcoding.py:88} INFO - Removed extraneous file: Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin Concerto, Triptych for Orchestra, Violin Concertino/01 Concerto for violin and small orchestra, Op. 39_ I. Fantasia 1.mp3
+[2025-03-13 12:23:04,093] {transcoding.py:88} INFO - Removed extraneous file: Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin Concerto, Triptych for Orchestra, Violin Concertino/02 Concerto for violin and small orchestra, Op. 39_ II. Arioso 1.mp3
+[2025-03-13 12:23:04,093] {transcoding.py:88} INFO - Removed extraneous file: Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin Concerto, Triptych for Orchestra, Violin Concertino/03 Concerto for violin and small orchestra, Op. 39_ III. Rondo 2.mp3
+[2025-03-13 12:23:04,094] {transcoding.py:88} INFO - Removed extraneous file: Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin Concerto, Triptych for Orchestra, Violin Concertino/04 Triptych_ Three movements for orchestra, Op. 100_ I. Impromptu_ Allegro risoluto 1.mp3
+[2025-03-13 12:23:04,094] {transcoding.py:88} INFO - Removed extraneous file: Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin Concerto, Triptych for Orchestra, Violin Concertino/05 Triptych_ Three movements for orchestra, Op. 100_ II. Lament_ Andante 1.mp3
+[2025-03-13 12:23:04,094] {transcoding.py:88} INFO - Removed extraneous file: Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin Concerto, Triptych for Orchestra, Violin Concertino/06 Triptych_ Three movements for orchestra, Op. 100_ III. Comedy_ Allegro con spirito 1.mp3
+[2025-03-13 12:23:04,094] {transcoding.py:88} INFO - Removed extraneous file: Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin Concerto, Triptych for Orchestra, Violin Concertino/07 Concertino for violin and string orchestra, Op. 52_ I. Andante tranquillo 1.mp3
+[2025-03-13 12:23:04,094] {transcoding.py:88} INFO - Removed extraneous file: Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin Concerto, Triptych for Orchestra, Violin Concertino/08 Concertino for violin and string orchestra, Op. 52_ II. Rigaudon_ Allegro giusto 1.mp3
+[2025-03-13 12:23:04,095] {transcoding.py:88} INFO - Removed extraneous file: Annette-Barbara Vogel, Kenneth Woods, Northern Sinfonia/Gál_ Violin Concerto, Triptych for Orchestra, Violin Concertino/folder.jpg
+[2025-03-13 12:23:04,095] {transcoding.py:88} INFO - Removed extraneous file: Antal Doráti_ Philharmonia Hungarica/Kodály_ Orchestral Works (2)/folder.jpg
+[2025-03-13 12:23:04,096] {transcoding.py:88} INFO - Removed extraneous file: Antal Doráti_ Philharmonia Hungarica/Kodály_ Orchestral Works/folder.jpg
+[2025-03-13 12:23:04,097] {transcoding.py:88} INFO - Removed extraneous file: Arthur Grumiaux, Christiane Jaccottet, Philippe Mermoud/Bach_ Complete Violin Sonatas, BWV 1014-1023 (2)/2-11 Bach_ Violin Sonata In G, BWV 1021 - 1. Adagio.mp3
+[2025-03-13 12:23:04,098] {transcoding.py:88} INFO - Removed extraneous file: Arthur Grumiaux, Christiane Jaccottet, Philippe Mermoud/Bach_ Complete Violin Sonatas, BWV 1014-1023 (2)/2-12 Bach_ Violin Sonata In G, BWV 1021 - 2. Vivace.mp3
+[2025-03-13 12:23:04,098] {transcoding.py:88} INFO - Removed extraneous file: Arthur Grumiaux, Christiane Jaccottet, Philippe Mermoud/Bach_ Complete Violin Sonatas, BWV 1014-1023 (2)/2-13 Bach_ Violin Sonata In G, BWV 1021 - 3. Largo.mp3
+[2025-03-13 12:23:04,098] {transcoding.py:88} INFO - Removed extraneous file: Arthur Grumiaux, Christiane Jaccottet, Philippe Mermoud/Bach_ Complete Violin Sonatas, BWV 1014-1023 (2)/2-14 Bach_ Violin Sonata In G, BWV 1021 - 4. Presto.mp3
+[2025-03-13 12:23:04,098] {transcoding.py:88} INFO - Removed extraneous file: Arthur Grumiaux, Christiane Jaccottet, Philippe Mermoud/Bach_ Complete Violin Sonatas, BWV 1014-1023 (2)/2-15 Bach_ Violin Sonata In F, BWV 1022 - Mvt. 1.mp3
+[2025-03-13 12:23:04,098] {transcoding.py:88} INFO - Removed extraneous file: Arthur Grumiaux, Christiane Jaccottet, Philippe Mermoud/Bach_ Complete Violin Sonatas, BWV 1014-1023 (2)/2-16 Bach_ Violin Sonata In F, BWV 1022 - 2. Allegro E Presto.mp3
+[2025-03-13 12:23:04,098] {transcoding.py:88} INFO - Removed extraneous file: Arthur Grumiaux, Christiane Jaccottet, Philippe Mermoud/Bach_ Complete Violin Sonatas, BWV 1014-1023 (2)/2-17 Bach_ Violin Sonata In F, BWV 1022 - 3. Adagio.mp3
+[2025-03-13 12:23:04,099] {transcoding.py:88} INFO - Removed extraneous file: Arthur Grumiaux, Christiane Jaccottet, Philippe Mermoud/Bach_ Complete Violin Sonatas, BWV 1014-1023 (2)/2-18 Bach_ Violin Sonata In F, BWV 1022 - 4. Presto.mp3
+[2025-03-13 12:23:04,099] {transcoding.py:88} INFO - Removed extraneous file: Arthur Grumiaux, Christiane Jaccottet, Philippe Mermoud/Bach_ Complete Violin Sonatas, BWV 1014-1023 (2)/2-19 Bach_ Violin Sonata In E Minor, BWV 1023 - 1. Adagio Ma Non Tanto.mp3
+[2025-03-13 12:23:04,099] {transcoding.py:88} INFO - Removed extraneous file: Arthur Grumiaux, Christiane Jaccottet, Philippe Mermoud/Bach_ Complete Violin Sonatas, BWV 1014-1023 (2)/2-20 Bach_ Violin Sonata In E Minor, BWV 1023 - 2. Allemande.mp3
+[2025-03-13 12:23:04,099] {transcoding.py:88} INFO - Removed extraneous file: Arthur Grumiaux, Christiane Jaccottet, Philippe Mermoud/Bach_ Complete Violin Sonatas, BWV 1014-1023 (2)/2-21 Bach_ Violin Sonata In E Minor, BWV 1023 - 3. Giga.mp3
+[2025-03-13 12:23:04,100] {transcoding.py:88} INFO - Removed extraneous file: BBC Radio 4/Start the Week/1968_ radicals, riots and jazz.mp3
+[2025-03-13 12:23:04,100] {transcoding.py:88} INFO - Removed extraneous file: BHS Festival All Stars/BHS Festival 2017 - Recorded Highlights/01 Cattywampus.mp3
+[2025-03-13 12:23:04,101] {transcoding.py:88} INFO - Removed extraneous file: BHS Festival All Stars/BHS Festival 2017 - Recorded Highlights/02 Just In Time.mp3
+[2025-03-13 12:23:04,101] {transcoding.py:88} INFO - Removed extraneous file: BHS Festival All Stars/BHS Festival 2017 - Recorded Highlights/03 Poeme.mp3
+[2025-03-13 12:23:04,101] {transcoding.py:88} INFO - Removed extraneous file: BHS Festival All Stars/BHS Festival 2017 - Recorded Highlights/04 The Silent Flame.mp3
+[2025-03-13 12:23:04,101] {transcoding.py:88} INFO - Removed extraneous file: BHS Festival All Stars/BHS Festival 2017 - Recorded Highlights/05 The Silent Flame ii.mp3
+[2025-03-13 12:23:04,101] {transcoding.py:88} INFO - Removed extraneous file: BHS Festival All Stars/BHS Festival 2017 - Recorded Highlights/06 Raptor Music.mp3
+[2025-03-13 12:23:04,102] {transcoding.py:88} INFO - Removed extraneous file: BHS Festival All Stars/BHS Festival 2017 - Recorded Highlights/07 Chorale with Variations.mp3
+[2025-03-13 12:23:04,104] {transcoding.py:88} INFO - Removed extraneous file: BHS Festival All Stars/BHS Festival 2017 - Recorded Highlights/08 Four Diversions.mp3
+[2025-03-13 12:23:04,105] {transcoding.py:88} INFO - Removed extraneous file: BHS Festival All Stars/BHS Festival 2017 - Recorded Highlights/09 Just Desserts No. 8.mp3
+[2025-03-13 12:23:04,105] {transcoding.py:88} INFO - Removed extraneous file: BHS Festival All Stars/BHS Festival 2017 - Recorded Highlights/10 How to Train Your Dragon.mp3
+[2025-03-13 12:23:04,105] {transcoding.py:88} INFO - Removed extraneous file: BHS Festival All Stars/BHS Festival 2017 - Recorded Highlights/11 Etude - Don't make it Bad.mp3
+[2025-03-13 12:23:04,105] {transcoding.py:88} INFO - Removed extraneous file: BHS Festival All Stars/BHS Festival 2017 - Recorded Highlights/12 Corelli Variations.mp3
+[2025-03-13 12:23:04,106] {transcoding.py:88} INFO - Removed extraneous file: Berlin Philharmonic Orchestra/Debussy_ Pelléas Et Mélisande Suite, Prélude À L'Après-Midi D'Un Faune, Nocturnes/01 Debussy_ Prélude À L'Après-Midi D'Un Faune, L 86 - Très Modéré.mp3
+[2025-03-13 12:23:04,106] {transcoding.py:88} INFO - Removed extraneous file: Berlin Philharmonic Orchestra/Debussy_ Pelléas Et Mélisande Suite, Prélude À L'Après-Midi D'Un Faune, Nocturnes/02 Debussy_ Nocturnes, L 91 - 1. Nuages.mp3
+[2025-03-13 12:23:04,106] {transcoding.py:88} INFO - Removed extraneous file: Berlin Philharmonic Orchestra/Debussy_ Pelléas Et Mélisande Suite, Prélude À L'Après-Midi D'Un Faune, Nocturnes/03 Debussy_ Nocturnes, L 91 - 2. Fêtes.mp3
+[2025-03-13 12:23:04,107] {transcoding.py:88} INFO - Removed extraneous file: Berlin Philharmonic Orchestra/Debussy_ Pelléas Et Mélisande Suite, Prélude À L'Après-Midi D'Un Faune, Nocturnes/04 Debussy_ Nocturnes, L 91 - 3. Sirènes.mp3
+[2025-03-13 12:23:04,107] {transcoding.py:88} INFO - Removed extraneous file: Berlin Philharmonic Orchestra/Debussy_ Pelléas Et Mélisande Suite, Prélude À L'Après-Midi D'Un Faune, Nocturnes/05 Debussy_ Pelléas Et Mélisande Suite - Act 1_ Une Forêt.mp3
+[2025-03-13 12:23:04,107] {transcoding.py:88} INFO - Removed extraneous file: Berlin Philharmonic Orchestra/Debussy_ Pelléas Et Mélisande Suite, Prélude À L'Après-Midi D'Un Faune, Nocturnes/06 Debussy_ Pelléas Et Mélisande Suite - Act 2, Sc. 1_ Une Fontaine Dans Le Parc.mp3
+[2025-03-13 12:23:04,107] {transcoding.py:88} INFO - Removed extraneous file: Berlin Philharmonic Orchestra/Debussy_ Pelléas Et Mélisande Suite, Prélude À L'Après-Midi D'Un Faune, Nocturnes/07 Debussy_ Pelléas Et Mélisande Suite - Act 3, Sc. 2_ Les Souterrains Du Château; Act 4, Sc. 2_ Un Appartement Dans Le Château.mp3
+[2025-03-13 12:23:04,107] {transcoding.py:88} INFO - Removed extraneous file: Berlin Philharmonic Orchestra/Debussy_ Pelléas Et Mélisande Suite, Prélude À L'Après-Midi D'Un Faune, Nocturnes/08 Debussy_ Pelléas Et Mélisande Suite - Act 5_ Une Chambre Dans Le Château.mp3
+[2025-03-13 12:23:04,108] {transcoding.py:88} INFO - Removed extraneous file: Berlin Philharmonic Orchestra/Debussy_ Pelléas Et Mélisande Suite, Prélude À L'Après-Midi D'Un Faune, Nocturnes/folder.jpg
+[2025-03-13 12:23:04,136] {transcoding.py:88} INFO - Removed extraneous file: Center City Brass Quintet/Center City Brass Quintet/18 Calvert - Suite _From the Monteregian Hills,_ Mvt.II_ Chanson mélancolique.mp3
+[2025-03-13 12:23:04,137] {transcoding.py:88} INFO - Removed extraneous file: Charles Dutoit_ Montreal Symphony Orchestra/Tchaikovsky_ Symphony #6, Romeo & Juliet Overture/01 Tchaikovsky_ Symphony #6 In B Minor, Op. 74, _Pathétique_ - 1. Adagio, Allegro Non Troppo.mp3
+[2025-03-13 12:23:04,137] {transcoding.py:88} INFO - Removed extraneous file: Charles Dutoit_ Montreal Symphony Orchestra/Tchaikovsky_ Symphony #6, Romeo & Juliet Overture/02 Tchaikovsky_ Symphony #6 In B Minor, Op. 74, _Pathétique_ - 2. Allegro Con Grazia.mp3
+[2025-03-13 12:23:04,137] {transcoding.py:88} INFO - Removed extraneous file: Charles Dutoit_ Montreal Symphony Orchestra/Tchaikovsky_ Symphony #6, Romeo & Juliet Overture/03 Tchaikovsky_ Symphony #6 In B Minor, Op. 74, _Pathétique_ - 3. Allegro Molto Vivace.mp3
+[2025-03-13 12:23:04,137] {transcoding.py:88} INFO - Removed extraneous file: Charles Dutoit_ Montreal Symphony Orchestra/Tchaikovsky_ Symphony #6, Romeo & Juliet Overture/04 Tchaikovsky_ Symphony #6 In B Minor, Op. 74, _Pathétique_ - 4. Finale_ Adagio Lamentoso, Andante.mp3
+[2025-03-13 12:23:04,138] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-01 Fauré_ Requiem, Op. 48 - 1. Introit & Kyrie.mp3
+[2025-03-13 12:23:04,138] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-02 Fauré_ Requiem, Op. 48 - 2. Offertoire.mp3
+[2025-03-13 12:23:04,138] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-03 Fauré_ Requiem, Op. 48 - 3. Sanctus.mp3
+[2025-03-13 12:23:04,138] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-04 Fauré_ Requiem, Op. 48 - 4. Pie Jesu.mp3
+[2025-03-13 12:23:04,138] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-05 Fauré_ Requiem, Op. 48 - 5. Agnus Dei.mp3
+[2025-03-13 12:23:04,139] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-06 Fauré_ Requiem, Op. 48 - 6. Libera Me.mp3
+[2025-03-13 12:23:04,139] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-07 Fauré_ Requiem, Op. 48 - 7. In Paradisum.mp3
+[2025-03-13 12:23:04,139] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-08 Fauré_ Cantique De Jean Racine, Op. 11.mp3
+[2025-03-13 12:23:04,139] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-09 Fauré_ Messe Basse - 1. Kyrie.mp3
+[2025-03-13 12:23:04,139] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-10 Fauré_ Messe Basse - 2. Sanctus.mp3
+[2025-03-13 12:23:04,140] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-11 Fauré_ Messe Basse - 3. Benedictus.mp3
+[2025-03-13 12:23:04,140] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-12 Fauré_ Messe Basse - 4. Agnus Dei.mp3
+[2025-03-13 12:23:04,140] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-13 Poulenc_ Mass In G - 1. Kyrie.mp3
+[2025-03-13 12:23:04,140] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-14 Poulenc_ Mass In G - 2. Gloria.mp3
+[2025-03-13 12:23:04,140] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-15 Poulenc_ Mass In G - 3. Sanctus.mp3
+[2025-03-13 12:23:04,140] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-16 Poulenc_ Mass In G - 4. Benedictus.mp3
+[2025-03-13 12:23:04,141] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-17 Poulenc_ Mass In G - 5. Agnus Dei.mp3
+[2025-03-13 12:23:04,141] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/1-18 Poulenc_ Salve Regina.mp3
+[2025-03-13 12:23:04,141] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/2-01 Duruflé_ Requiem - 1. Introit & Kyrie.mp3
+[2025-03-13 12:23:04,142] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/2-02 Duruflé_ Requiem - 2. Domine Jesu Christe.mp3
+[2025-03-13 12:23:04,142] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/2-03 Duruflé_ Requiem - 3. Sanctus.mp3
+[2025-03-13 12:23:04,142] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/2-04 Duruflé_ Requiem - 4. Pie Jesu.mp3
+[2025-03-13 12:23:04,142] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/2-05 Duruflé_ Requiem - 5. Agnus Dei.mp3
+[2025-03-13 12:23:04,142] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/2-06 Duruflé_ Requiem - 6. Lux Aeterna.mp3
+[2025-03-13 12:23:04,143] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/2-07 Duruflé_ Requiem - 7. Libera Me.mp3
+[2025-03-13 12:23:04,143] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/2-08 Duruflé_ Requiem - 8. In Paradisum.mp3
+[2025-03-13 12:23:04,143] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/2-09 Duruflé_ Prélude Et Fugue Sur Le Nom D'Alain.mp3
+[2025-03-13 12:23:04,143] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/2-11 Duruflé_ Motets On Gregorian Themes, Op. 10 - 2. Tota Pulchra Es.mp3
+[2025-03-13 12:23:04,143] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/2-12 Duruflé_ Motets On Gregorian Themes, Op. 10 - 3. Tu Es Petrus.mp3
+[2025-03-13 12:23:04,143] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/2-13 Duruflé_ Motets On Gregorian Themes, Op. 10 - 4. Tantum Ergo.mp3
+[2025-03-13 12:23:04,144] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/2-14 Poulenc_ Litanies A La Vierge Noire.mp3
+[2025-03-13 12:23:04,144] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/2-15 Poulenc_ Exultate Deo.mp3
+[2025-03-13 12:23:04,144] {transcoding.py:88} INFO - Removed extraneous file: Choir of St John's College Cambridge, George Guest/Fauré_ Requiem; Duruflé_ Requiem, Etc_/folder.jpg
+[2025-03-13 12:23:04,203] {transcoding.py:88} INFO - Removed extraneous file: Christopher Hogwood_ Academy Of Ancient Music/Bach_ Brandenburg Concertos/1-03 Bach_ Brandenburg Concerto #1 In F, BWV 1046 - 3. Allegro; 4. Menuet.mp3
+[2025-03-13 12:23:04,203] {transcoding.py:88} INFO - Removed extraneous file: Christopher Hogwood_ Academy Of Ancient Music/Bach_ Brandenburg Concertos/1-04 Bach_ Brandenburg Concerto #2 In F, BWV 1047 - 1. [Allegro].mp3
+[2025-03-13 12:23:04,203] {transcoding.py:88} INFO - Removed extraneous file: Christopher Hogwood_ Academy Of Ancient Music/Bach_ Brandenburg Concertos/1-05 Bach_ Brandenburg Concerto #2 In F, BWV 1047 - 2. Andante.mp3
+[2025-03-13 12:23:04,203] {transcoding.py:88} INFO - Removed extraneous file: Christopher Hogwood_ Academy Of Ancient Music/Bach_ Brandenburg Concertos/1-06 Bach_ Brandenburg Concerto #2 In F, BWV 1047 - 3. Allegro Assai.mp3
+[2025-03-13 12:23:04,210] {transcoding.py:88} INFO - Removed extraneous file: Christopher Hogwood_ Academy Of Ancient Music/Bach_ Brandenburg Concertos/1-07 Bach_ Brandenburg Concerto #3 In G, BWV 1048 - 1. [Allegro].mp3
+[2025-03-13 12:23:04,211] {transcoding.py:88} INFO - Removed extraneous file: Christopher Hogwood_ Academy Of Ancient Music/Bach_ Brandenburg Concertos/1-08 Bach_ Brandenburg Concerto #3 In G, BWV 1048 - 2. Adagio.mp3
+[2025-03-13 12:23:04,211] {transcoding.py:88} INFO - Removed extraneous file: Christopher Hogwood_ Academy Of Ancient Music/Bach_ Brandenburg Concertos/1-09 Bach_ Brandenburg Concerto #3 In G, BWV 1048 - 3. Allegro.mp3
+[2025-03-13 12:23:04,211] {transcoding.py:88} INFO - Removed extraneous file: Christopher Hogwood_ Academy Of Ancient Music/Bach_ Brandenburg Concertos/2-01 Bach_ Brandenburg Concerto #4 In G, BWV 1049 - 1. Allegro.mp3
+[2025-03-13 12:23:04,211] {transcoding.py:88} INFO - Removed extraneous file: Christopher Hogwood_ Academy Of Ancient Music/Bach_ Brandenburg Concertos/2-02 Bach_ Brandenburg Concerto #4 In G, BWV 1049 - 2. Andante.mp3
+[2025-03-13 12:23:04,211] {transcoding.py:88} INFO - Removed extraneous file: Christopher Hogwood_ Academy Of Ancient Music/Bach_ Brandenburg Concertos/2-03 Bach_ Brandenburg Concerto #4 In G, BWV 1049 - 3. Presto.mp3
+[2025-03-13 12:23:04,211] {transcoding.py:88} INFO - Removed extraneous file: Christopher Hogwood_ Academy Of Ancient Music/Bach_ Brandenburg Concertos/2-04 Bach_ Brandenburg Concerto #5 In D, BWV 1050 - 1. Allegro.mp3
+[2025-03-13 12:23:04,212] {transcoding.py:88} INFO - Removed extraneous file: Christopher Hogwood_ Academy Of Ancient Music/Bach_ Brandenburg Concertos/2-05 Bach_ Brandenburg Concerto #5 In D, BWV 1050 - 2. Affettuoso.mp3
+[2025-03-13 12:23:04,212] {transcoding.py:88} INFO - Removed extraneous file: Christopher Hogwood_ Academy Of Ancient Music/Bach_ Brandenburg Concertos/2-06 Bach_ Brandenburg Concerto #5 In D, BWV 1050 - 3. Allegro.mp3
+[2025-03-13 12:23:04,212] {transcoding.py:88} INFO - Removed extraneous file: Christopher Hogwood_ Academy Of Ancient Music/Bach_ Brandenburg Concertos/2-07 Bach_ Brandenburg Concerto #6 In B Flat, BWV 1051 - 1. Allegro.mp3
+[2025-03-13 12:23:04,212] {transcoding.py:88} INFO - Removed extraneous file: Christopher Hogwood_ Academy Of Ancient Music/Bach_ Brandenburg Concertos/2-08 Bach_ Brandenburg Concerto #6 In B Flat, BWV 1051 - 2. Adagio Ma Non Tanto.mp3
+[2025-03-13 12:23:04,212] {transcoding.py:88} INFO - Removed extraneous file: Christopher Hogwood_ Academy Of Ancient Music/Bach_ Brandenburg Concertos/2-09 Bach_ Brandenburg Concerto #6 In B Flat, BWV 1051 - 3. Allegro.mp3
+[2025-03-13 12:23:04,219] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Brahms_ Piano Quartet No. 2 in a Major, Op. 26 for Orchestra/01 Piano Quartet No. 2 in A Major, Op. 26_ I. Allegro non troppo.mp3
+[2025-03-13 12:23:04,219] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Brahms_ Piano Quartet No. 2 in a Major, Op. 26 for Orchestra/02 Piano Quartet No. 2 in A Major, Op. 26_ II. Poco Adagio.mp3
+[2025-03-13 12:23:04,219] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Brahms_ Piano Quartet No. 2 in a Major, Op. 26 for Orchestra/03 Piano Quartet No. 2 in A Major, Op. 26_ III. Scherzo - Poco Allegro.mp3
+[2025-03-13 12:23:04,220] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Brahms_ Piano Quartet No. 2 in a Major, Op. 26 for Orchestra/04 Piano Quartet No. 2 in A Major, Op. 26_ IV. Finale - Allegro.mp3
+[2025-03-13 12:23:04,220] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/2-01 Dvořák_ Symphony #9 In E Minor, Op. 95, B 178, _From The New World_ - 1. Adagio, Allegro Molto.mp3
+[2025-03-13 12:23:04,220] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/2-02 Dvořák_ Symphony #9 In E Minor, Op. 95, B 178, _From The New World_ - 2. Largo.mp3
+[2025-03-13 12:23:04,221] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/2-03 Dvořák_ Symphony #9 In E Minor, Op. 95, B 178, _From The New World_ - 3. Scherzo_ Molto Vivace.mp3
+[2025-03-13 12:23:04,221] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/2-04 Dvořák_ Symphony #9 In E Minor, Op. 95, B 178, _From The New World_ - 4. Allegro Con Fuoco.mp3
+[2025-03-13 12:23:04,221] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/2-05 Dvořák_ Symphonic Variations, Op. 78, B 70 - 1. Theme.mp3
+[2025-03-13 12:23:04,221] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/2-06 Dvořák_ Symphonic Variations, Op. 78, B 70 - 2. Variations 1, 28.mp3
+[2025-03-13 12:23:04,221] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/2-07 Dvořák_ Symphonic Variations, Op. 78, B 70 - 3. Finale.mp3
+[2025-03-13 12:23:04,222] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/folder.jpg
+[2025-03-13 12:23:04,222] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/01 Beethoven_ Für Elise, WoO 59.mp3
+[2025-03-13 12:23:04,223] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/02 Waltz in D flat major,op.64 no.1 (minute).mp3
+[2025-03-13 12:23:04,223] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/03 Schubert_ Moments Musicaux, D 780 - 3. Allegretto Moderato.mp3
+[2025-03-13 12:23:04,223] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/04 Liszt_ Liebesträume #3, _O Lieb_.mp3
+[2025-03-13 12:23:04,223] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/05 Handel_ Harpsichord Suite #5 In E, Vol. 1_5, HWV 430 - Prelude.mp3
+[2025-03-13 12:23:04,223] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/06 Handel_ Harpsichord Suite #5 In E, Vol. 1_5, HWV 430 - Allemande.mp3
+[2025-03-13 12:23:04,223] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/07 Handel_ Harpsichord Suite #5 In E, Vol. 1_5, HWV 430 - Courante.mp3
+[2025-03-13 12:23:04,224] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/08 Handel_ Harpsichord Suite #5 In E, Vol. 1_5, HWV 430 - Air & Variations, _The Harmonious Blacksmith_.mp3
+[2025-03-13 12:23:04,224] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/09 Nocturne in E flat major, op.9 no.2.mp3
+[2025-03-13 12:23:04,224] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/10 Ballet music from Rosamunde.mp3
+[2025-03-13 12:23:04,224] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/11 Schumann_ Scenes From Childhood, Op. 15 - Dreaming.mp3
+[2025-03-13 12:23:04,224] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/12 Grande valse brillante in E flat major, op.18.mp3
+[2025-03-13 12:23:04,224] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/13 Satie_ Gymnopédies - 1. Lent Et Douloureux.mp3
+[2025-03-13 12:23:04,225] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/14 Satie_ Gymnopédies - 2. Lent Et Triste.mp3
+[2025-03-13 12:23:04,225] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/15 Satie_ Gymnopédies - 3. Lent Et Grave.mp3
+[2025-03-13 12:23:04,225] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/16 Spring Song.mp3
+[2025-03-13 12:23:04,225] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/17 Spinning Song.mp3
+[2025-03-13 12:23:04,225] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/18 Debussy_ Preludes, Book 1, L 117 - #8, La Fille Aux Cheveux De Lin.mp3
+[2025-03-13 12:23:04,226] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/19 Albéniz_ Suite Española, Op. 47 - Sevilla (Sevillanas).mp3
+[2025-03-13 12:23:04,226] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/20 Impromptu No.4 in A flat major, D899.mp3
+[2025-03-13 12:23:04,226] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/21 Polonaise in A flat major, op.53.mp3
+[2025-03-13 12:23:04,226] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Für Elise - Piano Favourites/folder.jpg
+[2025-03-13 12:23:04,226] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Handel_ Essential Classics/02 Handel_ Music For The Royal Fireworks, HWV 351 - Bourée.mp3
+[2025-03-13 12:23:04,227] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Handel_ Essential Classics/04 Handel_ Music For The Royal Fireworks, HWV 351 - La Réjouissance.mp3
+[2025-03-13 12:23:04,227] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Handel_ Essential Classics/13 Handel_ Water Music Suite #1 In F, HWV 348 - Bourrée.mp3
+[2025-03-13 12:23:04,227] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Handel_ Essential Classics/20 Handel_ Water Music Suite #2 In D, HWV 349 - Bourrée.mp3
+[2025-03-13 12:23:04,228] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Introducing The Complete Mozart Edition/01 Mozart_ Die Entführung Aus Dem Serail, K 384 (Excerpt).mp3
+[2025-03-13 12:23:04,228] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Introducing The Complete Mozart Edition/06 Mozart_ Così Fan Tutte, K 588 (Excerpt).mp3
+[2025-03-13 12:23:04,228] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Introducing The Complete Mozart Edition/10 Mozart_ Die Zauberflöte, K 620 (Excerpt).mp3
+[2025-03-13 12:23:04,229] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Mahler_ Symphony No. 9 in D major/02 Im Tempo eines geächlichen Ländler -- Etwas täppisch un sehr derb.mp3
+[2025-03-13 12:23:04,240] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Mahler_ Symphony No. 9 in D major/04 Adagio -- Sehr langsam un noch zurückhaltend.mp3
+[2025-03-13 12:23:04,240] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Melancholy/02 Ravel_ Pavane Pour Une Infante Défunte.mp3
+[2025-03-13 12:23:04,254] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Stravinsky_ The Great Ballets/2-01 Stravinsky_ Apollon Musagète - Coda.mp3
+[2025-03-13 12:23:04,254] {transcoding.py:88} INFO - Removed extraneous file: Compilations/Stravinsky_ The Great Ballets/2-02 Stravinsky_ Apollon Musagète - Apotheosis.mp3
+[2025-03-13 12:23:04,255] {transcoding.py:88} INFO - Removed extraneous file: Ely Cathedral Choir/Traditional Carols From Around The World/08 Célébrons La Naissance, We Sing In Celebration (French).mp3
+[2025-03-13 12:23:04,260] {transcoding.py:88} INFO - Removed extraneous file: Ely Cathedral Choir/Traditional Carols From Around The World/11 Dans Cette Étable, Cradled All Lowly (French).mp3
+[2025-03-13 12:23:04,261] {transcoding.py:88} INFO - Removed extraneous file: Ely Cathedral Choir/Traditional Carols From Around The World/13 Wie Schön Leuchtet, How Brightly Beams (German).mp3
+[2025-03-13 12:23:04,277] {transcoding.py:88} INFO - Removed extraneous file: Gabriella Dall'Olio/Harp Recital/04 Hindemith_ Harp Sonata - Mässig Schnell.mp3
+[2025-03-13 12:23:04,278] {transcoding.py:88} INFO - Removed extraneous file: Giacomo Puccini/Puccini_ Madama Butterfly - Basile, Scotto, Cioni, Rinaldi, Mattiucci 1967/07 Madama Butterfly - Act 1. Bimba dagli occhi pieni di malìa.mp3
+[2025-03-13 12:23:04,279] {transcoding.py:88} INFO - Removed extraneous file: Giacomo Puccini/Puccini_ Madama Butterfly - Basile, Scotto, Cioni, Rinaldi, Mattiucci 1967/11 Madama Butterfly - Act 2, Scene 1. Un bel dì, vedremo.mp3
+[2025-03-13 12:23:04,279] {transcoding.py:88} INFO - Removed extraneous file: Giacomo Puccini/Puccini_ Madama Butterfly - Basile, Scotto, Cioni, Rinaldi, Mattiucci 1967/2-01 Madama Butterfly - Act 2, Scene 1. C'è. Entrate.mp3
+[2025-03-13 12:23:04,279] {transcoding.py:88} INFO - Removed extraneous file: Giacomo Puccini/Puccini_ Madama Butterfly - Basile, Scotto, Cioni, Rinaldi, Mattiucci 1967/2-04 Madama Butterfly - Act 2, Scene 1. Che tua madre dovrà.mp3
+[2025-03-13 12:23:04,279] {transcoding.py:88} INFO - Removed extraneous file: Giacomo Puccini/Puccini_ Madama Butterfly - Basile, Scotto, Cioni, Rinaldi, Mattiucci 1967/2-09 Madama Butterfly - Act 2, Scene 2. Già il sole!.mp3
+[2025-03-13 12:23:04,279] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 1(2)/2-10 Bach_ Well-Tempered Clavier, Book 1 - Fugue #17 In A Flat, BWV 862.mp3
+[2025-03-13 12:23:04,298] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-01 Bach_ The Well-Tempered Clavier, Book 2 - Prelude #1 In C, BWV 870.mp3
+[2025-03-13 12:23:04,298] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-02 Bach_ The Well-Tempered Clavier, Book 2 - Fugue #1 In C, BWV 870.mp3
+[2025-03-13 12:23:04,299] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-03 Bach_ The Well-Tempered Clavier, Book 2 - Prelude #2 In C Minor, BWV 871.mp3
+[2025-03-13 12:23:04,299] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-04 Bach_ The Well-Tempered Clavier, Book 2 - Fugue #2 In C Minor, BWV 871.mp3
+[2025-03-13 12:23:04,299] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-05 Bach_ The Well-Tempered Clavier, Book 2 - Prelude #3 In C Sharp, BWV 872.mp3
+[2025-03-13 12:23:04,300] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-06 Bach_ The Well-Tempered Clavier, Book 2 - Fugue #3 In C Sharp, BWV 872.mp3
+[2025-03-13 12:23:04,300] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-07 Bach_ The Well-Tempered Clavier, Book 2 - Prelude #4 In C Sharp Minor, BWV 873.mp3
+[2025-03-13 12:23:04,300] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-08 Bach_ The Well-Tempered Clavier, Book 2 - Fugue #4 In C Sharp Minor, BWV 873.mp3
+[2025-03-13 12:23:04,301] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-09 Bach_ The Well-Tempered Clavier, Book 2 - Prelude #5 In D, BWV 874.mp3
+[2025-03-13 12:23:04,301] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-10 Bach_ The Well-Tempered Clavier, Book 2 - Fugue #5 In D, BWV 874.mp3
+[2025-03-13 12:23:04,302] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-11 Bach_ The Well-Tempered Clavier, Book 2 - Prelude #6 In D Minor, BWV 875.mp3
+[2025-03-13 12:23:04,302] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-12 Bach_ The Well-Tempered Clavier, Book 2 - Fugue #6 In D Minor, BWV 875.mp3
+[2025-03-13 12:23:04,302] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-13 Bach_ The Well-Tempered Clavier, Book 2 - Prelude #7 In E Flat, BWV 876.mp3
+[2025-03-13 12:23:04,302] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-14 Bach_ The Well-Tempered Clavier, Book 2 - Fugue #7 In E Flat, BWV 876.mp3
+[2025-03-13 12:23:04,303] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-15 Bach_ The Well-Tempered Clavier, Book 2 - Prelude #8 In D Sharp Minor, BWV 877.mp3
+[2025-03-13 12:23:04,303] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-16 Bach_ The Well-Tempered Clavier, Book 2 - Fugue #8 In D Sharp Minor, BWV 877.mp3
+[2025-03-13 12:23:04,303] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-17 Bach_ The Well-Tempered Clavier, Book 2 - Prelude #9 In E Major, BWV 878.mp3
+[2025-03-13 12:23:04,303] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-18 Bach_ The Well-Tempered Clavier, Book 2 - Fugue #9 In E, BWV 878.mp3
+[2025-03-13 12:23:04,304] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-19 Bach_ The Well-Tempered Clavier, Book 2 - Prelude #10 In E Minor, BWV 879.mp3
+[2025-03-13 12:23:04,304] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-20 Bach_ The Well-Tempered Clavier, Book 2 - Fugue #10 In E Minor, BWV 879.mp3
+[2025-03-13 12:23:04,304] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-21 Bach_ The Well-Tempered Clavier, Book 2 - Prelude #11 In F, BWV 880.mp3
+[2025-03-13 12:23:04,304] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-22 Bach_ The Well-Tempered Clavier, Book 2 - Fugue #11 In F, BWV 880.mp3
+[2025-03-13 12:23:04,305] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-23 Bach_ The Well-Tempered Clavier, Book 2 - Prelude #12 In F Minor, BWV 881.mp3
+[2025-03-13 12:23:04,305] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 1]/1-24 Bach_ The Well-Tempered Clavier, Book 2 - Fugue #12 In F Minor, BWV 881.mp3
+[2025-03-13 12:23:04,305] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-01 Bach_ The Well Tempered Clavier Book 2 - Prelude #13 In F Sharp, BWV 882.mp3
+[2025-03-13 12:23:04,305] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-02 Bach_ The Well Tempered Clavier Book 2 - Fugue #13 In F Sharp, BWV 882.mp3
+[2025-03-13 12:23:04,305] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-03 Bach_ The Well Tempered Clavier Book 2 - Prelude #14 In F Sharp Minor, BWV 883.mp3
+[2025-03-13 12:23:04,306] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-04 Bach_ The Well Tempered Clavier Book 2 - Fugue #14 In F Sharp Minor, BWV 883.mp3
+[2025-03-13 12:23:04,306] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-05 Bach_ The Well Tempered Clavier Book 2 - Prelude #15 In G, BWV 884.mp3
+[2025-03-13 12:23:04,306] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-06 Bach_ The Well Tempered Clavier Book 2 - Fugue #15 In G, BWV 884.mp3
+[2025-03-13 12:23:04,306] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-07 Bach_ The Well Tempered Clavier Book 2 - Prelude #16 In G Minor, BWV 885.mp3
+[2025-03-13 12:23:04,306] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-08 Bach_ The Well Tempered Clavier Book 2 - Fugue #16 In G Minor, BWV 885.mp3
+[2025-03-13 12:23:04,307] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-09 Bach_ The Well Tempered Clavier Book 2 - Prelude #17 In A Flat, BWV 886.mp3
+[2025-03-13 12:23:04,307] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-10 Bach_ The Well Tempered Clavier Book 2 - Fugue #17 In A Flat, BWV 886.mp3
+[2025-03-13 12:23:04,307] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-11 Bach_ The Well Tempered Clavier Book 2 - Prelude #18 In G Sharp Minor, BWV 887.mp3
+[2025-03-13 12:23:04,307] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-12 Bach_ The Well Tempered Clavier Book 2 - Fugue #18 In G Sharp Minor, BWV 887.mp3
+[2025-03-13 12:23:04,308] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-13 Bach_ The Well Tempered Clavier Book 2 - Prelude #19 In A, BWV 888.mp3
+[2025-03-13 12:23:04,308] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-14 Bach_ The Well Tempered Clavier Book 2 - Fugue #19 In A, BWV 888.mp3
+[2025-03-13 12:23:04,308] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-15 Bach_ The Well Tempered Clavier Book 2 - Prelude #20 In A Minor, BWV 889.mp3
+[2025-03-13 12:23:04,309] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-16 Bach_ The Well Tempered Clavier Book 2 - Fugue #20 In A Minor, BWV 889.mp3
+[2025-03-13 12:23:04,309] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-17 Bach_ The Well Tempered Clavier Book 2 - Prelude #21 In B Flat, BWV 890.mp3
+[2025-03-13 12:23:04,309] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-18 Bach_ The Well Tempered Clavier Book 2 - Fugue #21 In B Flat, BWV 890.mp3
+[2025-03-13 12:23:04,310] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-19 Bach_ The Well Tempered Clavier Book 2 - Prelude #22 In B Flat Minor, BWV 891.mp3
+[2025-03-13 12:23:04,310] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-20 Bach_ The Well Tempered Clavier Book 2 - Fugue #22 In B Flat Minor, BWV 891.mp3
+[2025-03-13 12:23:04,310] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-21 Bach_ The Well Tempered Clavier Book 2 - Prelude #23 In B, BWV 892.mp3
+[2025-03-13 12:23:04,310] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-22 Bach_ The Well Tempered Clavier Book 2 - Fugue #23 In B, BWV 892.mp3
+[2025-03-13 12:23:04,311] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-23 Bach_ The Well Tempered Clavier Book 2 - Prelude #24 In B Minor, BWV 893.mp3
+[2025-03-13 12:23:04,311] {transcoding.py:88} INFO - Removed extraneous file: Glenn Gould/Bach_ The Well-Tempered Clavier, Book 2 [Disc 2]/2-24 Bach_ The Well Tempered Clavier Book 2 - Fugue #24 In B Minor, BWV 893.mp3
+[2025-03-13 12:23:04,316] {transcoding.py:88} INFO - Removed extraneous file: Heitor Villa-Lobos; Victoria de Los Angeles; Orchestre National de la Radiodiffusion Francaise/Villa-Lobos_ Bachianas Brasileiras #1, 2, 5 & 9/02 Villa-Lobos_ Bachiana Brasileira #5 - 2. Dança (Martelo).mp3
+[2025-03-13 12:23:04,316] {transcoding.py:88} INFO - Removed extraneous file: Heitor Villa-Lobos; Victoria de Los Angeles; Orchestre National de la Radiodiffusion Francaise/Villa-Lobos_ Bachianas Brasileiras #1, 2, 5 & 9/03 Villa-Lobos_ Bachiana Brasileira #2 - 1. Prelúdio (O Canto Do Capadocio).mp3
+[2025-03-13 12:23:04,317] {transcoding.py:88} INFO - Removed extraneous file: Heitor Villa-Lobos; Victoria de Los Angeles; Orchestre National de la Radiodiffusion Francaise/Villa-Lobos_ Bachianas Brasileiras #1, 2, 5 & 9/05 Villa-Lobos_ Bachiana Brasileira #2 - 3. Dança (Lembrança Do Sertão).mp3
+[2025-03-13 12:23:04,317] {transcoding.py:88} INFO - Removed extraneous file: Heitor Villa-Lobos; Victoria de Los Angeles; Orchestre National de la Radiodiffusion Francaise/Villa-Lobos_ Bachianas Brasileiras #1, 2, 5 & 9/07 Villa-Lobos_ Bachiana Brasileira #1 - 1. Introdução (Embolada).mp3
+[2025-03-13 12:23:04,317] {transcoding.py:88} INFO - Removed extraneous file: Heitor Villa-Lobos; Victoria de Los Angeles; Orchestre National de la Radiodiffusion Francaise/Villa-Lobos_ Bachianas Brasileiras #1, 2, 5 & 9/08 Villa-Lobos_ Bachiana Brasileira #1 - 2. Prelúdio (Modinha).mp3
+[2025-03-13 12:23:04,317] {transcoding.py:88} INFO - Removed extraneous file: Heitor Villa-Lobos; Victoria de Los Angeles; Orchestre National de la Radiodiffusion Francaise/Villa-Lobos_ Bachianas Brasileiras #1, 2, 5 & 9/10 Villa-Lobos_ Bachiana Brasileira #9 For Chorus - 1. Prelúdio.mp3
+[2025-03-13 12:23:04,318] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/01 Suite No. 1 for Small Orchestra_ Andante.mp3
+[2025-03-13 12:23:04,318] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/02 Suite No. 1 for Small Orchestra_ Napoletana.mp3
+[2025-03-13 12:23:04,318] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/03 Suite No. 1 for Small Orchestra_ Espagnola.mp3
+[2025-03-13 12:23:04,318] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/04 Suite No. 1 for Small Orchestra_ Balalaika.mp3
+[2025-03-13 12:23:04,318] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/05 Suite No. 2 for Small Orchestra_ Marche.mp3
+[2025-03-13 12:23:04,319] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/06 Suite No. 2 for Small Orchestra_ Valse.mp3
+[2025-03-13 12:23:04,319] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/07 Suite No. 2 for Small Orchestra_ Polka.mp3
+[2025-03-13 12:23:04,319] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/08 Suite No. 2 for Small Orchestra_ Galop.mp3
+[2025-03-13 12:23:04,319] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/09 Ragtime.mp3
+[2025-03-13 12:23:04,319] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/10 Octet for Wind Instruments_ I. Sinfonia.mp3
+[2025-03-13 12:23:04,319] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/11 Octet for Wind Instruments.mp3
+[2025-03-13 12:23:04,320] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/12 Octet for Wind Instruments_ III. Finale.mp3
+[2025-03-13 12:23:04,320] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/13 Danses concertantes_ Marcia. Introduzione.mp3
+[2025-03-13 12:23:04,320] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/14 Danses concertantes_ Passo d'azione.mp3
+[2025-03-13 12:23:04,320] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/15 Danses concertantes_ Tema variato.mp3
+[2025-03-13 12:23:04,320] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/16 Danses concertantes_ Passo a due.mp3
+[2025-03-13 12:23:04,321] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/17 Danses concertantes_ Marcia. Conclusione.mp3
+[2025-03-13 12:23:04,321] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/18 Concerto for Chamber Orchestra in E-Flat Major _Dumbarton Oaks__ I. Tempo giusto.mp3
+[2025-03-13 12:23:04,321] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/19 Concerto for Chamber Orchestra in E-Flat Major _Dumbarton Oaks__ II. Allegretto.mp3
+[2025-03-13 12:23:04,321] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/20 Concerto for Chamber Orchestra in E-Flat Major _Dumbarton Oaks__ III. Con moto.mp3
+[2025-03-13 12:23:04,322] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/21 Concerto for String Orchestra in D Major_ I. Vivace.mp3
+[2025-03-13 12:23:04,322] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/22 Concerto for String Orchestra in D Major_ II. Arioso.mp3
+[2025-03-13 12:23:04,322] {transcoding.py:88} INFO - Removed extraneous file: Igor Stravinsky & Orchestra della Radiotelevisione della Svizzera Italiana/Stravinsky Conducts Stravinsky/23 Concerto for String Orchestra in D Major_ III. Rondo. Allegro.mp3
+[2025-03-13 12:23:04,322] {transcoding.py:88} INFO - Removed extraneous file: J. Bernardo Silva/Solo_ Works for Solo Horn/01 Suite No.1, BWV 1007_ I. Prelude.mp3
+[2025-03-13 12:23:04,322] {transcoding.py:88} INFO - Removed extraneous file: J. Bernardo Silva/Solo_ Works for Solo Horn/02 Suite No.1, BWV 1007_ II. Allemande.mp3
+[2025-03-13 12:23:04,322] {transcoding.py:88} INFO - Removed extraneous file: J. Bernardo Silva/Solo_ Works for Solo Horn/03 Suite No.1, BWV 1007_ III. Courante.mp3
+[2025-03-13 12:23:04,322] {transcoding.py:88} INFO - Removed extraneous file: J. Bernardo Silva/Solo_ Works for Solo Horn/04 Suite No.1, BWV 1007_ IV. Sarabande.mp3
+[2025-03-13 12:23:04,323] {transcoding.py:88} INFO - Removed extraneous file: J. Bernardo Silva/Solo_ Works for Solo Horn/05 Suite No.1, BWV 1007_ V. Menuett I & II.mp3
+[2025-03-13 12:23:04,323] {transcoding.py:88} INFO - Removed extraneous file: J. Bernardo Silva/Solo_ Works for Solo Horn/06 Suite No.1, BWV 1007_ VI. Gigue.mp3
+[2025-03-13 12:23:04,323] {transcoding.py:88} INFO - Removed extraneous file: J. Bernardo Silva/Solo_ Works for Solo Horn/07 Laudatio.mp3
+[2025-03-13 12:23:04,364] {transcoding.py:88} INFO - Removed extraneous file: J. Bernardo Silva/Solo_ Works for Solo Horn/08 Hornlokk.mp3
+[2025-03-13 12:23:04,364] {transcoding.py:88} INFO - Removed extraneous file: J. Bernardo Silva/Solo_ Works for Solo Horn/09 Monodie, Op. 218 bis.mp3
+[2025-03-13 12:23:04,365] {transcoding.py:88} INFO - Removed extraneous file: J. Bernardo Silva/Solo_ Works for Solo Horn/10 The Dream of the Rhinoceros.mp3
+[2025-03-13 12:23:04,365] {transcoding.py:88} INFO - Removed extraneous file: J. Bernardo Silva/Solo_ Works for Solo Horn/11 España.mp3
+[2025-03-13 12:23:04,365] {transcoding.py:88} INFO - Removed extraneous file: J. Bernardo Silva/Solo_ Works for Solo Horn/12 Cor Leonis.mp3
+[2025-03-13 12:23:04,365] {transcoding.py:88} INFO - Removed extraneous file: J. Bernardo Silva/Solo_ Works for Solo Horn/13 Le Rendez-vous de Chasse.mp3
+[2025-03-13 12:23:04,366] {transcoding.py:88} INFO - Removed extraneous file: Jamey Aebersold/How to Play Jazz & Improvise - Slower Tempos, Vol. 1/01 Tuning Notes.mp3
+[2025-03-13 12:23:04,366] {transcoding.py:88} INFO - Removed extraneous file: Jamey Aebersold/How to Play Jazz & Improvise - Slower Tempos, Vol. 1/02 F Minor, Eb Minor, D Minor (8 Bars Each).mp3
+[2025-03-13 12:23:04,366] {transcoding.py:88} INFO - Removed extraneous file: Jamey Aebersold/How to Play Jazz & Improvise - Slower Tempos, Vol. 1/03 F Minor, Eb Minor, D Minor (4 Bars Each).mp3
+[2025-03-13 12:23:04,366] {transcoding.py:88} INFO - Removed extraneous file: Jamey Aebersold/How to Play Jazz & Improvise - Slower Tempos, Vol. 1/04 Random Minor Chords (8 Bars Each).mp3
+[2025-03-13 12:23:04,366] {transcoding.py:88} INFO - Removed extraneous file: Jamey Aebersold/How to Play Jazz & Improvise - Slower Tempos, Vol. 1/05 Random Minor Chords (4 Bars Each).mp3
+[2025-03-13 12:23:04,366] {transcoding.py:88} INFO - Removed extraneous file: Jamey Aebersold/How to Play Jazz & Improvise - Slower Tempos, Vol. 1/06 Four Measure Cadences (Ii_V7_I).mp3
+[2025-03-13 12:23:04,366] {transcoding.py:88} INFO - Removed extraneous file: Jamey Aebersold/How to Play Jazz & Improvise - Slower Tempos, Vol. 1/07 Blues in Key of Bb Concert.mp3
+[2025-03-13 12:23:04,367] {transcoding.py:88} INFO - Removed extraneous file: Jamey Aebersold/How to Play Jazz & Improvise - Slower Tempos, Vol. 1/08 Blues in Key of F Concert.mp3
+[2025-03-13 12:23:04,367] {transcoding.py:88} INFO - Removed extraneous file: Jamey Aebersold/How to Play Jazz & Improvise - Slower Tempos, Vol. 1/09 Cycle of Dominant 7th's (4 Bars Each).mp3
+[2025-03-13 12:23:04,367] {transcoding.py:88} INFO - Removed extraneous file: Jamey Aebersold/How to Play Jazz & Improvise - Slower Tempos, Vol. 1/10 24-Measure Song.mp3
+[2025-03-13 12:23:04,367] {transcoding.py:88} INFO - Removed extraneous file: Jamey Aebersold/How to Play Jazz & Improvise - Slower Tempos, Vol. 1/11 Minor to Dominant Progression (12 Keys).mp3
+[2025-03-13 12:23:04,367] {transcoding.py:88} INFO - Removed extraneous file: Janáček Quartet & Alexandre Magnin/Boccherini_ Flute Quintets, Op. 17/01 Boccherini_ Flute Quintet #1 In D, G 419 - 1. Allegro Assai.mp3
+[2025-03-13 12:23:04,368] {transcoding.py:88} INFO - Removed extraneous file: Janáček Quartet & Alexandre Magnin/Boccherini_ Flute Quintets, Op. 17/02 Boccherini_ Flute Quintet #1 In D, G 419 - 2. Minuetto - Amoroso.mp3
+[2025-03-13 12:23:04,368] {transcoding.py:88} INFO - Removed extraneous file: Janáček Quartet & Alexandre Magnin/Boccherini_ Flute Quintets, Op. 17/03 Boccherini_ Flute Quintet #2 In C, G 420 - 1. Allegro Giusto.mp3
+[2025-03-13 12:23:04,368] {transcoding.py:88} INFO - Removed extraneous file: Janáček Quartet & Alexandre Magnin/Boccherini_ Flute Quintets, Op. 17/04 Boccherini_ Flute Quintet #2 In C, G 420 - 2. Minuetto - Amoroso.mp3
+[2025-03-13 12:23:04,368] {transcoding.py:88} INFO - Removed extraneous file: Janáček Quartet & Alexandre Magnin/Boccherini_ Flute Quintets, Op. 17/05 Boccherini_ Flute Quintet #3 In D Minor, G 421 - 1. Larghetto.mp3
+[2025-03-13 12:23:04,369] {transcoding.py:88} INFO - Removed extraneous file: Janáček Quartet & Alexandre Magnin/Boccherini_ Flute Quintets, Op. 17/06 Boccherini_ Flute Quintet #3 In D Minor, G 421 - 2. Rondo_ Allegro Grazioso.mp3
+[2025-03-13 12:23:04,369] {transcoding.py:88} INFO - Removed extraneous file: Janáček Quartet & Alexandre Magnin/Boccherini_ Flute Quintets, Op. 17/07 Boccherini_ Flute Quintet #4 In B Flat, G 422 - 1. Andantino Moderato.mp3
+[2025-03-13 12:23:04,370] {transcoding.py:88} INFO - Removed extraneous file: Janáček Quartet & Alexandre Magnin/Boccherini_ Flute Quintets, Op. 17/08 Boccherini_ Flute Quintet #4 In B Flat, G 422 - 2. Minuetto - Allegro.mp3
+[2025-03-13 12:23:04,370] {transcoding.py:88} INFO - Removed extraneous file: Janáček Quartet & Alexandre Magnin/Boccherini_ Flute Quintets, Op. 17/09 Boccherini_ Flute Quintet #5 In G, G 423 - 1. Allegro Moderato.mp3
+[2025-03-13 12:23:04,370] {transcoding.py:88} INFO - Removed extraneous file: Janáček Quartet & Alexandre Magnin/Boccherini_ Flute Quintets, Op. 17/10 Boccherini_ Flute Quintet #5 In G, G 423 - 2. Allegro Assai.mp3
+[2025-03-13 12:23:04,375] {transcoding.py:88} INFO - Removed extraneous file: Janáček Quartet & Alexandre Magnin/Boccherini_ Flute Quintets, Op. 17/11 Boccherini_ Flute Quintet #6 In E Flat, G 424 - 1. Larghetto.mp3
+[2025-03-13 12:23:04,375] {transcoding.py:88} INFO - Removed extraneous file: Janáček Quartet & Alexandre Magnin/Boccherini_ Flute Quintets, Op. 17/12 Boccherini_ Flute Quintet #6 In E Flat, G 424 - 2. Rondo_ Allegro Con Moto.mp3
+[2025-03-13 12:23:04,376] {transcoding.py:88} INFO - Removed extraneous file: Janáček Quartet & Alexandre Magnin/Boccherini_ Flute Quintets, Op. 17/folder.jpg
+[2025-03-13 12:23:04,376] {transcoding.py:88} INFO - Removed extraneous file: Jiri Belohlavek_ Czech Philharmonic Orchestra/Martinů_ Memorial to Lidice; Field Mass; Symphony No. 4/01 Památnik Lidicím (Memorial to Lidice).mp3
+[2025-03-13 12:23:04,376] {transcoding.py:88} INFO - Removed extraneous file: Jiri Belohlavek_ Czech Philharmonic Orchestra/Martinů_ Memorial to Lidice; Field Mass; Symphony No. 4/02 Polní Mše (Field Mass).mp3
+[2025-03-13 12:23:04,376] {transcoding.py:88} INFO - Removed extraneous file: Jiri Belohlavek_ Czech Philharmonic Orchestra/Martinů_ Memorial to Lidice; Field Mass; Symphony No. 4/03 Symphony No. 4. I. Poco moderato.mp3
+[2025-03-13 12:23:04,376] {transcoding.py:88} INFO - Removed extraneous file: Jiri Belohlavek_ Czech Philharmonic Orchestra/Martinů_ Memorial to Lidice; Field Mass; Symphony No. 4/04 Symphony No. 4. II. Allegro vivo - Trio. Moderato - Allegro vivo.mp3
+[2025-03-13 12:23:04,377] {transcoding.py:88} INFO - Removed extraneous file: Jiri Belohlavek_ Czech Philharmonic Orchestra/Martinů_ Memorial to Lidice; Field Mass; Symphony No. 4/05 Symphony No. 4. III. Largo.mp3
+[2025-03-13 12:23:04,377] {transcoding.py:88} INFO - Removed extraneous file: Jiri Belohlavek_ Czech Philharmonic Orchestra/Martinů_ Memorial to Lidice; Field Mass; Symphony No. 4/06 Symphony No. 4. IV. Poco allegro.mp3
+[2025-03-13 12:23:04,377] {transcoding.py:88} INFO - Removed extraneous file: Jiri Belohlavek_ Czech Philharmonic Orchestra/Martinů_ Memorial to Lidice; Field Mass; Symphony No. 4/folder.jpg
+[2025-03-13 12:23:04,377] {transcoding.py:88} INFO - Removed extraneous file: Jorma Hynninen, Hans Sotin, Etc.; Klaus Tennstedt_ London Philharmonic Orchestra & Chorus/Mahler_ Symphony No. 8 [Disc 2]/2-03 Mahler_ Symphony #8 In E Flat - Part 2_ Wie Felsenabgrund Mir Zu Füssen.mp3
+[2025-03-13 12:23:04,378] {transcoding.py:88} INFO - Removed extraneous file: Jorma Hynninen, Hans Sotin, Etc.; Klaus Tennstedt_ London Philharmonic Orchestra & Chorus/Mahler_ Symphony No. 8 [Disc 2]/2-07 Mahler_ Symphony #8 In E Flat - Part 2_ Höchste Herrscherin Der Welt.mp3
+[2025-03-13 12:23:04,378] {transcoding.py:88} INFO - Removed extraneous file: Jorma Hynninen, Hans Sotin, Etc.; Klaus Tennstedt_ London Philharmonic Orchestra & Chorus/Mahler_ Symphony No. 8 [Disc 2]/2-08 Mahler_ Symphony #8 In E Flat - Part 2_ Dir, Der Unberührbaren.mp3
+[2025-03-13 12:23:04,378] {transcoding.py:88} INFO - Removed extraneous file: Jorma Hynninen, Hans Sotin, Etc.; Klaus Tennstedt_ London Philharmonic Orchestra & Chorus/Mahler_ Symphony No. 8 [Disc 2]/2-09 Mahler_ Symphony #8 In E Flat - Part 2_ Bei Der Liebe, Die Den Füssen.mp3
+[2025-03-13 12:23:04,378] {transcoding.py:88} INFO - Removed extraneous file: Jorma Hynninen, Hans Sotin, Etc.; Klaus Tennstedt_ London Philharmonic Orchestra & Chorus/Mahler_ Symphony No. 8 [Disc 2]/2-12 Mahler_ Symphony #8 In E Flat - Part 2_ Alles Vergängliche.mp3
+[2025-03-13 12:23:04,378] {transcoding.py:88} INFO - Removed extraneous file: Juilliard Quartet/Debussy; Ravel; Dutilleux_ String Quartets/01 Debussy_ String Quartet In G Minor, Op. 10 - 1. Animé Et Très Décidé.mp3
+[2025-03-13 12:23:04,378] {transcoding.py:88} INFO - Removed extraneous file: Juilliard Quartet/Debussy; Ravel; Dutilleux_ String Quartets/02 Debussy_ String Quartet In G Minor, Op. 10 - 2. Assez Vif Et Bien Rythmé.mp3
+[2025-03-13 12:23:04,378] {transcoding.py:88} INFO - Removed extraneous file: Juilliard Quartet/Debussy; Ravel; Dutilleux_ String Quartets/04 Debussy_ String Quartet In G Minor, Op. 10 - 4. Très Modéré, Très Animé.mp3
+[2025-03-13 12:23:04,379] {transcoding.py:88} INFO - Removed extraneous file: Juilliard Quartet/Debussy; Ravel; Dutilleux_ String Quartets/05 Ravel_ String Quartet In F - 1. Moderato, Très Doux.mp3
+[2025-03-13 12:23:04,379] {transcoding.py:88} INFO - Removed extraneous file: Juilliard Quartet/Debussy; Ravel; Dutilleux_ String Quartets/06 Ravel_ String Quartet In F - 2. Assez Vif, Très Rythmé.mp3
+[2025-03-13 12:23:04,379] {transcoding.py:88} INFO - Removed extraneous file: Juilliard Quartet/Debussy; Ravel; Dutilleux_ String Quartets/07 Ravel_ String Quartet In F - 3. Très Lent.mp3
+[2025-03-13 12:23:04,380] {transcoding.py:88} INFO - Removed extraneous file: Juilliard Quartet/Debussy; Ravel; Dutilleux_ String Quartets/08 Ravel_ String Quartet In F - 4. Vif Et Agité.mp3
+[2025-03-13 12:23:04,380] {transcoding.py:88} INFO - Removed extraneous file: Juilliard Quartet/Debussy; Ravel; Dutilleux_ String Quartets/11 Dutilleux_ String Quartet, _Ainsi La Nuit_ - Parenthèse #1.mp3
+[2025-03-13 12:23:04,380] {transcoding.py:88} INFO - Removed extraneous file: Juilliard Quartet/Debussy; Ravel; Dutilleux_ String Quartets/13 Dutilleux_ String Quartet, _Ainsi La Nuit_ - Parenthèse #2.mp3
+[2025-03-13 12:23:04,380] {transcoding.py:88} INFO - Removed extraneous file: Juilliard Quartet/Debussy; Ravel; Dutilleux_ String Quartets/15 Dutilleux_ String Quartet, _Ainsi La Nuit_ - Parenthèse #3.mp3
+[2025-03-13 12:23:04,380] {transcoding.py:88} INFO - Removed extraneous file: Juilliard Quartet/Debussy; Ravel; Dutilleux_ String Quartets/17 Dutilleux_ String Quartet, _Ainsi La Nuit_ - Parenthèse #4.mp3
+[2025-03-13 12:23:04,381] {transcoding.py:88} INFO - Removed extraneous file: Julian Bream, John Williams/Together/1-05 Granados_ Danzas Españolas, Op. 37 - Rondella Aragonesa.mp3
+[2025-03-13 12:23:04,381] {transcoding.py:88} INFO - Removed extraneous file: Julian Bream, John Williams/Together/1-06 Albéniz_ Cantos De Espana, Op. 232 - Bajo La Palmera.mp3
+[2025-03-13 12:23:04,381] {transcoding.py:88} INFO - Removed extraneous file: Julian Bream, John Williams/Together/1-07 Granados_ Danzas Españolas, Op. 37 - Zambra.mp3
+[2025-03-13 12:23:04,381] {transcoding.py:88} INFO - Removed extraneous file: Julian Bream, John Williams/Together/1-09 Albéniz_ Iberia, B 47 - Evocación.mp3
+[2025-03-13 12:23:04,381] {transcoding.py:88} INFO - Removed extraneous file: Julian Bream, John Williams/Together/1-18 Debussy_ Rêverie, L 68.mp3
+[2025-03-13 12:23:04,382] {transcoding.py:88} INFO - Removed extraneous file: Julian Bream, John Williams/Together/2-09 Albéniz_ Cantos De Espana, Op. 232 - Cordoba (Nocturne).mp3
+[2025-03-13 12:23:04,382] {transcoding.py:88} INFO - Removed extraneous file: Julian Bream, John Williams/Together/2-13 Fauré_ Dolly Suite - 1. Berceuse.mp3
+[2025-03-13 12:23:04,382] {transcoding.py:88} INFO - Removed extraneous file: Julian Bream, John Williams/Together/2-14 Fauré_ Dolly Suite - 2. Mi, A-Ou.mp3
+[2025-03-13 12:23:04,383] {transcoding.py:88} INFO - Removed extraneous file: Julian Bream, John Williams/Together/2-15 Fauré_ Dolly Suite - 3. Dolly's Garden.mp3
+[2025-03-13 12:23:04,383] {transcoding.py:88} INFO - Removed extraneous file: Julian Bream, John Williams/Together/2-16 Fauré_ Dolly Suite - 4. Kitty, Valse.mp3
+[2025-03-13 12:23:04,383] {transcoding.py:88} INFO - Removed extraneous file: Julian Bream, John Williams/Together/2-17 Fauré_ Dolly Suite - 5. Tendresse.mp3
+[2025-03-13 12:23:04,383] {transcoding.py:88} INFO - Removed extraneous file: Julian Bream, John Williams/Together/2-18 Fauré_ Dolly Suite - Le Pas Espagnol.mp3
+[2025-03-13 12:23:04,383] {transcoding.py:88} INFO - Removed extraneous file: Julian Bream, John Williams/Together/2-19 Granados_ Danzas Españolas, Op. 37 - 2. Oriental.mp3
+[2025-03-13 12:23:04,384] {transcoding.py:88} INFO - Removed extraneous file: Julius Katchen/Brahms Piano Concertos 1 & 2 (2)/album.jpg
+[2025-03-13 12:23:04,384] {transcoding.py:88} INFO - Removed extraneous file: Julius Katchen/Brahms Piano Concertos 1 & 2/album.jpg
+[2025-03-13 12:23:04,385] {transcoding.py:88} INFO - Removed extraneous file: Kirov Orchestra; Valery Gergiev/Tchaikovsky_ The Nutcracker/16 Tchaikovsky_ The Nutcracker, Op. 71 - 16. Act 2_ Character Dances (Divertissement)_ Trépak (Russian Dance).mp3
+[2025-03-13 12:23:04,385] {transcoding.py:88} INFO - Removed extraneous file: Klara Kormendi; Jerome Kaltenbach_ Nancy Symphony Orchestra/The Best Of Satie/01 Satie_ 3 Gymnopédies - #1_ Lent Et Douloureux.mp3
+[2025-03-13 12:23:04,385] {transcoding.py:88} INFO - Removed extraneous file: Klara Kormendi; Jerome Kaltenbach_ Nancy Symphony Orchestra/The Best Of Satie/02 Satie_ 3 Gymnopédies - #2_ Lent Et Triste.mp3
+[2025-03-13 12:23:04,385] {transcoding.py:88} INFO - Removed extraneous file: Klara Kormendi; Jerome Kaltenbach_ Nancy Symphony Orchestra/The Best Of Satie/03 Satie_ 3 Gymnopédies - #3_ Lent Et Grave.mp3
+[2025-03-13 12:23:04,386] {transcoding.py:88} INFO - Removed extraneous file: Klara Kormendi; Jerome Kaltenbach_ Nancy Symphony Orchestra/The Best Of Satie/21 Satie_ 3 Gymnopédies - #1_ Lent Et Douloureux.mp3
+[2025-03-13 12:23:04,386] {transcoding.py:88} INFO - Removed extraneous file: Klara Kormendi; Jerome Kaltenbach_ Nancy Symphony Orchestra/The Best Of Satie/22 Satie_ 3 Gymnopédies - #2_ Lent Et Triste.mp3
+[2025-03-13 12:23:04,386] {transcoding.py:88} INFO - Removed extraneous file: Klara Kormendi; Jerome Kaltenbach_ Nancy Symphony Orchestra/The Best Of Satie/23 Satie_ 3 Gymnopédies - #3_ Lent Et Grave.mp3
+[2025-03-13 12:23:04,430] {transcoding.py:88} INFO - Removed extraneous file: London Philharmonic, Bryden Thomson/Elgar_ Symphonies 1 & 2, Froissart, Sanguine Fan/07 Elgar_ The Sanguine Fan, Op. 81 - Più Moderato.mp3
+[2025-03-13 12:23:04,430] {transcoding.py:88} INFO - Removed extraneous file: London Philharmonic, Haitink_London Symphony, Markevitch/Stravinsky_ The Great Ballets/1-16 Stravinsky_ Apollon Musagète - Prologue_ The Birth Of Apollo.mp3
+[2025-03-13 12:23:04,431] {transcoding.py:88} INFO - Removed extraneous file: London Philharmonic, Haitink_London Symphony, Markevitch/Stravinsky_ The Great Ballets/1-17 Stravinsky_ Apollon Musagète - Variation Of Apollo (Apollo & The Muses).mp3
+[2025-03-13 12:23:04,431] {transcoding.py:88} INFO - Removed extraneous file: London Philharmonic, Haitink_London Symphony, Markevitch/Stravinsky_ The Great Ballets/1-18 Stravinsky_ Apollon Musagète - Pas D'Action (Apollo & The 3 Muses).mp3
+[2025-03-13 12:23:04,431] {transcoding.py:88} INFO - Removed extraneous file: London Philharmonic, Haitink_London Symphony, Markevitch/Stravinsky_ The Great Ballets/1-19 Stravinsky_ Apollon Musagète - Variation Of Calliope.mp3
+[2025-03-13 12:23:04,431] {transcoding.py:88} INFO - Removed extraneous file: London Philharmonic, Haitink_London Symphony, Markevitch/Stravinsky_ The Great Ballets/1-20 Stravinsky_ Apollon Musagète - Variation Of Polyhymnia.mp3
+[2025-03-13 12:23:04,431] {transcoding.py:88} INFO - Removed extraneous file: London Philharmonic, Haitink_London Symphony, Markevitch/Stravinsky_ The Great Ballets/1-21 Stravinsky_ Apollon Musagète - Variation Of Terpsichore.mp3
+[2025-03-13 12:23:04,432] {transcoding.py:88} INFO - Removed extraneous file: London Philharmonic, Haitink_London Symphony, Markevitch/Stravinsky_ The Great Ballets/1-22 Stravinsky_ Apollon Musagète - Variation Of Apollo.mp3
+[2025-03-13 12:23:04,432] {transcoding.py:88} INFO - Removed extraneous file: London Philharmonic, Haitink_London Symphony, Markevitch/Stravinsky_ The Great Ballets/1-23 Stravinsky_ Apollon Musagète - Pas De Deux (Apollo & Terpsichore).mp3
+[2025-03-13 12:23:04,432] {transcoding.py:88} INFO - Removed extraneous file: Lorin Maazel, Orchestra dell'Accademia di Santa Cecilia/Puccini_ Tosca/1-09 Puccini_ Tosca - Act 1_ Or Tutto È Chiaro.mp3
+[2025-03-13 12:23:04,433] {transcoding.py:88} INFO - Removed extraneous file: Lorin Maazel, Orchestra dell'Accademia di Santa Cecilia/Puccini_ Tosca/2-01 _Tosca è un buon falco!_.mp3
+[2025-03-13 12:23:04,433] {transcoding.py:88} INFO - Removed extraneous file: Lorin Maazel, Orchestra dell'Accademia di Santa Cecilia/Puccini_ Tosca/2-02 _Ha più forte sapore_ - _Spoletta è giunto_.mp3
+[2025-03-13 12:23:04,433] {transcoding.py:88} INFO - Removed extraneous file: Lorin Maazel, Orchestra dell'Accademia di Santa Cecilia/Puccini_ Tosca/2-03 O galantuomo, come andò la caccia_.mp3
+[2025-03-13 12:23:04,433] {transcoding.py:88} INFO - Removed extraneous file: Lorin Maazel, Orchestra dell'Accademia di Santa Cecilia/Puccini_ Tosca/2-04 _Ov'è Angelotti__ - _Mario, tu qui_!_.mp3
+[2025-03-13 12:23:04,433] {transcoding.py:88} INFO - Removed extraneous file: Lorin Maazel, Orchestra dell'Accademia di Santa Cecilia/Puccini_ Tosca/2-06 _Orsù, Tosca, parlate._ - _Mario, consenti ch'io parli__.mp3
+[2025-03-13 12:23:04,434] {transcoding.py:88} INFO - Removed extraneous file: Lorin Maazel, Orchestra dell'Accademia di Santa Cecilia/Puccini_ Tosca/2-11 Chi è là_.mp3
+[2025-03-13 12:23:04,434] {transcoding.py:88} INFO - Removed extraneous file: Lorin Maazel, Orchestra dell'Accademia di Santa Cecilia/Puccini_ Tosca/2-18 Puccini_ Tosca - Act 3_ Come È Lunga L'Attesta!.mp3
+[2025-03-13 12:23:04,434] {transcoding.py:88} INFO - Removed extraneous file: Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/1-13 Grave (Sonata No. 2 A minor) BWV 1003.mp3
+[2025-03-13 12:23:04,435] {transcoding.py:88} INFO - Removed extraneous file: Magdalena Hajóssyová, Jozef Kundlák, Etc.; Zdeněk Košler_ Slovak Philharmonic Orchestra & Chorus/Mozart_ Requiem/01 Mozart_ Requiem In D Minor, K 626 - 1. Introitus_ Requiem Aeternam.mp3
+[2025-03-13 12:23:04,435] {transcoding.py:88} INFO - Removed extraneous file: Magdalena Hajóssyová, Jozef Kundlák, Etc.; Zdeněk Košler_ Slovak Philharmonic Orchestra & Chorus/Mozart_ Requiem/02 Mozart_ Requiem In D Minor, K 626 - 2. Kyrie Eleison.mp3
+[2025-03-13 12:23:04,435] {transcoding.py:88} INFO - Removed extraneous file: Magdalena Hajóssyová, Jozef Kundlák, Etc.; Zdeněk Košler_ Slovak Philharmonic Orchestra & Chorus/Mozart_ Requiem/03 Mozart_ Requiem In D Minor, K 626 - 3. Seqentia, 1. Dies Irae.mp3
+[2025-03-13 12:23:04,435] {transcoding.py:88} INFO - Removed extraneous file: Magdalena Hajóssyová, Jozef Kundlák, Etc.; Zdeněk Košler_ Slovak Philharmonic Orchestra & Chorus/Mozart_ Requiem/04 Mozart_ Requiem In D Minor, K 626 - 3. Seqentia, 2. Tuba Mirum.mp3
+[2025-03-13 12:23:04,436] {transcoding.py:88} INFO - Removed extraneous file: Magdalena Hajóssyová, Jozef Kundlák, Etc.; Zdeněk Košler_ Slovak Philharmonic Orchestra & Chorus/Mozart_ Requiem/05 Mozart_ Requiem In D Minor, K 626 - 3. Seqentia, 3. Rex Tremendae Majestatis.mp3
+[2025-03-13 12:23:04,436] {transcoding.py:88} INFO - Removed extraneous file: Magdalena Hajóssyová, Jozef Kundlák, Etc.; Zdeněk Košler_ Slovak Philharmonic Orchestra & Chorus/Mozart_ Requiem/06 Mozart_ Requiem In D Minor, K 626 - 3. Seqentia, 4. Recordare, Jesu Pie.mp3
+[2025-03-13 12:23:04,436] {transcoding.py:88} INFO - Removed extraneous file: Magdalena Hajóssyová, Jozef Kundlák, Etc.; Zdeněk Košler_ Slovak Philharmonic Orchestra & Chorus/Mozart_ Requiem/07 Mozart_ Requiem In D Minor, K 626 - 3. Seqentia, 5. Confutatis Maledictis.mp3
+[2025-03-13 12:23:04,436] {transcoding.py:88} INFO - Removed extraneous file: Magdalena Hajóssyová, Jozef Kundlák, Etc.; Zdeněk Košler_ Slovak Philharmonic Orchestra & Chorus/Mozart_ Requiem/08 Mozart_ Requiem In D Minor, K 626 - 3. Seqentia, 6. Lacrimosa Dies Illa.mp3
+[2025-03-13 12:23:04,436] {transcoding.py:88} INFO - Removed extraneous file: Magdalena Hajóssyová, Jozef Kundlák, Etc.; Zdeněk Košler_ Slovak Philharmonic Orchestra & Chorus/Mozart_ Requiem/09 Mozart_ Requiem In D Minor, K 626 - 4. Offertorium, 1. Domine Jesu Christe.mp3
+[2025-03-13 12:23:04,437] {transcoding.py:88} INFO - Removed extraneous file: Magdalena Hajóssyová, Jozef Kundlák, Etc.; Zdeněk Košler_ Slovak Philharmonic Orchestra & Chorus/Mozart_ Requiem/10 Mozart_ Requiem In D Minor, K 626 - 4. Offertorium, 2. Hostias Et Preces.mp3
+[2025-03-13 12:23:04,437] {transcoding.py:88} INFO - Removed extraneous file: Magdalena Hajóssyová, Jozef Kundlák, Etc.; Zdeněk Košler_ Slovak Philharmonic Orchestra & Chorus/Mozart_ Requiem/11 Mozart_ Requiem In D Minor, K 626 - 5. Sanctus.mp3
+[2025-03-13 12:23:04,437] {transcoding.py:88} INFO - Removed extraneous file: Magdalena Hajóssyová, Jozef Kundlák, Etc.; Zdeněk Košler_ Slovak Philharmonic Orchestra & Chorus/Mozart_ Requiem/12 Mozart_ Requiem In D Minor, K 626 - 6. Benedictus.mp3
+[2025-03-13 12:23:04,437] {transcoding.py:88} INFO - Removed extraneous file: Magdalena Hajóssyová, Jozef Kundlák, Etc.; Zdeněk Košler_ Slovak Philharmonic Orchestra & Chorus/Mozart_ Requiem/13 Mozart_ Requiem In D Minor, K 626 - 7. Agnus Dei.mp3
+[2025-03-13 12:23:04,437] {transcoding.py:88} INFO - Removed extraneous file: Magdalena Hajóssyová, Jozef Kundlák, Etc.; Zdeněk Košler_ Slovak Philharmonic Orchestra & Chorus/Mozart_ Requiem/14 Mozart_ Requiem In D Minor, K 626 - 7. Communio_ Lux Aeterna.mp3
+[2025-03-13 12:23:04,437] {transcoding.py:88} INFO - Removed extraneous file: Magdalena Hajóssyová, Jozef Kundlák, Etc.; Zdeněk Košler_ Slovak Philharmonic Orchestra & Chorus/Mozart_ Requiem/folder.jpg
+[2025-03-13 12:23:04,438] {transcoding.py:88} INFO - Removed extraneous file: Maurice Gendron/Bach_ Cello Suites (2)/2-11 Bach_ Cello Suite #3 In C, BWV 1009 - Bourrée #1 & 2.mp3
+[2025-03-13 12:23:04,438] {transcoding.py:88} INFO - Removed extraneous file: Maurice Gendron/Bach_ Cello Suites/11 Bach_ Cello Suite #4 In E Flat, BWV 1010 - Bourée 1 & 2.mp3
+[2025-03-13 12:23:04,439] {transcoding.py:88} INFO - Removed extraneous file: Metropolitan Opera Orchestra/Stravinsky_ Rake's Progress (The) (Metropolitan Opera, Stravinsky) (1953) (2)/2-01 Stravinsky_ The Rake's Progress - Act II Scene 3_ As I was saying à Come, sweet, come à Scorned! Abused! (Baba, Rakewell).mp3
+[2025-03-13 12:23:04,439] {transcoding.py:88} INFO - Removed extraneous file: Metropolitan Opera Orchestra/Stravinsky_ Rake's Progress (The) (Metropolitan Opera, Stravinsky) (1953)/1-14 Stravinsky_ The Rake's Progress - Act I Scene 2_ Soon dawn will glitter à Sisters of Venus, Brothers of Mars (Whores, Roaring Boys, Shadow).mp3
+[2025-03-13 12:23:04,439] {transcoding.py:88} INFO - Removed extraneous file: Metropolitan Opera Orchestra/Stravinsky_ Rake's Progress (The) (Metropolitan Opera, Stravinsky) (1953)/1-28 Stravinsky_ The Rake's Progress - Act II Scene 2_ How strange! à O heart, be stronger (Anne).mp3
+[2025-03-13 12:23:04,440] {transcoding.py:88} INFO - Removed extraneous file: Myun-Whun Chung_ Vienna Philharmonic Orchestra/Dvořák_ Symphonies #6 & 8/01 Dvořák_ Symphony #6 In D, Op. 60, B 112 - 1. Allegro Non Tanto.mp3
+[2025-03-13 12:23:04,440] {transcoding.py:88} INFO - Removed extraneous file: Myun-Whun Chung_ Vienna Philharmonic Orchestra/Dvořák_ Symphonies #6 & 8/02 Dvořák_ Symphony #6 In D, Op. 60, B 112 - 2. Adagio.mp3
+[2025-03-13 12:23:04,440] {transcoding.py:88} INFO - Removed extraneous file: Myun-Whun Chung_ Vienna Philharmonic Orchestra/Dvořák_ Symphonies #6 & 8/03 Dvořák_ Symphony #6 In D, Op. 60, B 112 - 3. Scherzo (Furiant)_ Presto.mp3
+[2025-03-13 12:23:04,441] {transcoding.py:88} INFO - Removed extraneous file: Myun-Whun Chung_ Vienna Philharmonic Orchestra/Dvořák_ Symphonies #6 & 8/04 Dvořák_ Symphony #6 In D, Op. 60, B 112 - 4. Finale_ Allegro Con Spirito.mp3
+[2025-03-13 12:23:04,441] {transcoding.py:88} INFO - Removed extraneous file: Myun-Whun Chung_ Vienna Philharmonic Orchestra/Dvořák_ Symphonies #6 & 8/05 Dvořák_ Symphony #8 In G, Op. 88, B 163 - 1. Allegro Con Brio.mp3
+[2025-03-13 12:23:04,441] {transcoding.py:88} INFO - Removed extraneous file: Myun-Whun Chung_ Vienna Philharmonic Orchestra/Dvořák_ Symphonies #6 & 8/06 Dvořák_ Symphony #8 In G, Op. 88, B 163 - 2. Adagio.mp3
+[2025-03-13 12:23:04,441] {transcoding.py:88} INFO - Removed extraneous file: Myun-Whun Chung_ Vienna Philharmonic Orchestra/Dvořák_ Symphonies #6 & 8/07 Dvořák_ Symphony #8 In G, Op. 88, B 163 - 3. Allegretto Grazioso.mp3
+[2025-03-13 12:23:04,441] {transcoding.py:88} INFO - Removed extraneous file: Myun-Whun Chung_ Vienna Philharmonic Orchestra/Dvořák_ Symphonies #6 & 8/08 Dvořák_ Symphony #8 In G, Op. 88, B 163 - 4. Allegro Ma Non Troppo.mp3
+[2025-03-13 12:23:04,442] {transcoding.py:88} INFO - Removed extraneous file: Myun-Whun Chung_ Vienna Philharmonic Orchestra/Dvořák_ Symphonies #6 & 8/folder.jpg
+[2025-03-13 12:23:04,442] {transcoding.py:88} INFO - Removed extraneous file: Nashville Symphony Orchestra__Nashville Symphony Orchestra__Nashville Symphony Orchestra, Kenneth Schermerhorn,/Bernstein_ West Side Story/album.jpg
+[2025-03-13 12:23:04,442] {transcoding.py:88} INFO - Removed extraneous file: Orchestra e Coro del Teatro Felice di Genova/Rossini_ Le siége de Corinthe/1-01 Symphonie.mp3
+[2025-03-13 12:23:04,443] {transcoding.py:88} INFO - Removed extraneous file: Orchestra e Coro del Teatro Felice di Genova/Rossini_ Le siége de Corinthe/folder.jpg
+[2025-03-13 12:23:04,444] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-01 Ravel_ Gaspard De La Nuit - Ondine.mp3
+[2025-03-13 12:23:04,444] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-02 Ravel_ Gaspard De La Nuit - Le Gibet.mp3
+[2025-03-13 12:23:04,444] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-03 Ravel_ Gaspard De La Nuit - Scarbo.mp3
+[2025-03-13 12:23:04,444] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-04 Ravel_ Valses Nobles Et Sentimentales - 1. Modéré.mp3
+[2025-03-13 12:23:04,444] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-05 Ravel_ Valses Nobles Et Sentimentales - 2. Assez Lent.mp3
+[2025-03-13 12:23:04,444] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-06 Ravel_ Valses Nobles Et Sentimentales - 3. Modéré.mp3
+[2025-03-13 12:23:04,445] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-07 Ravel_ Valses Nobles Et Sentimentales - 4. Assez Animé.mp3
+[2025-03-13 12:23:04,445] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-08 Ravel_ Valses Nobles Et Sentimentales - 5. Presque Lent.mp3
+[2025-03-13 12:23:04,445] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-09 Ravel_ Valses Nobles Et Sentimentales - 6. Assez Vif.mp3
+[2025-03-13 12:23:04,445] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-10 Ravel_ Valses Nobles Et Sentimentales - 7. Moins Vif.mp3
+[2025-03-13 12:23:04,445] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-11 Ravel_ Valses Nobles Et Sentimentales - 8. Épilogue_ Lent.mp3
+[2025-03-13 12:23:04,446] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-12 Ravel_ Jeux D_Eau.mp3
+[2025-03-13 12:23:04,446] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-13 Ravel_ Miroirs - Noctuelles.mp3
+[2025-03-13 12:23:04,446] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-14 Ravel_ Miroirs - Oiseaux Tristes.mp3
+[2025-03-13 12:23:04,446] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-15 Ravel_ Miroirs - Une Barque Sur L'Ocean.mp3
+[2025-03-13 12:23:04,446] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-16 Ravel_ Miroirs - Alborada Del Gracioso.mp3
+[2025-03-13 12:23:04,446] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/1-17 Ravel_ Miroirs - La Vallée Des Cloches.mp3
+[2025-03-13 12:23:04,447] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-01 Ravel_ Sonatine - Modéré.mp3
+[2025-03-13 12:23:04,447] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-02 Ravel_ Sonatine - Mouvement De Menuet.mp3
+[2025-03-13 12:23:04,447] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-03 Ravel_ Sonatine - Animé.mp3
+[2025-03-13 12:23:04,447] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-04 Ravel_ Le Tombeau De Couperin - 1. Prélude.mp3
+[2025-03-13 12:23:04,447] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-05 Ravel_ Le Tombeau De Couperin - 2. Forlane.mp3
+[2025-03-13 12:23:04,448] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-06 Ravel_ Le Tombeau De Couperin - 3. Menuet.mp3
+[2025-03-13 12:23:04,463] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-07 Ravel_ Le Tombeau De Couperin - 4. Rigaudon.mp3
+[2025-03-13 12:23:04,463] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-08 Ravel_ Le Tombeau De Couperin - 5. Menuet.mp3
+[2025-03-13 12:23:04,464] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-09 Ravel_ Le Tombeau De Couperin - 6. Toccata.mp3
+[2025-03-13 12:23:04,464] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-10 Ravel_ Prélude.mp3
+[2025-03-13 12:23:04,464] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-11 Ravel_ Menuet Sur Le Nom De Haydn.mp3
+[2025-03-13 12:23:04,464] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-12 Ravel_ À La Manière De Borodine.mp3
+[2025-03-13 12:23:04,464] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-13 Ravel_ Menuet Antique.mp3
+[2025-03-13 12:23:04,465] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-14 Ravel_ Pavane Pour Une Infante Défunte.mp3
+[2025-03-13 12:23:04,465] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-15 Ravel_ À La Manière De Chabrier.mp3
+[2025-03-13 12:23:04,465] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-16 Ravel_ Ma Mère L'Oye - Pavane De La Belle Au Bois Dormant.mp3
+[2025-03-13 12:23:04,465] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-17 Ravel_ Ma Mère L'Oye - Petit Poucet.mp3
+[2025-03-13 12:23:04,465] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-18 Ravel_ Ma Mère L'Oye - Laideronnette, Imperatrice Des Pagodes.mp3
+[2025-03-13 12:23:04,466] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-19 Ravel_ Ma Mère L'Oye - Entretiens De La Belle Et De La Bete.mp3
+[2025-03-13 12:23:04,466] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/2-20 Ravel_ Ma Mère L'Oye - Le Jardin Féerique.mp3
+[2025-03-13 12:23:04,466] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Ravel_ Piano Works/folder.jpg
+[2025-03-13 12:23:04,466] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Saint-Saëns_ Piano Concertos/1-01 Saint-Saëns_ Piano Concerto #1 In D, Op. 17 - 1. Andante, Allegro Assai.mp3
+[2025-03-13 12:23:04,467] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Saint-Saëns_ Piano Concertos/1-02 Saint-Saëns_ Piano Concerto #1 In D, Op. 17 - 2. Andante Sostenuto Quasi Adagio.mp3
+[2025-03-13 12:23:04,467] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Saint-Saëns_ Piano Concertos/1-03 Saint-Saëns_ Piano Concerto #1 In D, Op. 17 - 3. Allegro Con Fuoco.mp3
+[2025-03-13 12:23:04,467] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Saint-Saëns_ Piano Concertos/1-04 Saint-Saëns_ Piano Concerto #2 In G Minor, Op. 22 - 1. Andante Sostenuto.mp3
+[2025-03-13 12:23:04,467] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Saint-Saëns_ Piano Concertos/1-05 Saint-Saëns_ Piano Concerto #2 In G Minor, Op. 22 - 2. Allegro Scherzando.mp3
+[2025-03-13 12:23:04,467] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Saint-Saëns_ Piano Concertos/1-06 Saint-Saëns_ Piano Concerto #2 In G Minor, Op. 22 - 3. Presto.mp3
+[2025-03-13 12:23:04,468] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Saint-Saëns_ Piano Concertos/1-07 Saint-Saëns_ Piano Concerto #3 In E Flat, Op. 29 - 1. Moderato Assai, Più Mosso (Allegro Maestoso).mp3
+[2025-03-13 12:23:04,468] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Saint-Saëns_ Piano Concertos/2-01 Saint-Saëns_ Piano Concerto #3 In E Flat, Op. 29 - 2. Andante.mp3
+[2025-03-13 12:23:04,469] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Saint-Saëns_ Piano Concertos/2-02 Saint-Saëns_ Piano Concerto #3 In E Flat, Op. 29 - 3. Allegro Non Troppo.mp3
+[2025-03-13 12:23:04,469] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Saint-Saëns_ Piano Concertos/2-03 Saint-Saëns_ Piano Concerto #4 In C Minor, Op. 44 - 1. Allegro Moderato.mp3
+[2025-03-13 12:23:04,469] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Saint-Saëns_ Piano Concertos/2-04 Saint-Saëns_ Piano Concerto #4 In C Minor, Op. 44 - 2. Allegro Vivace.mp3
+[2025-03-13 12:23:04,469] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Saint-Saëns_ Piano Concertos/2-05 Saint-Saëns_ Piano Concerto #5 In F, Op. 103, _Egyptian_ - 1. Allegro Animato.mp3
+[2025-03-13 12:23:04,470] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Saint-Saëns_ Piano Concertos/2-06 Saint-Saëns_ Piano Concerto #5 In F, Op. 103, _Egyptian_ - 2. Andante.mp3
+[2025-03-13 12:23:04,470] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Saint-Saëns_ Piano Concertos/2-07 Saint-Saëns_ Piano Concerto #5 In F, Op. 103, _Egyptian_ - 3. Molto Allegro.mp3
+[2025-03-13 12:23:04,470] {transcoding.py:88} INFO - Removed extraneous file: Pascal Rogé/Saint-Saëns_ Piano Concertos/folder.jpg
+[2025-03-13 12:23:04,471] {transcoding.py:88} INFO - Removed extraneous file: Peter Damm/Französische Musik für Horn und Klavier/01 Jean Françaix - Divertimento - Introduction.mp3
+[2025-03-13 12:23:04,472] {transcoding.py:88} INFO - Removed extraneous file: Peter Damm/Französische Musik für Horn und Klavier/02 Jean Françaix - Divertimento - Aria di cantabile.mp3
+[2025-03-13 12:23:04,472] {transcoding.py:88} INFO - Removed extraneous file: Peter Damm/Französische Musik für Horn und Klavier/03 Jean Françaix - Divertimento - Canzonetta.mp3
+[2025-03-13 12:23:04,472] {transcoding.py:88} INFO - Removed extraneous file: Peter Damm/Französische Musik für Horn und Klavier/04 Camille Saint-Saëns - Romanze op. 67.mp3
+[2025-03-13 12:23:04,473] {transcoding.py:88} INFO - Removed extraneous file: Peter Damm/Französische Musik für Horn und Klavier/05 Henri Busser - La Chasse de Saint Hubert.mp3
+[2025-03-13 12:23:04,473] {transcoding.py:88} INFO - Removed extraneous file: Peter Damm/Französische Musik für Horn und Klavier/06 Charles Gounod - Mélodie nr. 5 Andante cantabile pour le Cor á Pistons.mp3
+[2025-03-13 12:23:04,473] {transcoding.py:88} INFO - Removed extraneous file: Peter Damm/Französische Musik für Horn und Klavier/07 Charles Gounod - Mélodie nr. 3 Andante pour le Cor á Pistons.mp3
+[2025-03-13 12:23:04,473] {transcoding.py:88} INFO - Removed extraneous file: Peter Damm/Französische Musik für Horn und Klavier/08 Eugène Bozza - Sur les Cimes.mp3
+[2025-03-13 12:23:04,473] {transcoding.py:88} INFO - Removed extraneous file: Peter Damm/Französische Musik für Horn und Klavier/09 Paul Dukas - Villanelle.mp3
+[2025-03-13 12:23:04,474] {transcoding.py:88} INFO - Removed extraneous file: Peter Damm/Französische Musik für Horn und Klavier/10 Jean-Michel Damase - Pavane variée.mp3
+[2025-03-13 12:23:04,474] {transcoding.py:88} INFO - Removed extraneous file: Peter Damm/Französische Musik für Horn und Klavier/11 Camille Saint-Saëns - Romanze op. 36.mp3
+[2025-03-13 12:23:04,474] {transcoding.py:88} INFO - Removed extraneous file: Peter Damm/Französische Musik für Horn und Klavier/12 Marcel Poot - Légende.mp3
+[2025-03-13 12:23:04,475] {transcoding.py:88} INFO - Removed extraneous file: Peter Damm/Französische Musik für Horn und Klavier/13 Gioacchino Rossini - Prélude, Thème et Variations.mp3
+[2025-03-13 12:23:04,475] {transcoding.py:88} INFO - Removed extraneous file: Peter Damm/Französische Musik für Horn und Klavier/folder.jpg
+[2025-03-13 12:23:04,475] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus, Giulini/Mozart_ Le Nozze Di Figaro/2-03 Mozart_ Le Nozze Di Figaro, K 492 - Act 3_ Che Imbarazzo È Mai Questo.mp3
+[2025-03-13 12:23:04,476] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus, Giulini/Mozart_ Le Nozze Di Figaro/2-04 Mozart_ Le Nozze Di Figaro, K 492 - Act 3_ Crudel! Perchè Finora Farmi Languir Così_.mp3
+[2025-03-13 12:23:04,476] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus, Giulini/Mozart_ Le Nozze Di Figaro/2-05 Mozart_ Le Nozze Di Figaro, K 492 - Act 3_ E Perchè Fosti Meco.mp3
+[2025-03-13 12:23:04,476] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus, Giulini/Mozart_ Le Nozze Di Figaro/2-06 Mozart_ Le Nozze Di Figaro, K 492 - Act 3_ Hai Già Vinta La Causa!.mp3
+[2025-03-13 12:23:04,476] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus, Giulini/Mozart_ Le Nozze Di Figaro/2-07 Mozart_ Le Nozze Di Figaro, K 492 - Act 3_ È Decisa La Lite.mp3
+[2025-03-13 12:23:04,477] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus, Giulini/Mozart_ Le Nozze Di Figaro/2-16 Mozart_ Le Nozze Di Figaro, K 492 - Act 4_ Tutto È Disposto.mp3
+[2025-03-13 12:23:04,477] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus, Giulini/Mozart_ Le Nozze Di Figaro/2-20 Mozart_ Le Nozze Di Figaro, K 492 - Act 4_ Pian, Pianin, Le Andrò Più Presso.mp3
+[2025-03-13 12:23:04,477] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus, Giulini/Mozart_ Le Nozze Di Figaro/2-21 Mozart_ Le Nozze Di Figaro, K 492 - Act 4_ Tutto È Tranquillo E Placido.mp3
+[2025-03-13 12:23:04,478] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus; Sinopoli/Mahler_ Symphonies Nos. 10 & 8/2-02 Più mosso (Allegro moderato).mp3
+[2025-03-13 12:23:04,478] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus; Sinopoli/Mahler_ Symphonies Nos. 10 & 8/2-05 _Wie Felsenabgrund mir zu Füßen_.mp3
+[2025-03-13 12:23:04,478] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus; Sinopoli/Mahler_ Symphonies Nos. 10 & 8/2-06 _Gerettet ist das edle Glied_ - _Hände verschlinget_.mp3
+[2025-03-13 12:23:04,478] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus; Sinopoli/Mahler_ Symphonies Nos. 10 & 8/2-07 _Jene Rosen, aus den Händen_.mp3
+[2025-03-13 12:23:04,478] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus; Sinopoli/Mahler_ Symphonies Nos. 10 & 8/2-09 _Ich spür' soeben_ - _Freudig empfangen wir_ - _Hier ist die Aussicht frei_.mp3
+[2025-03-13 12:23:04,479] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus; Sinopoli/Mahler_ Symphonies Nos. 10 & 8/2-10 _Höchste Herrscherin der Welt_.mp3
+[2025-03-13 12:23:04,479] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus; Sinopoli/Mahler_ Symphonies Nos. 10 & 8/2-11 _Dir, der Unberührbaren_ - _Du schwebst zu Höhen_.mp3
+[2025-03-13 12:23:04,479] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus; Sinopoli/Mahler_ Symphonies Nos. 10 & 8/2-14 _Er überwächst uns schon_.mp3
+[2025-03-13 12:23:04,479] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus; Sinopoli/Mahler_ Symphonies Nos. 10 & 8/2-15 _Vom edlen Geisterchor umgeben_ - _Komm! hebe dich zu höhern Sphären_ - _Blicket auf zum Retterblick_.mp3
+[2025-03-13 12:23:04,480] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra and Chorus; Sinopoli/Mahler_ Symphonies Nos. 10 & 8/2-16 _Alles Vergängliche_.mp3
+[2025-03-13 12:23:04,480] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra, Ashkenazy/Tchaikovsky_ The 3 Great Symphonies/2-03 Tchaikovsky_ Symphony #6 In B Minor, Op. 74, _Pathétique_ - 1. Adagio, Allegro Non Troppo.mp3
+[2025-03-13 12:23:04,480] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra, Ashkenazy/Tchaikovsky_ The 3 Great Symphonies/2-04 Tchaikovsky_ Symphony #6 In B Minor, Op. 74, _Pathétique_ - 2. Allegro Con Grazia.mp3
+[2025-03-13 12:23:04,481] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra, Ashkenazy/Tchaikovsky_ The 3 Great Symphonies/2-05 Tchaikovsky_ Symphony #6 In B Minor, Op. 74, _Pathétique_ - 3. Allegro Molto Vivace.mp3
+[2025-03-13 12:23:04,481] {transcoding.py:88} INFO - Removed extraneous file: Philharmonia Orchestra, Ashkenazy/Tchaikovsky_ The 3 Great Symphonies/2-06 Tchaikovsky_ Symphony #6 In B Minor, Op. 74, _Pathétique_ - 4. Finale_ Adagio Lamentoso, Andante.mp3
+[2025-03-13 12:23:04,482] {transcoding.py:88} INFO - Removed extraneous file: Pip Eastop, The Hanover Band & Anthony Halstead/Mozart_ Horn Concertos/01 Horn Concerto No. 2 in E-Flat Major, K. 417_ I. Allegro.mp3
+[2025-03-13 12:23:04,482] {transcoding.py:88} INFO - Removed extraneous file: Pip Eastop, The Hanover Band & Anthony Halstead/Mozart_ Horn Concertos/03 Horn Concerto No. 2 in E-Flat Major, K. 417_ III. Rondo_ Allegro.mp3
+[2025-03-13 12:23:04,482] {transcoding.py:88} INFO - Removed extraneous file: Pip Eastop, The Hanover Band & Anthony Halstead/Mozart_ Horn Concertos/04 Horn Concerto No. 4 in E-Flat Major, K. 495_ I. Allegro maestoso.mp3
+[2025-03-13 12:23:04,483] {transcoding.py:88} INFO - Removed extraneous file: Pip Eastop, The Hanover Band & Anthony Halstead/Mozart_ Horn Concertos/05 Horn Concerto No. 4 in E-Flat Major, K. 495_ II. Romance_ Andante cantabile.mp3
+[2025-03-13 12:23:04,483] {transcoding.py:88} INFO - Removed extraneous file: Pip Eastop, The Hanover Band & Anthony Halstead/Mozart_ Horn Concertos/06 Horn Concerto No. 4 in E-Flat Major, K. 495_ III. Rondo_ Allegro vivace.mp3
+[2025-03-13 12:23:04,484] {transcoding.py:88} INFO - Removed extraneous file: Pip Eastop, The Hanover Band & Anthony Halstead/Mozart_ Horn Concertos/07 Horn Concerto No. 3 in E-Flat Major, K. 447_ I. Allegro.mp3
+[2025-03-13 12:23:04,484] {transcoding.py:88} INFO - Removed extraneous file: Pip Eastop, The Hanover Band & Anthony Halstead/Mozart_ Horn Concertos/08 Horn Concerto No. 3 in E-Flat Major, K. 447_ II. Romance_ Larghetto.mp3
+[2025-03-13 12:23:04,484] {transcoding.py:88} INFO - Removed extraneous file: Pip Eastop, The Hanover Band & Anthony Halstead/Mozart_ Horn Concertos/09 Horn Concerto No. 3 in E-Flat Major, K. 447_ III. Allegro.mp3
+[2025-03-13 12:23:04,484] {transcoding.py:88} INFO - Removed extraneous file: Pip Eastop, The Hanover Band & Anthony Halstead/Mozart_ Horn Concertos/10 Horn Concerto No. 1 in D Major, K. 412_ I. Allegro.mp3
+[2025-03-13 12:23:04,485] {transcoding.py:88} INFO - Removed extraneous file: Pip Eastop, The Hanover Band & Anthony Halstead/Mozart_ Horn Concertos/11 Horn Concerto No. 1 in D Major, K. 412_ II. Rondo_ Allegro.mp3
+[2025-03-13 12:23:04,485] {transcoding.py:88} INFO - Removed extraneous file: Pip Eastop, The Hanover Band & Anthony Halstead/Mozart_ Horn Concertos/Digital Booklet - Mozart_ Horn Concertos.pdf
+[2025-03-13 12:23:04,485] {transcoding.py:88} INFO - Removed extraneous file: Polish National Radio Symphony Orchestra/Glazunov_Dvořák_ Violin Concertos/01 Glazunov Violin Concerto_ Moderato - Andante sostenuto - Allegro.mp3
+[2025-03-13 12:23:04,486] {transcoding.py:88} INFO - Removed extraneous file: Polish National Radio Symphony Orchestra/Glazunov_Dvořák_ Violin Concertos/02 Dvořák Violin Concerto_ I. Allegro ma non troppo.mp3
+[2025-03-13 12:23:04,486] {transcoding.py:88} INFO - Removed extraneous file: Polish National Radio Symphony Orchestra/Glazunov_Dvořák_ Violin Concertos/03 Dvořák Violin Concerto_ II. Adagio ma non troppo.mp3
+[2025-03-13 12:23:04,487] {transcoding.py:88} INFO - Removed extraneous file: Polish National Radio Symphony Orchestra/Glazunov_Dvořák_ Violin Concertos/04 Dvořák Violin Concerto_ III. Finale_ Allegro giocoso, ma non troppo.mp3
+[2025-03-13 12:23:04,487] {transcoding.py:88} INFO - Removed extraneous file: Polish National Radio Symphony Orchestra/Glazunov_Dvořák_ Violin Concertos/05 Dvořák_ Romance for Violin and Orchestra in F minor, Op. 1.mp3
+[2025-03-13 12:23:04,487] {transcoding.py:88} INFO - Removed extraneous file: Polish National Radio Symphony Orchestra/Glazunov_Dvořák_ Violin Concertos/folder.jpg
+[2025-03-13 12:23:04,488] {transcoding.py:88} INFO - Removed extraneous file: Red Priest/Priest On The Run/07 Narváez_ Mille Regretz, _Canción Del Emperador_.mp3
+[2025-03-13 12:23:04,488] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/1-01 Puccini_ La Bohème - Act 1_ Questo Mar Rosso Mi Ammollisce.mp3
+[2025-03-13 12:23:04,489] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/1-02 Puccini_ La Bohème - Act 1_ Pensier Profond.mp3
+[2025-03-13 12:23:04,489] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/1-03 Puccini_ La Bohème - Act 1_ Legna!.mp3
+[2025-03-13 12:23:04,489] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/1-04 Puccini_ La Bohème - Act 1_ Si Quo_.mp3
+[2025-03-13 12:23:04,490] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/1-05 Puccini_ La Bohème - Act 1_ Io Resto Per Terminar L'Articolo.mp3
+[2025-03-13 12:23:04,490] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/1-06 Puccini_ La Bohème - Act 1_ Chi E La_.mp3
+[2025-03-13 12:23:04,490] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/1-07 Puccini_ La Bohème - Act 1_ Si Sente Meglio_.mp3
+[2025-03-13 12:23:04,491] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/1-08 Puccini_ La Bohème - Act 1_ Che Gelida Manina.mp3
+[2025-03-13 12:23:04,491] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/1-09 Puccini_ La Bohème - Act 1_ Si. Mi Chiamano Mimi.mp3
+[2025-03-13 12:23:04,491] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/1-10 Puccini_ La Bohème - Act 1_ O Soave Fanciulla....mp3
+[2025-03-13 12:23:04,491] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/1-11 Puccini_ La Bohème - Act 2_ Aranci, Datteri! Caldi I Marroni!.mp3
+[2025-03-13 12:23:04,492] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/1-12 Puccini_ La Bohème - Act 2_ Chi Guardi_.mp3
+[2025-03-13 12:23:04,492] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/1-13 Puccini_ La Bohème - Act 2_ Viva Parpignol! Parpignol!.mp3
+[2025-03-13 12:23:04,493] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/1-14 Puccini_ La Bohème - Act 2_ Oh! Musetta!.mp3
+[2025-03-13 12:23:04,493] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/1-15 Puccini_ La Bohème - Act 2_ Quando Men Vo.mp3
+[2025-03-13 12:23:04,493] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/1-16 Puccini_ La Bohème - Act 2_ Chi L'Ha Richiesto_.mp3
+[2025-03-13 12:23:04,493] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/2-01 Puccini_ La Bohème - Act 3_ Ohè, Là, Le Guardie!...Aprite!...Ohè, Là!.mp3
+[2025-03-13 12:23:04,494] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/2-02 Puccini_ La Bohème - Act 3_ Sa Dirmi, Scusi, Qual'È L'Osteria.mp3
+[2025-03-13 12:23:04,494] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/2-03 Puccini_ La Bohème - Act 3_ Mimì!.mp3
+[2025-03-13 12:23:04,494] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/2-04 Puccini_ La Bohème - Act 3_ Marcello, Finalmente!.mp3
+[2025-03-13 12:23:04,495] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/2-05 Puccini_ La Bohème - Act 3_ Mimì È Una Civetta.mp3
+[2025-03-13 12:23:04,495] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/2-06 Puccini_ La Bohème - Act 3_ Mimì È Tanto Malata!.mp3
+[2025-03-13 12:23:04,496] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/2-07 Puccini_ La Bohème - Act 3_ D'Onde Lieta Uscì Al Tuo Grido D'Amore.mp3
+[2025-03-13 12:23:04,498] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/2-08 Puccini_ La Bohème - Act 3_ Dunque È Proprio Finita_.mp3
+[2025-03-13 12:23:04,499] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/2-09 Puccini_ La Bohème - Act 4_ In Un Coupé_.mp3
+[2025-03-13 12:23:04,499] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/2-10 Puccini_ La Bohème - Act 4_ O Mimì Tu Più Non Torni.mp3
+[2025-03-13 12:23:04,499] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/2-11 Puccini_ La Bohème - Act 4_ Gavotta.mp3
+[2025-03-13 12:23:04,500] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/2-12 Puccini_ La Bohème - Act 4_ C'È Mimì Che Mi Segue E Che Sta Male.mp3
+[2025-03-13 12:23:04,500] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/2-13 Puccini_ La Bohème - Act 4_ Vecchia Zimarra, Senti.mp3
+[2025-03-13 12:23:04,502] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/2-14 Puccini_ La Bohème - Act 4_ Sono Andati_.mp3
+[2025-03-13 12:23:04,502] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/2-15 Puccini_ La Bohème - Act 4_ Che Avvien_.mp3
+[2025-03-13 12:23:04,503] {transcoding.py:88} INFO - Removed extraneous file: Renata Tebaldi, Carlo Bergonzi, Etc.; Tullio Serafin_ St. Cecilia Academy Orchestra & Chorus/Puccini_ La Bohème/folder.jpg
+[2025-03-13 12:23:04,503] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/1-01 Bizet_ Les Pêcheurs De Perles - Prélude.mp3
+[2025-03-13 12:23:04,504] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/1-02 Bizet_ Les Pêcheurs De Perles - No.1 Introduction_ a) Choeur_ _Sur la grève en feu_.mp3
+[2025-03-13 12:23:04,504] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/1-03 No.1 Introduction_ b) Scène et Choeur_ _Amis, interrompez vos danses_.mp3
+[2025-03-13 12:23:04,508] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/1-04 No.1 Introduction_ c) Récit et reprise du choeur dansé_ _Demeure parmi nous, Nadir_.mp3
+[2025-03-13 12:23:04,509] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/1-05 No.2 a) Récit_ _C'est toi, toi qu'enfin fe revois!_.mp3
+[2025-03-13 12:23:04,509] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/1-06 No.2 b) Duo_ _Au fond du temple saint_.mp3
+[2025-03-13 12:23:04,509] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/1-07 No.3 a) Récit_ _Que vois-je__.mp3
+[2025-03-13 12:23:04,510] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/1-08 No.3 b) Choeur_ _Sois la bienvenue_.mp3
+[2025-03-13 12:23:04,510] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/1-09 No.3 c) Scène et Choeur_ _Seule au milieu de nous_.mp3
+[2025-03-13 12:23:04,510] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/1-10 No.4 a) Récit_ _A cette voix_.mp3
+[2025-03-13 12:23:04,511] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/1-11 No.4 b) Romance_ _Je crois entendre encore_.mp3
+[2025-03-13 12:23:04,511] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/1-12 No.5 Finale_ a) Scène et Choeur_ _Le ciel est bleu_.mp3
+[2025-03-13 12:23:04,512] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/1-13 No.5 Finale_ b) Air et Choeur_ _O dieu Brahma_.mp3
+[2025-03-13 12:23:04,512] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/2-01 Bizet_ Les Pêcheurs De Perles - Entr'Acte #1.mp3
+[2025-03-13 12:23:04,513] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/2-02 Bizet_ Les Pêcheurs De Perles - Act 2_ Me Voila Seule Dans La Nuit.mp3
+[2025-03-13 12:23:04,513] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/2-03 Bizet_ Les Pêcheurs De Perles - Act 2_ De Mon Amie, Fleur Endormie.mp3
+[2025-03-13 12:23:04,514] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/2-04 Bizet_ Les Pêcheurs De Perles - Act 2_ Leila! Leila! … 'Dieu Puissant.mp3
+[2025-03-13 12:23:04,514] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/2-05 Bizet_ Les Pêcheurs De Perles - Act 2_ Ah, Revenez A La Raison!.mp3
+[2025-03-13 12:23:04,515] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/2-06 Bizet_ Les Pêcheurs De Perles - Entr'Acte #2.mp3
+[2025-03-13 12:23:04,515] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/2-07 Bizet_ Les Pêcheurs De Perles - Act 3_ Qu Ai-Je Vu_.mp3
+[2025-03-13 12:23:04,516] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/2-08 Bizet_ Les Pêcheurs De Perles - Act 3_ Je Frémis, Je Chancelle.mp3
+[2025-03-13 12:23:04,516] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/2-09 Bizet_ Les Pêcheurs De Perles - Act 3_ Entends Au Looin Ce Bruit De Fête.mp3
+[2025-03-13 12:23:04,516] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/2-10 Bizet_ Les Pêcheurs De Perles - Act 3_ Dès Que Le Soleil.mp3
+[2025-03-13 12:23:04,517] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/2-11 Bizet_ Les Pêcheurs De Perles - Act 3_ Sombres Divinités.mp3
+[2025-03-13 12:23:04,517] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/2-12 Bizet_ Les Pêcheurs De Perles - Act 3_ O Lumière Sainte.mp3
+[2025-03-13 12:23:04,517] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/2-13 Bizet_ Les Pêcheurs De Perles - Act 3_ Ce Sont Eux, Les Voici!.mp3
+[2025-03-13 12:23:04,518] {transcoding.py:88} INFO - Removed extraneous file: René Bianco, Léopold Simoneau, Etc.; Jean Fournet_ Lamoureux Concerts Association Orchestra, Elisabeth Brasseur Choir/Bizet_ The Pearl Fishers (Les Pêcheurs de perles)/folder.jpg
+[2025-03-13 12:23:04,518] {transcoding.py:88} INFO - Removed extraneous file: Richard Goolden, Norman Shelley, Tony Church, Patrick Wymark/Kenneth Grahame_ The Wind in the Willows/1-01 Part One.mp3
+[2025-03-13 12:23:04,518] {transcoding.py:88} INFO - Removed extraneous file: Richard Goolden, Norman Shelley, Tony Church, Patrick Wymark/Kenneth Grahame_ The Wind in the Willows/2-01 Part Two.mp3
+[2025-03-13 12:23:04,519] {transcoding.py:88} INFO - Removed extraneous file: Royal Concertgebouw Orchestra, Colin Davis/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/08 Dvořák_ Symphony #8 In G - 4. Allegro Ma Non Troppo.mp3
+[2025-03-13 12:23:04,519] {transcoding.py:88} INFO - Removed extraneous file: Royal Concertgebouw Orchestra, Colin Davis/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/1-01 Dvořák_ Symphony #7 In D Minor - 1. Allegro Maestoso.mp3
+[2025-03-13 12:23:04,520] {transcoding.py:88} INFO - Removed extraneous file: Royal Concertgebouw Orchestra, Colin Davis/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/1-02 Dvořák_ Symphony #7 In D Minor - 2. Poco Adagio.mp3
+[2025-03-13 12:23:04,520] {transcoding.py:88} INFO - Removed extraneous file: Royal Concertgebouw Orchestra, Colin Davis/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/1-03 Dvořák_ Symphony #7 In D Minor - 3. Scherzo_ Vivace.mp3
+[2025-03-13 12:23:04,520] {transcoding.py:88} INFO - Removed extraneous file: Royal Concertgebouw Orchestra, Colin Davis/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/1-04 Dvořák_ Symphony #7 In D Minor - 4. Finale_ Allegro.mp3
+[2025-03-13 12:23:04,520] {transcoding.py:88} INFO - Removed extraneous file: Royal Concertgebouw Orchestra, Colin Davis/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/1-05 Dvořák_ Symphony #8 In G - 1. Allegro Con Brio.mp3
+[2025-03-13 12:23:04,521] {transcoding.py:88} INFO - Removed extraneous file: Royal Concertgebouw Orchestra, Colin Davis/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/1-06 Dvořák_ Symphony #8 In G - 2. Adagio.mp3
+[2025-03-13 12:23:04,521] {transcoding.py:88} INFO - Removed extraneous file: Royal Concertgebouw Orchestra, Colin Davis/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/1-07 Dvořák_ Symphony #8 In G - 3. Allegretto Grazioso.mp3
+[2025-03-13 12:23:04,522] {transcoding.py:88} INFO - Removed extraneous file: Royal Concertgebouw Orchestra, Colin Davis/Dvořák_ Symphonies #7, 8 and 9, Symphonic variations/folder.jpg
+[2025-03-13 12:23:04,522] {transcoding.py:88} INFO - Removed extraneous file: Royal Concertgebouw Orchestra/Strauss, R._ Five Great Tone Poems/1-04 Strauss (R)_ Ein Heldenleben, Op. 40 - Des Helden Gefährtin.mp3
+[2025-03-13 12:23:04,523] {transcoding.py:88} INFO - Removed extraneous file: The Royal Philharmonic Orchestra, Sir Thomas Beecham/Grieg_ An Old Norwegian Folksong With Variations, Concert Overture 'In Autumn'/01 An Old Norwegian Folksong With Variations, Op. 51.mp3
+[2025-03-13 12:23:04,523] {transcoding.py:92} INFO - ['/Users/timbanks/MyWork/Refresh Music Server', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python313.zip', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages']
+[2025-03-13 12:23:04,529] {transcoding.py:93} INFO - /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages
