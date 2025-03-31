@@ -130,7 +130,7 @@ if len(updates+additions)>0:
 
                 if rc==output_path:
                     copied = copied+1
-                    logger.info(f"Copied {f} to {output_path}. ({copied} of {len(additions)}). ")
+                    logger.info(f"Copied {f} to {output_path}. ({copied+1} of {len(updates+additions)}). ")
                     
                 else:
                     raise Exception(f"Failed copy of {input_path} to {output_path}. cp returned {rc}")
