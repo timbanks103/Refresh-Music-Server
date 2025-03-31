@@ -56,7 +56,7 @@
       </MacroExpansion>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "$(SRCROOT)/analysis.py"
+            argument = "$(SRCROOT)/findForgotten.py"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
