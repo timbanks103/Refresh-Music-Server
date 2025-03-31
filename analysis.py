@@ -148,7 +148,7 @@ if len(updates+additions)>0:
     transcoded=0
     copied=0
     for f in updates+additions:
-        if f.find(".m4a") and transcoded<=transcodeConstraint:
+        if f.find(".m4a") > -1 and transcoded<=transcodeConstraint:
             input_path = masterDir+"/"+f
             output_path = candidateDir+"/"+f.replace(".m4a", ".mp3").replace(".M4A", ".mp3")
             output_dir = "/".join(output_path.split("/")[0:-1])
@@ -162,7 +162,7 @@ if len(updates+additions)>0:
             except ffmpeg.Error as e:
                 logger.debug(f"An error occurred attempting to transcode {f}: {e}")
                 raise Exception(f"An error occurred: {e} attempting to transcode {f}")
-        elif f.lower().find(".mp3") or f.lower().find(".jpg") > -1 and copied<=copyConstraint:
+        elif f.lower().find(".mp3") > -1 or f.lower().find(".jpg") > -1 and copied<=copyConstraint:
                 input_path = masterDir+"/"+f
                 output_path = candidateDir+"/"+f
                 output_dir = "/".join(output_path.split("/")[0:-1])

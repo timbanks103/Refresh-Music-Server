@@ -9,6 +9,7 @@
 /* Begin PBXFileReference section */
 		AA2E05472D84A31E000B2457 /* notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
 		AAB84C662D8C9A8500008E72 /* analysis.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = analysis.py; sourceTree = "<group>"; };
+		AAB84C682D9B1D6600008E72 /* findForgotten.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = findForgotten.py; sourceTree = "<group>"; };
 		AAD9DA512D7B49CB0015CB57 /* transcoding.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = transcoding.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -19,6 +20,7 @@
 				AA2E05472D84A31E000B2457 /* notes.txt */,
 				AAD9DA512D7B49CB0015CB57 /* transcoding.py */,
 				AAB84C662D8C9A8500008E72 /* analysis.py */,
+				AAB84C682D9B1D6600008E72 /* findForgotten.py */,
 			);
 			sourceTree = "<group>";
 		};
