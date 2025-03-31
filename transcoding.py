@@ -116,8 +116,8 @@ if len(updates+additions)>0:
                 ffmpeg.input(input_path).output(output_path,loglevel="quiet").run(overwrite_output=True)
                 if f in updates: msgInsert = "updated"
                 else: msgInsert = "missing"
-                logger.info(f"Successfully converted {msgInsert} {input_path} to {output_path}. ({transcoded} of {len(additions)}). ")
                 transcoded=transcoded+1
+                logger.info(f"Successfully converted {msgInsert} {input_path} to {output_path}. ({transcoded-copied} of {len(updates+additions)}). ")
             except ffmpeg.Error as e:
                 logger.debug(f"An error occurred attempting to transcode {f}: {e}")
                 raise Exception(f"An error occurred: {e} attempting to transcode {f}")
@@ -130,7 +130,7 @@ if len(updates+additions)>0:
 
                 if rc==output_path:
                     copied = copied+1
-                    logger.info(f"Copied {f} to {output_path}. ({copied + 1} of {len(updates+additions)}). ")
+                    logger.info(f"Copied {f} to {output_path}. ({copied} of {len(updates+additions)-transcoded}). ")
                     
                 else:
                     raise Exception(f"Failed copy of {input_path} to {output_path}. cp returned {rc}")
