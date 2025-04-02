@@ -14,7 +14,7 @@ THINGS TO DO
 o DONE Some files in the Music collection are on the Internal drive rather than the Media external drive.  What does the menu item "File>Library>Organise Library"  do?  ""*Test out* Importing the Macintosh HD/timbanks/Music collection to detect and deleted files from that location.
   A script may be a better way to find the extent of the problem.
   
-  This is done by comparing the internal drive collection weith the Media external drive via the anasylsis.py script.
+  This is done by comparing the internal drive collection weith the Media external drive via the analysis.py script.
   Repairs werere done manually.
   
    
@@ -33,12 +33,21 @@ o Compare the iTunes Music-retired with Music Library for missing/duplicate trac
 o DONE Check that files removed from the Music app are removed from the server
   This may require a changed to the "Safety net" setting in CCC.
 
----------------- 31 March 2025
+
+o DONE Clean up the various copies of the library  - on Mac Hard disk, Media disk and on the server at /Public/Shared Music
+  There are some remains in the Public/Shared Music/_CCCSafetyNet files which will eventually be removed automatically
+  There is also a Hidden-ma4 folder which has proved useful in the past. So keeping it until the backup system is bedded in.
+  
+o  Curiously, the Trevor Pinnock CD of Bach does not show the album artwork, even though it is set in the metadata.
+   SOLVED. This is a feature of the way the Music App manages Album art (and avoids putting artwork in each track).  The solution is to explicity add new artwork to
+   ALSO - the 'Automatically update artwork' setting has been turned on. The effect is unknown.
+
+
+---------------- 2 APRIL 2025
 o Figure out what happened in removed.log
       
 o Remove empty directories on the transcoding target file system
 
-  Finally...
-o Clean up the various copies of the library  - on Mac Hard disk, Media disk and on the server at /Public/Shared Music
 
-
+There are 20 files which show up inFinder as having zero bytes in spite of being playable.   But they cannot be backed up by CCC.
+This was cured by remounting the network drive and re-running the backup.
