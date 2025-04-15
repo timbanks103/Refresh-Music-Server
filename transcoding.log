@@ -1,11 +1,21 @@
-[2025-04-04 16:48:44,434] {transcoding.py:84} INFO - []
-[2025-04-04 16:48:44,435] {transcoding.py:86} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
-[2025-04-04 16:48:44,435] {transcoding.py:87} INFO - []
-[2025-04-04 16:48:44,435] {transcoding.py:89} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
-[2025-04-04 16:48:44,435] {transcoding.py:90} INFO - ['/./Christmas Music.m3u']
-[2025-04-04 16:48:44,435] {transcoding.py:92} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
-[2025-04-04 16:48:44,435] {transcoding.py:93} INFO - ['/./Christmas Music.m3u8']
-[2025-04-04 16:48:44,436] {transcoding.py:105} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music//./Christmas Music.m3u (1 of 1). 
-[2025-04-04 16:48:44,458] {transcoding.py:114} INFO - Empty Directories: 
-[2025-04-04 16:48:44,458] {transcoding.py:115} INFO - []
-[2025-04-04 16:48:44,538] {transcoding.py:176} INFO - Copied/translated updated /./Christmas Music.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./Christmas Music.m3u8. (1 of 1). 
+[2025-04-14 20:30:23,959] {transcoding.py:84} INFO - ['/./-May 17.m3u8',
+ 'Django Reinhardt/The Unforgetable.._/11 Limehouse Blues.m4a']
+[2025-04-14 20:30:23,959] {transcoding.py:86} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-04-14 20:30:23,959] {transcoding.py:87} INFO - ['/./-May 17.m3u8',
+ 'Django Reinhardt/The Unforgetable.._/11 Limehouse Blues.m4a']
+[2025-04-14 20:30:23,959] {transcoding.py:89} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-04-14 20:30:23,959] {transcoding.py:90} INFO - []
+[2025-04-14 20:30:23,959] {transcoding.py:92} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-04-14 20:30:23,959] {transcoding.py:93} INFO - []
+[2025-04-14 20:30:23,980] {transcoding.py:114} INFO - Empty Directories: 
+[2025-04-14 20:30:23,981] {transcoding.py:115} INFO - ['/Volumes/Media/Shared Music/MusicMP3/Music/Batched Automatically Add to '
+ 'Music.localized/Glenn Gould/Bach_ The Well-Tempered Clavier, Book 1(2)',
+ '/Volumes/Media/Shared Music/MusicMP3/Music/Various Artists/Brahms_ Concertos '
+ 'for Piano and Violin']
+[2025-04-14 20:30:24,231] {transcoding.py:176} INFO - Copied/translated missing /./-May 17.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./-May 17.m3u8. (1 of 2). 
+[2025-04-14 20:30:27,001] {transcoding.py:137} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Django Reinhardt/The Unforgetable.._/11 Limehouse Blues.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Django Reinhardt/The Unforgetable.._/11 Limehouse Blues.mp3. (2 of 2). 
+[2025-04-14 20:30:27,001] {transcoding.py:193} INFO - Non-Deleted empty directory /Volumes/Media/Shared Music/MusicMP3/Music/Batched Automatically Add to Music.localized/Glenn Gould/Bach_ The Well-Tempered Clavier, Book 1(2)
+[2025-04-14 20:30:27,001] {transcoding.py:193} INFO - Non-Deleted empty directory /Volumes/Media/Shared Music/MusicMP3/Music/Various Artists/Brahms_ Concertos for Piano and Violin
+[2025 Apr 14 22:28:06] {minimRescanWrapper.zsh} 
++*rescan
++:status=0

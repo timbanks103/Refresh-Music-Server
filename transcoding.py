@@ -5,7 +5,7 @@
 //  Created by Timothy Banks on 07/03/2025.
 //  
 //  This script can be run in any of three ways:
-//     by invoking python3 with this file as the mail argument.  It runs in terminal mode.
+//     by invoking python3 with this file as the main argument.  It runs in terminal mode.
 //     by invoking the AsWrapper applescript file which invokeds it without terminal output.
 """
 
@@ -107,7 +107,7 @@ if len(removals)>0:
 
 
 emptydirs=[]
-dlen=len(mp3Dir)
+#dlen=len(mp3Dir)
 for (r,ds,ls) in os.walk(mp3Dir,topdown=True):
         if ls==[] and ds==[]: emptydirs.append(r)
 
@@ -186,7 +186,34 @@ if len(updates+additions)>0:
                     
 else: logger.info("No transcoding or copying needed. ")
     
+if len(emptydirs)>0:
+    emptied=0
+    for f in emptydirs:
+        #os.path.rmdir()
+        logger.info(f"Non-Deleted empty directory {f}")
+"""
+# Should repeat the exercise until there are none left.
+# ... and note that some directories which started out empty may be filled during transcoding.
+emptydirs=[]
+#dlen=len(mp3Dir)
+for (r,ds,ls) in os.walk(mp3Dir,topdown=True):
+        if ls==[] and ds==[]: emptydirs.append(r)
+        
+see also: 
 
+This next example is a simple implementation of shutil.rmtree(). Walking the tree bottom-up is essential as rmdir() doesn’t allow deleting a directory before it is empty:
+
+# Delete everything reachable from the directory "top".
+# CAUTION:  This is dangerous! For example, if top == Path('/'),
+# it could delete all of your files.
+for root, dirs, files in top.walk(top_down=False):
+    for name in files:
+        (root / name).unlink()
+    for name in dirs:
+        (root / name).rmdir()        
+        
+        
+"""
 
 # References:
 """

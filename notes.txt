@@ -3,18 +3,42 @@ Music Server Notes
 The following settings are assumed for the 'Music' app
 
  o Keep Music Media folder organised.
- o Copy files to Music Media folder whenm adding to library
+ o Copy files to Music Media folder when adding to library
  o Import settings  AAC encoder 256kbps stereo
 
-Music is kept on the 'Media' removeable disc and a preflight task in Carbon Copy Cloner makes a transcoding or copy of any
-new or updated files so that all files are in mp3 format.  The cloner then copies any updates to the Music server.
+Music is kept on the 'Media' removable disc and a preflight task in Carbon Copy Cloner makes a 
+transcoding or copy of any new or updated files so that all files are in mp3 format.  The cloner
+then copies any updates to the Music server.
+
+Music can be accessed and played (via dlna) on a Smart TV  or via BubbleUPNP on Android
+
+Playlists can be constructed from the server music collection using 
+ Mac OS Music App - they are available to any renderer 
+ BubbleUPNP - they can be downloaded to the Phone and moved to a USB flash drive using X-plore
+ file manager.  The USB drive/download can be played on various devices (notably Ruark)
+ without any of the complexity and fragility of UPNP wifi connectivity (evident on Pure radio).  
+ 
+There are complications (and weaknesses) in many places in the system, some of which can be weeded out (see below) but there are oothers which are unavoidable. Namely:
+
+ o The server is slow and sometimes not powerful enough to deal with concurrent activity such as a backup.  This results in timeout of the requests to retrieve media and in the
+   case of the Pure One Flow...
+ o The Pure One Flow does not deal tidily with errors.  In the case of repeated failures to load music it requires a power-off to reset the server connection (which seemingly needs to 
+   be long-lived)
+ o The Pure One Flow seemhly has constraints on the length of urls which it can use to retreive media. Examples can be found in the original titles of tracks in the Goldberg 
+   Variations.  Changing to short titles (and therefore file names and therefore short urls) makes the loading work.
+   There are still mysterious failures - notably all tracks in the Bach violin Sonatas and Partitas album.     
+
+
 
 THINGS TO DO
+
+o Automate the export of all playlists from the Music app by calling from python/transcoding.py
+  to applescript for the operation (before doing the translation to relative file paths etc)
 
 o DONE Some files in the Music collection are on the Internal drive rather than the Media external drive.  What does the menu item "File>Library>Organise Library"  do?  ""*Test out* Importing the Macintosh HD/timbanks/Music collection to detect and deleted files from that location.
   A script may be a better way to find the extent of the problem.
   
-  This is done by comparing the internal drive collection weith the Media external drive via the analysis.py script.
+  This is done by comparing the internal drive collection with the Media external drive via the analysis.py script.
   Repairs werere done manually.
   
    
