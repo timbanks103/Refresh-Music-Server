@@ -24,10 +24,15 @@ There are complications (and weaknesses) in many places in the system, some of w
    case of the Pure One Flow...
  o The Pure One Flow does not deal tidily with errors.  In the case of repeated failures to load music it requires a power-off to reset the server connection (which seemingly needs to 
    be long-lived)
- o The Pure One Flow seemhly has constraints on the length of urls which it can use to retreive media. Examples can be found in the original titles of tracks in the Goldberg 
-   Variations.  Changing to short titles (and therefore file names and therefore short urls) makes the loading work.
-   There are still mysterious failures - notably all tracks in the Bach violin Sonatas and Partitas album.     
-
+   
+  o The Pure One Flow seemingly has constraints on the length of urls which it can use to retreive media. Examples can be found in the original titles
+   of tracks in the Goldberg Variations.
+   Changing to short titles (and therefore file names and therefore short urls) makes the loading work.
+   
+   There are failures for all tracks in the Bach violin Sonatas and Partitas album which mean the "loading" message on track selection is never resolved.
+   Deleting the metadata with https://products.groupdocs.app/metadata/clean/mp3 can overcome this loading problem, so a way of cleaning the metadata is seemingly what's needed.
+   
+   
 
 
 THINGS TO DO
