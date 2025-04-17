@@ -124,7 +124,24 @@ if len(updates+additions)>0:
     copied=0
     skipped=0
     for f in updates+additions:
-        if (f.find(".m4a") > -1 or f.find(".M4A") > -1) and transcoded<=transcodeConstraint:
+        if (f.find(".m4a") > -1 and f.find("NOT Lydia Mordkovich") >-1) and transcoded<=transcodeConstraint:
+            input_path = sourceDir+"/"+f
+            output_path = mp3Dir+"/"+f.replace(".m4a", ".mp3").replace(".M4A", ".mp3")
+            output_dir = "/".join(output_path.split("/")[0:-1])
+            os.makedirs(output_dir, exist_ok=True)
+            try:
+                ffmpeg.input(input_path).output(output_path,loglevel="quiet").run(overwrite_output=True"""-map_metadata -1  -f ffmetadata metadata.txt    """)
+                if f in updates: msgInsert = "updated"
+                else: msgInsert = "missing"
+                transcoded=transcoded+1
+                logger.info(f"Successfully converted troiublesome file {msgInsert} {input_path} to {output_path}. ({transcoded+copied} of {len(updates+additions)}). ")
+            except ffmpeg.Error as e:
+                logger.debug(f"An error occurred attempting to transcode {f}: {e}")
+                raise Exception(f"An error occurred: {e} attempting to transcode {f}")
+                
+                
+                
+        elif (f.find(".m4a") > -1 or f.find(".M4A") > -1) and transcoded<=transcodeConstraint:
             input_path = sourceDir+"/"+f
             output_path = mp3Dir+"/"+f.replace(".m4a", ".mp3").replace(".M4A", ".mp3")
             output_dir = "/".join(output_path.split("/")[0:-1])
@@ -138,6 +155,7 @@ if len(updates+additions)>0:
             except ffmpeg.Error as e:
                 logger.debug(f"An error occurred attempting to transcode {f}: {e}")
                 raise Exception(f"An error occurred: {e} attempting to transcode {f}")
+               
         elif f.lower().find(".mp3") >-1 or f.lower().find(".jpg") > -1 or f.lower().find(".pdf") >-1 and copied<=copyConstraint:
                 input_path = sourceDir+"/"+f
                 output_path = mp3Dir+"/"+f

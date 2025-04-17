@@ -22,16 +22,21 @@ There are complications (and weaknesses) in many places in the system, some of w
 
  o The server is slow and sometimes not powerful enough to deal with concurrent activity such as a backup.  This results in timeout of the requests to retrieve media and in the
    case of the Pure One Flow...
- o The Pure One Flow does not deal tidily with errors.  In the case of repeated failures to load music it requires a power-off to reset the server connection (which seemingly needs to 
-   be long-lived)
+   
+ o A weak WiFi signal is danger to consistent connectivity and is unpredictable - varying with time and position of the radio. The signal strength indicator needs to be
+   at 4 bars minimum and extending the ariel helps.
+   
+ o The Pure One Flow does not deal tidily with errors.  In the case of repeated failures to load music it requires a power-off to reset the server connection (which
+   seemingly needs to be long-lived)
    
   o The Pure One Flow seemingly has constraints on the length of urls which it can use to retreive media. Examples can be found in the original titles
-   of tracks in the Goldberg Variations.
-   Changing to short titles (and therefore file names and therefore short urls) makes the loading work.
+    of tracks in the Goldberg Variations.
+    Changing to short titles (and therefore file names and therefore short urls) makes the loading work.
    
    There are failures for all tracks in the Bach violin Sonatas and Partitas album which mean the "loading" message on track selection is never resolved.
    Deleting the metadata with https://products.groupdocs.app/metadata/clean/mp3 can overcome this loading problem, so a way of cleaning the metadata is seemingly what's needed.
-   
+   Or perhaps the python module https://eyed3.readthedocs.io/en/latest/installation.html can help? [extract metadata to json/clean/restore metadata?]
+   Mp3tag does not fix things.
    
 
 

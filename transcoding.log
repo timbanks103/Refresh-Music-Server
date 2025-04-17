@@ -1,21 +1,7 @@
-[2025-04-14 20:30:23,959] {transcoding.py:84} INFO - ['/./-May 17.m3u8',
- 'Django Reinhardt/The Unforgetable.._/11 Limehouse Blues.m4a']
-[2025-04-14 20:30:23,959] {transcoding.py:86} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
-[2025-04-14 20:30:23,959] {transcoding.py:87} INFO - ['/./-May 17.m3u8',
- 'Django Reinhardt/The Unforgetable.._/11 Limehouse Blues.m4a']
-[2025-04-14 20:30:23,959] {transcoding.py:89} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
-[2025-04-14 20:30:23,959] {transcoding.py:90} INFO - []
-[2025-04-14 20:30:23,959] {transcoding.py:92} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
-[2025-04-14 20:30:23,959] {transcoding.py:93} INFO - []
-[2025-04-14 20:30:23,980] {transcoding.py:114} INFO - Empty Directories: 
-[2025-04-14 20:30:23,981] {transcoding.py:115} INFO - ['/Volumes/Media/Shared Music/MusicMP3/Music/Batched Automatically Add to '
- 'Music.localized/Glenn Gould/Bach_ The Well-Tempered Clavier, Book 1(2)',
- '/Volumes/Media/Shared Music/MusicMP3/Music/Various Artists/Brahms_ Concertos '
- 'for Piano and Violin']
-[2025-04-14 20:30:24,231] {transcoding.py:176} INFO - Copied/translated missing /./-May 17.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./-May 17.m3u8. (1 of 2). 
-[2025-04-14 20:30:27,001] {transcoding.py:137} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Django Reinhardt/The Unforgetable.._/11 Limehouse Blues.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Django Reinhardt/The Unforgetable.._/11 Limehouse Blues.mp3. (2 of 2). 
-[2025-04-14 20:30:27,001] {transcoding.py:193} INFO - Non-Deleted empty directory /Volumes/Media/Shared Music/MusicMP3/Music/Batched Automatically Add to Music.localized/Glenn Gould/Bach_ The Well-Tempered Clavier, Book 1(2)
-[2025-04-14 20:30:27,001] {transcoding.py:193} INFO - Non-Deleted empty directory /Volumes/Media/Shared Music/MusicMP3/Music/Various Artists/Brahms_ Concertos for Piano and Violin
-[2025 Apr 14 22:28:06] {minimRescanWrapper.zsh} 
+  File "/Users/timbanks/MyWork/Refresh Music Server/transcoding.py", line 127
+    if (f.find(".m4a") > -1 and f.find("NOT Lydia Mordkovich") >-1 and transcoded<=transcodeConstraint:
+                                                                                                      ^
+SyntaxError: invalid syntax
+[2025 Apr 16 20:14:00] {minimRescanWrapper.zsh} 
 +*rescan
 +:status=0
