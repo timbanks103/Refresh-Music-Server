@@ -1,7 +1,56 @@
-  File "/Users/timbanks/MyWork/Refresh Music Server/transcoding.py", line 127
-    if (f.find(".m4a") > -1 and f.find("NOT Lydia Mordkovich") >-1 and transcoded<=transcodeConstraint:
-                                                                                                      ^
-SyntaxError: invalid syntax
-[2025 Apr 16 20:14:00] {minimRescanWrapper.zsh} 
-+*rescan
-+:status=0
+[2025-04-20 22:42:58,379] {transcoding.py:84} INFO - ['/./1970-1995.m3u8', '/./Bedtime.m3u8', '/./Christmas.m3u8']
+of 6
+[2025-04-20 22:42:58,380] {transcoding.py:86} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-04-20 22:42:58,380] {transcoding.py:87} INFO - ['/./1970-1995.m3u8', '/./Bedtime.m3u8', '/./Christmas.m3u8']
+of 6
+[2025-04-20 22:42:58,380] {transcoding.py:89} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-04-20 22:42:58,380] {transcoding.py:90} INFO - ['/./-1975-1995.m3u8', '/./-Bedtime.m3u8', '/./-Christmas.m3u8']
+[2025-04-20 22:42:58,380] {transcoding.py:91} INFO - of 6
+[2025-04-20 22:42:58,380] {transcoding.py:92} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-04-20 22:42:58,380] {transcoding.py:93} INFO - ['Apollo5/O Radiant Dawn/01 O Radiant Dawn.m4a',
+ 'Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/01 I Get A '
+ 'Kick Out Of You.m4a',
+ 'Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/02 My '
+ 'Heart Belongs To Daddy.m4a']
+[2025-04-20 22:42:58,380] {transcoding.py:94} INFO - of 19
+[2025-04-20 22:42:58,511] {transcoding.py:105} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music//./-1975-1995.m3u8 (1 of 6). 
+[2025-04-20 22:42:58,511] {transcoding.py:105} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music//./-Bedtime.m3u8 (2 of 6). 
+[2025-04-20 22:42:58,512] {transcoding.py:105} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music//./-Christmas.m3u8 (3 of 6). 
+[2025-04-20 22:42:58,531] {transcoding.py:105} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music//./-May 17.m3u8 (4 of 6). 
+[2025-04-20 22:42:58,544] {transcoding.py:105} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music//./-Test.m3u8 (5 of 6). 
+[2025-04-20 22:42:58,546] {transcoding.py:105} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Unknown Artist/Sawyer_ Concerto for Cello and Orchestra/01 Philip Sawyers_ Concerto for Cello and Orchestra PREMIX.mp3 (6 of 6). 
+[2025-04-20 22:42:58,568] {transcoding.py:114} INFO - Empty Directories: 
+[2025-04-20 22:42:58,568] {transcoding.py:115} INFO - ['/Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach S and Ps '
+ 'for solo Violin',
+ '/Volumes/Media/Shared Music/MusicMP3/Music/Unknown Artist/Sawyer_ Concerto '
+ 'for Cello and Orchestra']
+[2025-04-20 22:43:13,730] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Apollo5/O Radiant Dawn/01 O Radiant Dawn.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Apollo5/O Radiant Dawn/01 O Radiant Dawn.mp3. (1 of 25). 
+[2025-04-20 22:43:18,472] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/01 I Get A Kick Out Of You.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/01 I Get A Kick Out Of You.mp3. (2 of 25). 
+[2025-04-20 22:43:21,682] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/02 My Heart Belongs To Daddy.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/02 My Heart Belongs To Daddy.mp3. (3 of 25). 
+[2025-04-20 22:43:24,594] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/03 I've Got You Under My Skin.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/03 I've Got You Under My Skin.mp3. (4 of 25). 
+[2025-04-20 22:43:26,619] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/04 After You, Who.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/04 After You, Who.mp3. (5 of 25). 
+[2025-04-20 22:43:31,817] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/05 So In Love.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/05 So In Love.mp3. (6 of 25). 
+[2025-04-20 22:43:34,801] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/06 Too Darn Hot.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/06 Too Darn Hot.mp3. (7 of 25). 
+[2025-04-20 22:43:37,054] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/07 Just One Of Those Things.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/07 Just One Of Those Things.mp3. (8 of 25). 
+[2025-04-20 22:43:39,938] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/08 Get Out Of Town.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/08 Get Out Of Town.mp3. (9 of 25). 
+[2025-04-20 22:43:42,191] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/09 Love For Sale.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/09 Love For Sale.mp3. (10 of 25). 
+[2025-04-20 22:43:44,766] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/10 From This Moment On.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/10 From This Moment On.mp3. (11 of 25). 
+[2025-04-20 22:43:48,424] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/11 Night And Day.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/11 Night And Day.mp3. (12 of 25). 
+[2025-04-20 22:43:50,692] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/12 Give Him The Ooh-La-La.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/12 Give Him The Ooh-La-La.mp3. (13 of 25). 
+[2025-04-20 22:43:53,027] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/13 Ev'rything I Love.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/13 Ev'rything I Love.mp3. (14 of 25). 
+[2025-04-20 22:43:57,454] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/14 Miss Otis Regrets (She's Unable To Lunch Today).m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/14 Miss Otis Regrets (She's Unable To Lunch Today).mp3. (15 of 25). 
+[2025-04-20 22:44:00,447] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/15 All Of You.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/15 All Of You.mp3. (16 of 25). 
+[2025-04-20 22:44:03,215] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/16 You're The Top.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/16 You're The Top.mp3. (17 of 25). 
+[2025-04-20 22:44:06,733] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/17 Most Gentlemen Don't Like Love.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/17 Most Gentlemen Don't Like Love.mp3. (18 of 25). 
+[2025-04-20 22:44:09,587] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Klara Kormendi; Jerome Kaltenbach_ Nancy Symphony Orchestra/The Best Of Satie/23 Satie_ 3 Gymnopédies - #3_ Lent Et Grave.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Klara Kormendi; Jerome Kaltenbach_ Nancy Symphony Orchestra/The Best Of Satie/23 Satie_ 3 Gymnopédies - #3_ Lent Et Grave.mp3. (19 of 25). 
+[2025-04-20 22:44:09,684] {transcoding.py:194} INFO - Copied/translated missing /./1970-1995.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./1970-1995.m3u8. (20 of 25). 
+[2025-04-20 22:44:09,686] {transcoding.py:194} INFO - Copied/translated missing /./Bedtime.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./Bedtime.m3u8. (21 of 25). 
+[2025-04-20 22:44:09,687] {transcoding.py:194} INFO - Copied/translated missing /./Christmas.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./Christmas.m3u8. (22 of 25). 
+[2025-04-20 22:44:09,688] {transcoding.py:194} INFO - Copied/translated missing /./May 17.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./May 17.m3u8. (23 of 25). 
+[2025-04-20 22:44:09,689] {transcoding.py:194} INFO - Copied/translated missing /./Test.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./Test.m3u8. (24 of 25). 
+[2025-04-20 22:44:09,791] {transcoding.py:169} INFO - Copied missing LydiaM/Bach S and Ps for solo Violin/16 Bouree (Partitia No. 3 in E major) BWV 1006 256K.mp3 to /Volumes/Media/Shared Music/MusicMP3/Music/LydiaM/Bach S and Ps for solo Violin/16 Bouree (Partitia No. 3 in E major) BWV 1006 256K.mp3. (25 of 25). 
+[2025-04-20 22:44:09,792] {transcoding.py:211} INFO - Non-Deleted empty directory /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach S and Ps for solo Violin
+[2025-04-20 22:44:09,792] {transcoding.py:211} INFO - Non-Deleted empty directory /Volumes/Media/Shared Music/MusicMP3/Music/Unknown Artist/Sawyer_ Concerto for Cello and Orchestra
+[2025 Apr 20 22:47:42] {minimRescanWrapper.zsh} 
+Server not responding: 192.168.0.52:9795
++:status=3

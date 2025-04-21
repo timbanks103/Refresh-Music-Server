@@ -130,7 +130,7 @@ if len(updates+additions)>0:
             output_dir = "/".join(output_path.split("/")[0:-1])
             os.makedirs(output_dir, exist_ok=True)
             try:
-                ffmpeg.input(input_path).output(output_path,loglevel="quiet").run(overwrite_output=True"""-map_metadata -1  -f ffmetadata metadata.txt    """)
+                ffmpeg.input(input_path).output(output_path,loglevel="quiet").run(overwrite_output=True)#-map_metadata -1  -f ffmetadata metadata.txt
                 if f in updates: msgInsert = "updated"
                 else: msgInsert = "missing"
                 transcoded=transcoded+1
