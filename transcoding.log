@@ -1,56 +1,371 @@
-[2025-04-20 22:42:58,379] {transcoding.py:84} INFO - ['/./1970-1995.m3u8', '/./Bedtime.m3u8', '/./Christmas.m3u8']
-of 6
-[2025-04-20 22:42:58,380] {transcoding.py:86} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
-[2025-04-20 22:42:58,380] {transcoding.py:87} INFO - ['/./1970-1995.m3u8', '/./Bedtime.m3u8', '/./Christmas.m3u8']
-of 6
-[2025-04-20 22:42:58,380] {transcoding.py:89} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
-[2025-04-20 22:42:58,380] {transcoding.py:90} INFO - ['/./-1975-1995.m3u8', '/./-Bedtime.m3u8', '/./-Christmas.m3u8']
-[2025-04-20 22:42:58,380] {transcoding.py:91} INFO - of 6
-[2025-04-20 22:42:58,380] {transcoding.py:92} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
-[2025-04-20 22:42:58,380] {transcoding.py:93} INFO - ['Apollo5/O Radiant Dawn/01 O Radiant Dawn.m4a',
- 'Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/01 I Get A '
- 'Kick Out Of You.m4a',
- 'Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/02 My '
- 'Heart Belongs To Daddy.m4a']
-[2025-04-20 22:42:58,380] {transcoding.py:94} INFO - of 19
-[2025-04-20 22:42:58,511] {transcoding.py:105} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music//./-1975-1995.m3u8 (1 of 6). 
-[2025-04-20 22:42:58,511] {transcoding.py:105} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music//./-Bedtime.m3u8 (2 of 6). 
-[2025-04-20 22:42:58,512] {transcoding.py:105} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music//./-Christmas.m3u8 (3 of 6). 
-[2025-04-20 22:42:58,531] {transcoding.py:105} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music//./-May 17.m3u8 (4 of 6). 
-[2025-04-20 22:42:58,544] {transcoding.py:105} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music//./-Test.m3u8 (5 of 6). 
-[2025-04-20 22:42:58,546] {transcoding.py:105} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Unknown Artist/Sawyer_ Concerto for Cello and Orchestra/01 Philip Sawyers_ Concerto for Cello and Orchestra PREMIX.mp3 (6 of 6). 
-[2025-04-20 22:42:58,568] {transcoding.py:114} INFO - Empty Directories: 
-[2025-04-20 22:42:58,568] {transcoding.py:115} INFO - ['/Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach S and Ps '
- 'for solo Violin',
- '/Volumes/Media/Shared Music/MusicMP3/Music/Unknown Artist/Sawyer_ Concerto '
- 'for Cello and Orchestra']
-[2025-04-20 22:43:13,730] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Apollo5/O Radiant Dawn/01 O Radiant Dawn.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Apollo5/O Radiant Dawn/01 O Radiant Dawn.mp3. (1 of 25). 
-[2025-04-20 22:43:18,472] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/01 I Get A Kick Out Of You.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/01 I Get A Kick Out Of You.mp3. (2 of 25). 
-[2025-04-20 22:43:21,682] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/02 My Heart Belongs To Daddy.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/02 My Heart Belongs To Daddy.mp3. (3 of 25). 
-[2025-04-20 22:43:24,594] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/03 I've Got You Under My Skin.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/03 I've Got You Under My Skin.mp3. (4 of 25). 
-[2025-04-20 22:43:26,619] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/04 After You, Who.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/04 After You, Who.mp3. (5 of 25). 
-[2025-04-20 22:43:31,817] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/05 So In Love.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/05 So In Love.mp3. (6 of 25). 
-[2025-04-20 22:43:34,801] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/06 Too Darn Hot.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/06 Too Darn Hot.mp3. (7 of 25). 
-[2025-04-20 22:43:37,054] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/07 Just One Of Those Things.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/07 Just One Of Those Things.mp3. (8 of 25). 
-[2025-04-20 22:43:39,938] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/08 Get Out Of Town.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/08 Get Out Of Town.mp3. (9 of 25). 
-[2025-04-20 22:43:42,191] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/09 Love For Sale.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/09 Love For Sale.mp3. (10 of 25). 
-[2025-04-20 22:43:44,766] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/10 From This Moment On.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/10 From This Moment On.mp3. (11 of 25). 
-[2025-04-20 22:43:48,424] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/11 Night And Day.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/11 Night And Day.mp3. (12 of 25). 
-[2025-04-20 22:43:50,692] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/12 Give Him The Ooh-La-La.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/12 Give Him The Ooh-La-La.mp3. (13 of 25). 
-[2025-04-20 22:43:53,027] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/13 Ev'rything I Love.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/13 Ev'rything I Love.mp3. (14 of 25). 
-[2025-04-20 22:43:57,454] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/14 Miss Otis Regrets (She's Unable To Lunch Today).m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/14 Miss Otis Regrets (She's Unable To Lunch Today).mp3. (15 of 25). 
-[2025-04-20 22:44:00,447] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/15 All Of You.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/15 All Of You.mp3. (16 of 25). 
-[2025-04-20 22:44:03,215] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/16 You're The Top.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/16 You're The Top.mp3. (17 of 25). 
-[2025-04-20 22:44:06,733] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/17 Most Gentlemen Don't Like Love.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Compilations/I Get A Kick Out Of You_ Cole Porter Songbook Vol. 2/17 Most Gentlemen Don't Like Love.mp3. (18 of 25). 
-[2025-04-20 22:44:09,587] {transcoding.py:154} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Klara Kormendi; Jerome Kaltenbach_ Nancy Symphony Orchestra/The Best Of Satie/23 Satie_ 3 Gymnopédies - #3_ Lent Et Grave.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Klara Kormendi; Jerome Kaltenbach_ Nancy Symphony Orchestra/The Best Of Satie/23 Satie_ 3 Gymnopédies - #3_ Lent Et Grave.mp3. (19 of 25). 
-[2025-04-20 22:44:09,684] {transcoding.py:194} INFO - Copied/translated missing /./1970-1995.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./1970-1995.m3u8. (20 of 25). 
-[2025-04-20 22:44:09,686] {transcoding.py:194} INFO - Copied/translated missing /./Bedtime.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./Bedtime.m3u8. (21 of 25). 
-[2025-04-20 22:44:09,687] {transcoding.py:194} INFO - Copied/translated missing /./Christmas.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./Christmas.m3u8. (22 of 25). 
-[2025-04-20 22:44:09,688] {transcoding.py:194} INFO - Copied/translated missing /./May 17.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./May 17.m3u8. (23 of 25). 
-[2025-04-20 22:44:09,689] {transcoding.py:194} INFO - Copied/translated missing /./Test.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./Test.m3u8. (24 of 25). 
-[2025-04-20 22:44:09,791] {transcoding.py:169} INFO - Copied missing LydiaM/Bach S and Ps for solo Violin/16 Bouree (Partitia No. 3 in E major) BWV 1006 256K.mp3 to /Volumes/Media/Shared Music/MusicMP3/Music/LydiaM/Bach S and Ps for solo Violin/16 Bouree (Partitia No. 3 in E major) BWV 1006 256K.mp3. (25 of 25). 
-[2025-04-20 22:44:09,792] {transcoding.py:211} INFO - Non-Deleted empty directory /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach S and Ps for solo Violin
-[2025-04-20 22:44:09,792] {transcoding.py:211} INFO - Non-Deleted empty directory /Volumes/Media/Shared Music/MusicMP3/Music/Unknown Artist/Sawyer_ Concerto for Cello and Orchestra
-[2025 Apr 20 22:47:42] {minimRescanWrapper.zsh} 
-Server not responding: 192.168.0.52:9795
-+:status=3
+  File "/Users/timbanks/MyWork/Refresh Music Server/transcoding.py", line 194
+    else cleanResult=cleaner.clean(output_path) # Clean it anyway to get rid of TXXX frames
+         ^^^^^^^^^^^
+SyntaxError: expected ':'
+[2025 Apr 26 23:08:20] {minimRescanWrapper.zsh} 
++*rescan
++:status=0
++*rescan
++:status=0
+[2025-04-26 23:09:21,569] {transcoding.py:51} INFO - Export of playlists from Music was successful.
+[2025-04-26 23:09:22,766] {transcoding.py:109} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-04-26 23:09:22,768] {transcoding.py:110} INFO - ['Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-01 Partita no '
+ '2_ Allemanda.m4a',
+ 'Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-02 '
+ 'Corrente.m4a',
+ 'Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-03 '
+ 'Sarabanda.m4a']
+[2025-04-26 23:09:22,768] {transcoding.py:112} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-04-26 23:09:22,768] {transcoding.py:113} INFO - []
+[2025-04-26 23:09:22,768] {transcoding.py:115} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-04-26 23:09:22,768] {transcoding.py:116} INFO - ['/./1970-1995.m3u8', '/./Bedtime.m3u8', '/./Christmas.m3u8']
+[2025-04-26 23:09:22,768] {transcoding.py:117} INFO - of 6
+[2025-04-26 23:09:22,790] {transcoding.py:137} INFO - Empty Directories: 
+[2025-04-26 23:09:22,790] {transcoding.py:138} INFO - []
+[2025-04-26 23:09:22,790] {metadataCleaning.py:83} DEBUG - Metadatacleaning for files with ?? maybe over-long metadata (title over 63 characters):
+[2025-04-26 23:09:22,869] {transcoding.py:243} INFO - Copied/translated updated /./1970-1995.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./1970-1995.m3u8. (1 of 11). 
+[2025-04-26 23:09:22,870] {transcoding.py:243} INFO - Copied/translated updated /./Bedtime.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./Bedtime.m3u8. (2 of 11). 
+[2025-04-26 23:09:22,883] {transcoding.py:243} INFO - Copied/translated updated /./Christmas.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./Christmas.m3u8. (3 of 11). 
+[2025-04-26 23:09:22,885] {transcoding.py:243} INFO - Copied/translated updated /./May 17.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./May 17.m3u8. (4 of 11). 
+[2025-04-26 23:09:22,886] {transcoding.py:243} INFO - Copied/translated updated /./MusicRadio.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./MusicRadio.m3u8. (5 of 11). 
+[2025-04-26 23:09:22,886] {transcoding.py:243} INFO - Copied/translated updated /./Test.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./Test.m3u8. (6 of 11). 
+[2025-04-26 23:09:30,429] {transcoding.py:164} INFO - Successfully converted troublesome file missing /Volumes/Media/Shared Music/Music Library/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-01 Partita no 2_ Allemanda.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-01 Partita no 2_ Allemanda.mp3. (7 of 11). 
+[2025-04-26 23:09:30,529] {metadataCleaning.py:154} INFO - 
+
+
+Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-01 Partita no 2_ Allemanda.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 4942613,
+'tagSize': '0x2, 0x2d, 0x56, 0xb (= decimal 4942603 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+[2025-04-26 23:09:30,530] {metadataCleaning.py:155} INFO - 
+
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 4942613,
+ 'layer': 3,
+ 'length': 344.84244897959184,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+[2025-04-26 23:09:30,530] {metadataCleaning.py:164} DEBUG - 
+
+
+Frame contents: 
+APIC=other,  (image/png, 4941659 bytes)
+TALB=Bach: Sonatas and Partitas for solo Violin
+TCOM=J.S. Bach
+TCON=Classical
+TDRC=1990
+TIT1=Partita No. 2 in D Minor, BWV 1004
+TIT2=Partita no 2: Allemanda
+TPE1=Lydia Mordkovitch
+TPE2=Lydia Mordkovitch
+TPOS=2/2
+TRCK=1/16
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=vers
+TXXX=TCMP=0
+TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3N72R33991616V68DE8AA8BD41D9B6759DCF7050DF494967P0
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 000001A2 0000019B 0000390E 00002F66 0003647B 00030A80 00003FE0 00004622 0002FA72 00044DAD
+TXXX=iTunSMPB= 00000000 00000840 00000290 0000000000E80530 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=16++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_artist=Lydia Mordkovitch
+[2025-04-26 23:09:30,531] {metadataCleaning.py:165} DEBUG - Text lengths: 
+{
+    "TALB": 42,
+    "TCOM": 9,
+    "TIT1": 34,
+    "TIT2": 23
+}
+[2025-04-26 23:09:34,182] {transcoding.py:164} INFO - Successfully converted troublesome file missing /Volumes/Media/Shared Music/Music Library/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-02 Corrente.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-02 Corrente.mp3. (8 of 11). 
+[2025-04-26 23:09:34,352] {metadataCleaning.py:154} INFO - 
+
+
+Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-02 Corrente.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 4942597,
+'tagSize': '0x2, 0x2d, 0x55, 0x7b (= decimal 4942587 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+[2025-04-26 23:09:34,352] {metadataCleaning.py:155} INFO - 
+
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 4942597,
+ 'layer': 3,
+ 'length': 175.96081632653062,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+[2025-04-26 23:09:34,352] {metadataCleaning.py:164} DEBUG - 
+
+
+Frame contents: 
+APIC=other,  (image/png, 4941659 bytes)
+TALB=Bach: Sonatas and Partitas for solo Violin
+TCOM=J.S. Bach
+TCON=Classical
+TDRC=1990
+TIT1=Partita No. 2 in D Minor, BWV 1004
+TIT2=Corrente
+TPE1=Lydia Mordkovitch
+TPE2=Lydia Mordkovitch
+TPOS=2/2
+TRCK=2/16
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=vers
+TXXX=TCMP=0
+TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3O7R33991617V5839FE3A002ED14BDE1D87C781BE1CBC26P3
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000201 000001EE 000026F6 00002370 00011C71 00020BFD 00004AD9 000047F6 0001DF5D 0001DF8B
+TXXX=iTunSMPB= 00000000 00000840 00000360 0000000000765C60 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=16++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_artist=Lydia Mordkovitch
+[2025-04-26 23:09:34,352] {metadataCleaning.py:165} DEBUG - Text lengths: 
+{
+    "TALB": 42,
+    "TCOM": 9,
+    "TIT1": 34,
+    "TIT2": 8
+}
+[2025-04-26 23:09:40,169] {transcoding.py:164} INFO - Successfully converted troublesome file missing /Volumes/Media/Shared Music/Music Library/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-03 Sarabanda.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-03 Sarabanda.mp3. (9 of 11). 
+[2025-04-26 23:09:40,363] {metadataCleaning.py:154} INFO - 
+
+
+Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-03 Sarabanda.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 4942600,
+'tagSize': '0x2, 0x2d, 0x55, 0x7e (= decimal 4942590 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+[2025-04-26 23:09:40,363] {metadataCleaning.py:155} INFO - 
+
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 4942600,
+ 'layer': 3,
+ 'length': 271.9085714285714,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+[2025-04-26 23:09:40,364] {metadataCleaning.py:164} DEBUG - 
+
+
+Frame contents: 
+APIC=other,  (image/png, 4941659 bytes)
+TALB=Bach: Sonatas and Partitas for solo Violin
+TCOM=J.S. Bach
+TCON=Classical
+TDRC=1990
+TIT1=Partita No. 2 in D Minor, BWV 1004
+TIT2=Sarabanda
+TPE1=Lydia Mordkovitch
+TPE2=Lydia Mordkovitch
+TPOS=2/2
+TRCK=3/16
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=vers
+TXXX=TCMP=0
+TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3N53R33991618U3781515E5253C01EC4EF654373F60DC6E76P0
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000115 00000146 000023B9 00002F33 00017211 00017211 00003EB8 000043C4 00016518 00016518
+TXXX=iTunSMPB= 00000000 00000840 00000310 0000000000B6ECB0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=16++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_artist=Lydia Mordkovitch
+[2025-04-26 23:09:40,364] {metadataCleaning.py:165} DEBUG - Text lengths: 
+{
+    "TALB": 42,
+    "TCOM": 9,
+    "TIT1": 34,
+    "TIT2": 9
+}
+[2025-04-26 23:09:45,957] {transcoding.py:164} INFO - Successfully converted troublesome file missing /Volumes/Media/Shared Music/Music Library/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-04 Giga.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-04 Giga.mp3. (10 of 11). 
+[2025-04-26 23:09:46,139] {metadataCleaning.py:154} INFO - 
+
+
+Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-04 Giga.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 4942595,
+'tagSize': '0x2, 0x2d, 0x55, 0x79 (= decimal 4942585 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+[2025-04-26 23:09:46,139] {metadataCleaning.py:155} INFO - 
+
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 4942595,
+ 'layer': 3,
+ 'length': 254.7983673469388,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+[2025-04-26 23:09:46,140] {metadataCleaning.py:164} DEBUG - 
+
+
+Frame contents: 
+APIC=other,  (image/png, 4941659 bytes)
+TALB=Bach: Sonatas and Partitas for solo Violin
+TCOM=J.S. Bach
+TCON=Classical
+TDRC=1990
+TIT1=Partita No. 2 in D Minor, BWV 1004
+TIT2=Giga
+TPE1=Lydia Mordkovitch
+TPE2=Lydia Mordkovitch
+TPOS=2/2
+TRCK=4/16
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=vers
+TXXX=TCMP=0
+TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3N99R33991619U2380B3FC05D4402C8A0C41966B9477F70AAP2
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 0000022B 00000206 00003D2B 00003F3A 00016104 00004CD3 00004CB1 000049E3 0000AA9C 000295C4
+TXXX=iTunSMPB= 00000000 00000840 0000015C 0000000000AB6E64 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=16++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_artist=Lydia Mordkovitch
+[2025-04-26 23:09:46,140] {metadataCleaning.py:165} DEBUG - Text lengths: 
+{
+    "TALB": 42,
+    "TCOM": 9,
+    "TIT1": 34,
+    "TIT2": 4
+}
+[2025-04-26 23:10:08,013] {transcoding.py:164} INFO - Successfully converted troublesome file missing /Volumes/Media/Shared Music/Music Library/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-05 Ciaccona.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-05 Ciaccona.mp3. (11 of 11). 
+[2025-04-26 23:10:08,088] {metadataCleaning.py:154} INFO - 
+
+
+Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-05 Ciaccona.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 4942598,
+'tagSize': '0x2, 0x2d, 0x55, 0x7c (= decimal 4942588 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+[2025-04-26 23:10:08,088] {metadataCleaning.py:155} INFO - 
+
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 4942598,
+ 'layer': 3,
+ 'length': 949.890612244898,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+[2025-04-26 23:10:08,089] {metadataCleaning.py:164} DEBUG - 
+
+
+Frame contents: 
+APIC=other,  (image/png, 4941659 bytes)
+TALB=Bach: Sonatas and Partitas for solo Violin
+TCOM=J.S. Bach
+TCON=Classical
+TDRC=1990
+TIT1=Partita No. 2 in D Minor, BWV 1004
+TIT2=Ciaccona
+TPE1=Lydia Mordkovitch
+TPE2=Lydia Mordkovitch
+TPOS=2/2
+TRCK=5/16
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=vers
+TXXX=TCMP=0
+TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3N34R33991620V889FE29948F7951A461F90F68EA1EC50CAP2
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 000002B2 000002A0 00004B8E 00003D24 00043575 000177F6 00007029 00006D07 0008D8F1 000A91D9
+TXXX=iTunSMPB= 00000000 00000840 000002F8 00000000027F28C8 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=16++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_artist=Lydia Mordkovitch
+[2025-04-26 23:10:08,089] {metadataCleaning.py:165} DEBUG - Text lengths: 
+{
+    "TALB": 42,
+    "TCOM": 9,
+    "TIT1": 34,
+    "TIT2": 8
+}
+[2025 Apr 26 23:16:54] {minimRescanWrapper.zsh} 
++*rescan
++:status=0
++*rescan
++:status=0
+[2025 Apr 26 23:45:58] {minimRescanWrapper.zsh} 
++*rescan
++:status=0
++*rescan
++:status=0
+[2025 Apr 27 00:11:55] {minimRescanWrapper.zsh} 
++*rescan
++:status=0
++*rescan
++:status=0
+[2025 Apr 27 00:28:50] {minimRescanWrapper.zsh} 
++*rescan
++:status=0
++*rescan
++:status=0

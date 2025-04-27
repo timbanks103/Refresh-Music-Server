@@ -15,5 +15,6 @@ echo $date$source >> transcoding.log 2>&1
 
 # Rescan the server library.  Annoyingly... minim will not execute commands as root.
 sudo -u timbanks /Applications/MinimServer.app/Contents/mscript -a 192.168.0.52:9795 -c rescan >> transcoding.log 2>&1
-
+sudo -u timbanks /Applications/MinimServer.app/Contents/mscript -a 192.168.0.16:9790 -c rescan >> transcoding.log 2>&1
+# 192.168.0.16:9790Fickle MBP 
 exit $?

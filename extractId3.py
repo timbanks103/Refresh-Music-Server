@@ -38,6 +38,8 @@ logging.basicConfig(
         level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
+
 def show_info(path):
     
     audio.tag=TinyTag.get(path)
@@ -105,6 +107,7 @@ metaDataRootPath = os.path.join('/Volumes',
                         'iTunes',
                         'metaData'
                         )
+"""
 for (r,ds,ls) in os.walk(libraryPath,topdown=True):
   #  if len(ds)==0:
         for l in ls:
@@ -116,11 +119,13 @@ for (r,ds,ls) in os.walk(libraryPath,topdown=True):
                 os.makedirs(output_dir, exist_ok=True)
                 with open(output_path, 'w') as f:
                     f.write(jsonTags)
-
+"""
 # mutagen seems an easier module to use than eyed3
 
 
 #                ffmpeg.input(input_path).output(output_path,loglevel="quiet").run(overwrite_output=True"""-map_metadata -1  -f ffmetadata metadata.txt    """)
+
+
 
 """  Take note of encoder and bit rate parameters
 Encoder    Param    Qmin    Qmax    Qdef    Recommended    Notes

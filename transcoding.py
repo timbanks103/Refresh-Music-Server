@@ -19,16 +19,40 @@
 import os, sys, logging
 import pdb # debugger
 from pprint import pformat
+from subprocess import Popen, PIPE
+import metadataCleaning
 
+def setLogger():
+    file_handler = logging.FileHandler(filename='transcoding.log')
+    stdout_handler = logging.StreamHandler(stream=sys.stdout)
+    handlers = [file_handler, stdout_handler]
+    logging.basicConfig(
+            format='[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s',
+            handlers=handlers,
+            level=logging.DEBUG)
+    logger = logging.getLogger(__name__)
+    return logger
+"""
+    Export the playlists from Music 
+"""
+def exportPlaylists(logger):
+    scriptPath = "/Users/timbanks/MyWork/Refresh Music Server/ExportPlaylists.scpt"
+    args = []#["args are not used", 3]
+    p = Popen(
+            ['/usr/bin/osascript', scriptPath] + [str(arg) for arg in args],
+            stdout=PIPE, stderr=PIPE)
 
-file_handler = logging.FileHandler(filename='transcoding.log')
-stdout_handler = logging.StreamHandler(stream=sys.stdout)
-handlers = [file_handler, stdout_handler]
-logging.basicConfig(
-        format='[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s',
-        handlers=handlers,
-        level=logging.INFO)
-logger = logging.getLogger(__name__)
+    out, err = p.communicate()
+
+    if p.returncode:
+        logger.info(f'ERROR: {err}')
+        # print(f'ERROR: {err}')
+        exit(err)
+    else: logger.info(f'Export of playlists from Music was successful.')
+    
+#proto main
+logger=setLogger()
+exportPlaylists(logger)
 
 
 sourceDir = '/Volumes/Media/Shared Music/Music Library' # Source of all music
@@ -81,7 +105,6 @@ additions=[f for f in sourceList if f.replace(".m4a", ".mp3").replace(".M4A", ".
 removals=[f for f in mp3List if f not in sourceList and f.replace(".mp3", ".m4a") not in sourceList and f.replace(".mp3", ".M4A") not in sourceList ]
 updates=[f for f in sourceList if (f not in additions and (sourceDates[f]>mp3Dates[f.replace(".m4a", ".mp3").replace(".M4A", ".mp3")] or sourceDates[f]>mp3Dates[f.replace(".m4a", ".mp3").replace(".M4A", ".mp3")])) ]
 
-logger.info(pformat(additions[0:3]))
 if len(additions)>3: print ("of "+str(len(additions)))
 logger.info("Additions to "+sourceDir+" not in "+mp3Dir+":")
 logger.info(pformat(additions[0:3]))
@@ -115,8 +138,8 @@ logger.info("Empty Directories: ")
 logger.info(pformat(emptydirs[0:30]))
 if len(emptydirs)>3: logger.info("of "+str(len(emptydirs)))
 
-# Convert video format
-
+# Convert video format and clean the metadata to make it palatable to Pure consumers
+cleaner=metadataCleaning.MDcleaner(logger)
 import ffmpeg, shutil
 # Input and output file paths
 if len(updates+additions)>0:
@@ -124,17 +147,26 @@ if len(updates+additions)>0:
     copied=0
     skipped=0
     for f in updates+additions:
-        if (f.find(".m4a") > -1 and f.find("NOT Lydia Mordkovich") >-1) and transcoded<=transcodeConstraint:
+        if f.find(".m4a") > -1 and transcoded<=transcodeConstraint:
             input_path = sourceDir+"/"+f
             output_path = mp3Dir+"/"+f.replace(".m4a", ".mp3").replace(".M4A", ".mp3")
             output_dir = "/".join(output_path.split("/")[0:-1])
             os.makedirs(output_dir, exist_ok=True)
             try:
-                ffmpeg.input(input_path).output(output_path,loglevel="quiet").run(overwrite_output=True)#-map_metadata -1  -f ffmetadata metadata.txt
+                #breakpoint() # transcoding imminent
+                ffmpeg.input(input_path).output(output_path,loglevel="quiet", acodec='mp3', joint_stereo=1) \
+                    .run(overwrite_output=True) # ouput(,acodec="copy"  causes error
+                                                # need to find a way to specify -codec:a libmp3lame  -q:a 3
+                                                # and  -joint_stereo 1
                 if f in updates: msgInsert = "updated"
                 else: msgInsert = "missing"
                 transcoded=transcoded+1
-                logger.info(f"Successfully converted troiublesome file {msgInsert} {input_path} to {output_path}. ({transcoded+copied} of {len(updates+additions)}). ")
+                logger.info(f"Successfully converted troublesome file {msgInsert} {input_path} to {output_path}. ({transcoded+copied} of {len(updates+additions)}). ")
+                if cleaner.report(output_path)=="Overlength":
+                    cleanResult=cleaner.clean(output_path)
+                    if cleanResult!= "Cleaned":
+                        os.remove(output_path)
+                        raise Exception(f"Cleaning error: {cleanResult}") # Make it palatable to Pure radio
             except ffmpeg.Error as e:
                 logger.debug(f"An error occurred attempting to transcode {f}: {e}")
                 raise Exception(f"An error occurred: {e} attempting to transcode {f}")
@@ -147,11 +179,24 @@ if len(updates+additions)>0:
             output_dir = "/".join(output_path.split("/")[0:-1])
             os.makedirs(output_dir, exist_ok=True)
             try:
-                ffmpeg.input(input_path).output(output_path,loglevel="quiet").run(overwrite_output=True)
+                
+                #  "-acodec copy"   recommneded by https://superuser.com/questions/704493/ffmpeg-convert-m4a-to-mp3-without-significant-loss
+                ffmpeg.input(input_path).output(output_path,loglevel="quiet").run(overwrite_output=True) # output(,acodec="copy" causes error
                 if f in updates: msgInsert = "updated"
                 else: msgInsert = "missing"
                 transcoded=transcoded+1
                 logger.info(f"Successfully converted {msgInsert} {input_path} to {output_path}. ({transcoded+copied} of {len(updates+additions)}). ")
+                if cleaner.report(output_path)=="Overlength": # Make it palatable to Pure radio
+                    cleanResult=cleaner.clean(output_path)
+                    if cleanResult!= "Cleaned":
+                        os.remove(output_path)
+                        raise Exception(f"Cleaning error: {cleanResult}")
+                else:
+                    cleanResult=cleaner.clean(output_path) # Clean it anyway to get rid of TXXX frames
+                    if cleanResult!= "Cleaned":
+                        os.remove(output_path)
+                        raise Exception(f"Cleaning error: {cleanResult}")
+                
             except ffmpeg.Error as e:
                 logger.debug(f"An error occurred attempting to transcode {f}: {e}")
                 raise Exception(f"An error occurred: {e} attempting to transcode {f}")
@@ -167,7 +212,11 @@ if len(updates+additions)>0:
                 if rc==output_path:
                     copied = copied+1
                     logger.info(f"Copied {msgInsert} {f} to {output_path}. ({transcoded+copied+skipped} of {len(updates+additions)}). ")
-                    
+                    if cleaner.report(output_path)=="Overlength":
+                        cleanResult=cleaner.clean(output_path)
+                        if cleanResult!= "Cleaned":
+                            os.remove(output_path)
+                            raise Exception(f"Cleaning error: {cleanResult}") # Make it palatable to Pure radio
                 else:
                     raise Exception(f"Failed copy of {input_path} to {output_path}. cp returned {rc}")
         elif f.lower().find(".m3u") >-1 and copied<=copyConstraint:
@@ -207,8 +256,11 @@ else: logger.info("No transcoding or copying needed. ")
 if len(emptydirs)>0:
     emptied=0
     for f in emptydirs:
-        #os.path.rmdir()
-        logger.info(f"Non-Deleted empty directory {f}")
+        try: #it may be that the directory has been repopulated by transcoding.
+            os.removedirs(f)
+        except OSError as e:
+            logger.info(f"Attempt to delete sometime-empty directory {f} failed with error: {e}")
+        else: logger.info(f"Deleted empty directory {f}")
 """
 # Should repeat the exercise until there are none left.
 # ... and note that some directories which started out empty may be filled during transcoding.
