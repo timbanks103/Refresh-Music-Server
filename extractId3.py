@@ -17,117 +17,102 @@
 import os.path, pprint
 
 import ffmpeg
-import os, sys, logging
-# One of the following may work... (tbc)
-from mutagen.id3  import ID3
-from mutagen.mp4 import MP4
+from PIL import Image
+from io import BytesIO
+import metadataCleaning
 
-import eyed3
-import eyed3.plugins.jsontag as jsontag
-from tinytag import TinyTag
-import audio_metadata
+import os, sys, logging, json
+from pathlib import Path
+from pprint import pformat, pprint
+from mutagen.id3 import ID3, TALB, TCOM, TIT1, TIT2, TIT3, TRCK, TPOS, APIC, TPE1, TPE2, TXXX, TCON, TDRC, TENC, TSSE
+from mutagen.mp3 import MP3
+from functools import reduce
 
-import json
+# Match a string in any item in a list of strings
+def smatch(string,matchList):
+    rlist=[]
+    for m in matchList:
+        if m in string: rlist.append(m)
+    return rlist
 
-file_handler = logging.FileHandler(filename='extractId3.log')
-stdout_handler = logging.StreamHandler(stream=sys.stdout)
-handlers = [file_handler, stdout_handler]
-logging.basicConfig(
-        format='[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s',
-        handlers=handlers,
-        level=logging.INFO)
-logger = logging.getLogger(__name__)
+def main():
+    file_handler = logging.FileHandler(filename='extractId3.log')
+    stdout_handler = logging.StreamHandler(stream=sys.stdout)
+    handlers = [file_handler, stdout_handler]
+    logging.basicConfig(
+            format='[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s',
+            handlers=handlers,
+            level=logging.DEBUG)
+    logger = logging.getLogger(__name__)
 
+    cleaner=metadataCleaning.MDcleaner(logger)
+    cleaner.logger.setLevel(logging.DEBUG)
 
-
-def show_info(path):
-    
-    audio.tag=TinyTag.get(path)
-    """
-    audio = eyed3.load(path)
-    if not hasattr(audio, 'tag'):
-            audio.tag= ID3(path)
-            if not hasattr(audio, 'tag'):
-                audio.initTag()
-    """
-            
-    #audio.tag.release_date="1991"
-    #audio.tag.save()
-    #pprint.pprint(dir(audio.tag))
-    
-    """print(audio.tag.getBestDate())
-    print(audio.tag.artist)
-    print(audio.tag.album)
-    print(audio.tag.title)
-    """
-    
-    return  jsonaudio.tag
-    
-def json(path):
-    import json
-    import audio_metadata
-    
-
-    #audioTag=TinyTag.get(path)
-    """
-    audio = eyed3.load(path)
-    if not hasattr(audio, 'tag'):
-            audio.tag= ID3(path)
-            if not hasattr(audio, 'tag'):
-                audio.initTag()
-    """
-    """
-    if path.lower().endswith("m4a"): audioTag=MP4(path)
-    elif path.lower().endswith("mp3"): audioTag= ID3(path)
-    """
-    #audio.tag.release_date="1991"
-    #audio.tag.save()
-    #pprint.pprint(dir(audio.tag))
-    
-    """print(audio.tag.getBestDate())
-    print(audio.tag.artist)
-    print(audio.tag.album)
-    print(audio.tag.title)
-    """
-    metadata = audio_metadata.load(path)
-    breakpoint()
-    return  json.dumps(metadata)  #jsontag.audioFileToJson(audio)
-        
-# Extract metadata including artwork
-libraryPath = os.path.join('/Volumes',
-                    'Media',
-                    'Shared Music',
-                    'MusicMP3',
-                    )
-
-metaDataRootPath = os.path.join('/Volumes',
+    # Extract metadata including artwork
+    libraryPath = os.path.join('/Volumes',
                         'Media',
                         'Shared Music',
-                        'm4a Archive',
-                        'iTunes',
-                        'metaData'
+                        'MusicMP3',
                         )
-"""
-for (r,ds,ls) in os.walk(libraryPath,topdown=True):
-  #  if len(ds)==0:
-        for l in ls:
-            if (l.find(".m4a") > -1 or l.find(".mp3") > -1 ):
-                jsonTags = json(os.path.join(libraryPath,r,l))
-                breakpoint()
-                output_path = os.path.join(metaDataRootPath,r,l)
-                output_dir = "/".join(output_path.split("/")[0:-1])
-                os.makedirs(output_dir, exist_ok=True)
-                with open(output_path, 'w') as f:
-                    f.write(jsonTags)
-"""
-# mutagen seems an easier module to use than eyed3
 
+    metaDataRootPath = os.path.join('/Volumes',
+                            'Media',
+                            'Shared Music',
+                            'm4a Archive',
+                            'iTunes',
+                            'metaData'
+                            )
+                            
 
-#                ffmpeg.input(input_path).output(output_path,loglevel="quiet").run(overwrite_output=True"""-map_metadata -1  -f ffmetadata metadata.txt    """)
-
-
-
-"""  Take note of encoder and bit rate parameters
-Encoder    Param    Qmin    Qmax    Qdef    Recommended    Notes
-libfdk_aac    -vbr    1    5    ?    4 (~128kbps)    Currently the highest quality encoder.
-"""
+    albumNamesTracks={   # Match partial album name (distinct values) and track number prefix
+                    #"Sonatas and Partitas":"2-08",
+                    "Sonatas and Partitas":"2-16",
+                    "Goldberg Variations!":"3-04",
+                    "Nocturnes!":"",
+                    "Best Of Satie!":"",
+                    "Rake's Progress!":"1-0"
+                    }
+                    
+    
+    cleaner.logger.info(f"Searching for paths in {cleaner.dir} matching any of {pformat(albumNamesTracks)}.")
+    for (r,ds,ls) in os.walk(cleaner.dir,topdown=True):
+        #if ds==[]:
+        for an in smatch(r,albumNamesTracks.keys()):
+            for l in filter(lambda m: m.endswith(".mp3") and m not in cleaner.fnameExclusions, ls):
+                filePath = os.path.join(r,l)#  lcleaner.dir+"/"+r[cleaner.dlen+1:]+"/"+l
+                if l.startswith(albumNamesTracks[an]):
+                    
+                    if cleaner.report(filePath).startswith("Overlength"):
+                        cleaner.longList.append(filePath)
+                    
+                    
+                    
+                    
+                    
+                    #if len(sys.argv)>1 and sys.argv[1]=="clean":
+                    #    cleaner.clean(filePath) # Cleans all frames (including dubious TXXX and  frames) and creates a new ID3v2.2 tag
+                                                # using simplified original data.
+                     
+                        frames = ID3(filePath)
+                        picframes=frames.getall("APIC")
+                        if(len(picframes)>0):
+                            breakpoint()
+                            # Compress the image
+                            img = Image.open(BytesIO(picframes[0].data))
+                            
+                            ###imgPath=os.path.join(r,l.split()[0]+" Cover.jpg")
+                            ###img.save(imgPath)
+                        
+                            byteIO = BytesIO()
+                            img.save(byteIO, format='JPEG', optimize=True)
+                            picframes[0].data=byteIO.getvalue()
+                            picframes[0].mime="image/jpeg"
+                            desc="compressed by metadataCleaning"
+                            frames.save(filePath)
+                    
+                    
+                    
+                    
+if __name__ == "__main__":
+    main()
+    exit

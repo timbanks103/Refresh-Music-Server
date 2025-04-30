@@ -1,370 +1,939 @@
-  File "/Users/timbanks/MyWork/Refresh Music Server/transcoding.py", line 194
-    else cleanResult=cleaner.clean(output_path) # Clean it anyway to get rid of TXXX frames
-         ^^^^^^^^^^^
-SyntaxError: expected ':'
-[2025 Apr 26 23:08:20] {minimRescanWrapper.zsh} 
-+*rescan
-+:status=0
-+*rescan
-+:status=0
-[2025-04-26 23:09:21,569] {transcoding.py:51} INFO - Export of playlists from Music was successful.
-[2025-04-26 23:09:22,766] {transcoding.py:109} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
-[2025-04-26 23:09:22,768] {transcoding.py:110} INFO - ['Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-01 Partita no '
- '2_ Allemanda.m4a',
- 'Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-02 '
- 'Corrente.m4a',
- 'Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-03 '
- 'Sarabanda.m4a']
-[2025-04-26 23:09:22,768] {transcoding.py:112} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
-[2025-04-26 23:09:22,768] {transcoding.py:113} INFO - []
-[2025-04-26 23:09:22,768] {transcoding.py:115} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
-[2025-04-26 23:09:22,768] {transcoding.py:116} INFO - ['/./1970-1995.m3u8', '/./Bedtime.m3u8', '/./Christmas.m3u8']
-[2025-04-26 23:09:22,768] {transcoding.py:117} INFO - of 6
-[2025-04-26 23:09:22,790] {transcoding.py:137} INFO - Empty Directories: 
-[2025-04-26 23:09:22,790] {transcoding.py:138} INFO - []
-[2025-04-26 23:09:22,790] {metadataCleaning.py:83} DEBUG - Metadatacleaning for files with ?? maybe over-long metadata (title over 63 characters):
-[2025-04-26 23:09:22,869] {transcoding.py:243} INFO - Copied/translated updated /./1970-1995.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./1970-1995.m3u8. (1 of 11). 
-[2025-04-26 23:09:22,870] {transcoding.py:243} INFO - Copied/translated updated /./Bedtime.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./Bedtime.m3u8. (2 of 11). 
-[2025-04-26 23:09:22,883] {transcoding.py:243} INFO - Copied/translated updated /./Christmas.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./Christmas.m3u8. (3 of 11). 
-[2025-04-26 23:09:22,885] {transcoding.py:243} INFO - Copied/translated updated /./May 17.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./May 17.m3u8. (4 of 11). 
-[2025-04-26 23:09:22,886] {transcoding.py:243} INFO - Copied/translated updated /./MusicRadio.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./MusicRadio.m3u8. (5 of 11). 
-[2025-04-26 23:09:22,886] {transcoding.py:243} INFO - Copied/translated updated /./Test.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music//./Test.m3u8. (6 of 11). 
-[2025-04-26 23:09:30,429] {transcoding.py:164} INFO - Successfully converted troublesome file missing /Volumes/Media/Shared Music/Music Library/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-01 Partita no 2_ Allemanda.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-01 Partita no 2_ Allemanda.mp3. (7 of 11). 
-[2025-04-26 23:09:30,529] {metadataCleaning.py:154} INFO - 
-
-
-Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-01 Partita no 2_ Allemanda.mp3:
+[2025-04-30 18:28:21,265] {transcoding.py:54} INFO - Export of playlists from Music was successful.
+of 17
+[2025-04-30 18:28:21,739] {transcoding.py:116} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-04-30 18:28:21,739] {transcoding.py:117} INFO - ['Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le '
+ 'Sacre Du Printemps/1-01 Stravinsky_ Firebird Suite - 1. Introduction.m4a',
+ 'Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le '
+ 'Sacre Du Printemps/1-02 Stravinsky_ Firebird Suite - 2. Var. Of The '
+ 'Firebird.m4a',
+ 'Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le '
+ "Sacre Du Printemps/1-03 Stravinsky_ Firebird Suite - 3. The Princesses' "
+ 'Round.m4a']
+of 17
+[2025-04-30 18:28:21,739] {transcoding.py:119} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-04-30 18:28:21,740] {transcoding.py:120} INFO - ['Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le '
+ 'Sacre Du Printemps [Disc 1]/1-01 Stravinsky_ Firebird Suite - 1. '
+ 'Introduction.mp3',
+ 'Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le '
+ 'Sacre Du Printemps [Disc 1]/1-02 Stravinsky_ Firebird Suite - 2. Var. Of The '
+ 'Firebird.mp3',
+ 'Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le '
+ 'Sacre Du Printemps [Disc 1]/1-03 Stravinsky_ Firebird Suite - 3. The '
+ "Princesses' Round.mp3"]
+[2025-04-30 18:28:21,740] {transcoding.py:121} INFO - of 17
+[2025-04-30 18:28:21,740] {transcoding.py:122} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-04-30 18:28:21,740] {transcoding.py:123} INFO - []
+[2025-04-30 18:28:21,774] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-01 Stravinsky_ Firebird Suite - 1. Introduction.mp3 (1 of 17). 
+[2025-04-30 18:28:21,774] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-02 Stravinsky_ Firebird Suite - 2. Var. Of The Firebird.mp3 (2 of 17). 
+[2025-04-30 18:28:21,774] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-03 Stravinsky_ Firebird Suite - 3. The Princesses' Round.mp3 (3 of 17). 
+[2025-04-30 18:28:21,775] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-04 Stravinsky_ Firebird Suite - 4. Infernal Dance Of King Kashchei.mp3 (4 of 17). 
+[2025-04-30 18:28:21,775] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-05 Stravinsky_ Firebird Suite - 5. Lullaby.mp3 (5 of 17). 
+[2025-04-30 18:28:21,775] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-06 Stravinsky_ Firebird Suite - 6. Finale.mp3 (6 of 17). 
+[2025-04-30 18:28:21,775] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-07 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 1. Introduction (Lento).mp3 (7 of 17). 
+[2025-04-30 18:28:21,775] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-08 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 2. Dance Of The Young Girls.mp3 (8 of 17). 
+[2025-04-30 18:28:21,775] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-09 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 3. Mock Abduction.mp3 (9 of 17). 
+[2025-04-30 18:28:21,775] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-10 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 4. Spring Round Dances.mp3 (10 of 17). 
+[2025-04-30 18:28:21,775] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-11 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 5. Games Of The Rival Tribes, Adoration Of The Earth, The Wise Elder.mp3 (11 of 17). 
+[2025-04-30 18:28:21,776] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-12 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 6. Dance Of The Earth.mp3 (12 of 17). 
+[2025-04-30 18:28:21,776] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-13 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 1. Introduction (Largo).mp3 (13 of 17). 
+[2025-04-30 18:28:21,776] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-14 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 2. Mystical Circles Of The Young Girls.mp3 (14 of 17). 
+[2025-04-30 18:28:21,776] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-15 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 3. Glorification Of The Chosen Victim, Summoning Of The Ancestors.mp3 (15 of 17). 
+[2025-04-30 18:28:21,777] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-16 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 4. Ritual Of The Ancestors.mp3 (16 of 17). 
+[2025-04-30 18:28:21,777] {transcoding.py:135} INFO - Removed extraneous file /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]/1-17 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 5. Sacrifical Dance, The Chosen Victim.mp3 (17 of 17). 
+[2025-04-30 18:28:21,802] {transcoding.py:146} INFO - Empty Directories: 
+[2025-04-30 18:28:21,802] {transcoding.py:147} INFO - ['/Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony '
+ 'Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]']
+[2025-04-30 18:28:25,587] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-01 Stravinsky_ Firebird Suite - 1. Introduction.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-01 Stravinsky_ Firebird Suite - 1. Introduction.mp3. (1 of 17). 
+[2025-04-30 18:28:25,593] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-01 Stravinsky_ Firebird Suite - 1. Introduction.mp3:
 {'headerFlags': '0x0 The header is extended: False',
 'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
 'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
 'mp3Score': 3,
-'size': 4942613,
-'tagSize': '0x2, 0x2d, 0x56, 0xb (= decimal 4942603 excluding 10 bytes for '
+'size': 156353,
+'tagSize': '0x0, 0x9, 0x45, 0x37 (= decimal 156343 excluding 10 bytes for '
            'header)',
 'unknown_frames': [],
 'version': (2, 4, 0)}
-[2025-04-26 23:09:30,530] {metadataCleaning.py:155} INFO - 
 
+
+
+[2025-04-30 18:28:25,593] {metadataCleaning.py:242} INFO - 
 MP3 info: 
   {'bitrate': 128000,
  'bitrate_mode': <BitrateMode.CBR: 1>,
  'channels': 2,
  'encoder_settings': '',
- 'frame_offset': 4942613,
+ 'frame_offset': 156353,
  'layer': 3,
- 'length': 344.84244897959184,
+ 'length': 202.8930612244898,
  'mode': 0,
  'padding': False,
  'protected': False,
  'sample_rate': 44100,
  'sketchy': False,
  'version': 1}
-[2025-04-26 23:09:30,530] {metadataCleaning.py:164} DEBUG - 
 
 
-Frame contents: 
-APIC=other,  (image/png, 4941659 bytes)
-TALB=Bach: Sonatas and Partitas for solo Violin
-TCOM=J.S. Bach
-TCON=Classical
-TDRC=1990
-TIT1=Partita No. 2 in D Minor, BWV 1004
-TIT2=Partita no 2: Allemanda
-TPE1=Lydia Mordkovitch
-TPE2=Lydia Mordkovitch
-TPOS=2/2
-TRCK=1/16
-TSSE=Lavf61.7.100
-TXXX=Encoding Params=vers
-TXXX=TCMP=0
-TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3N72R33991616V68DE8AA8BD41D9B6759DCF7050DF494967P0
-TXXX=compatible_brands=M4A mp42isom
-TXXX=gapless_playback=0
-TXXX=iTunNORM= 000001A2 0000019B 0000390E 00002F66 0003647B 00030A80 00003FE0 00004622 0002FA72 00044DAD
-TXXX=iTunSMPB= 00000000 00000840 00000290 0000000000E80530 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
-TXXX=iTunes_CDDB_IDs=16++
-TXXX=major_brand=M4A 
-TXXX=minor_version=0
-TXXX=sort_artist=Lydia Mordkovitch
-[2025-04-26 23:09:30,531] {metadataCleaning.py:165} DEBUG - Text lengths: 
-{
-    "TALB": 42,
-    "TCOM": 9,
-    "TIT1": 34,
-    "TIT2": 23
-}
-[2025-04-26 23:09:34,182] {transcoding.py:164} INFO - Successfully converted troublesome file missing /Volumes/Media/Shared Music/Music Library/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-02 Corrente.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-02 Corrente.mp3. (8 of 11). 
-[2025-04-26 23:09:34,352] {metadataCleaning.py:154} INFO - 
 
-
-Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-02 Corrente.mp3:
+[2025-04-30 18:28:25,594] {metadataCleaning.py:144} INFO - 'Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-01 Stravinsky_ Firebird Suite - 1. Introduction.mp3'
+[2025-04-30 18:28:27,221] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-02 Stravinsky_ Firebird Suite - 2. Var. Of The Firebird.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-02 Stravinsky_ Firebird Suite - 2. Var. Of The Firebird.mp3. (2 of 17). 
+[2025-04-30 18:28:27,224] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-02 Stravinsky_ Firebird Suite - 2. Var. Of The Firebird.mp3:
 {'headerFlags': '0x0 The header is extended: False',
 'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
 'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
 'mp3Score': 3,
-'size': 4942597,
-'tagSize': '0x2, 0x2d, 0x55, 0x7b (= decimal 4942587 excluding 10 bytes for '
+'size': 156362,
+'tagSize': '0x0, 0x9, 0x45, 0x40 (= decimal 156352 excluding 10 bytes for '
            'header)',
 'unknown_frames': [],
 'version': (2, 4, 0)}
-[2025-04-26 23:09:34,352] {metadataCleaning.py:155} INFO - 
 
+
+
+[2025-04-30 18:28:27,224] {metadataCleaning.py:242} INFO - 
 MP3 info: 
   {'bitrate': 128000,
  'bitrate_mode': <BitrateMode.CBR: 1>,
  'channels': 2,
  'encoder_settings': '',
- 'frame_offset': 4942597,
+ 'frame_offset': 156362,
  'layer': 3,
- 'length': 175.96081632653062,
+ 'length': 79.30775510204082,
  'mode': 0,
  'padding': False,
  'protected': False,
  'sample_rate': 44100,
  'sketchy': False,
  'version': 1}
-[2025-04-26 23:09:34,352] {metadataCleaning.py:164} DEBUG - 
 
 
-Frame contents: 
-APIC=other,  (image/png, 4941659 bytes)
-TALB=Bach: Sonatas and Partitas for solo Violin
-TCOM=J.S. Bach
-TCON=Classical
-TDRC=1990
-TIT1=Partita No. 2 in D Minor, BWV 1004
-TIT2=Corrente
-TPE1=Lydia Mordkovitch
-TPE2=Lydia Mordkovitch
-TPOS=2/2
-TRCK=2/16
-TSSE=Lavf61.7.100
-TXXX=Encoding Params=vers
-TXXX=TCMP=0
-TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3O7R33991617V5839FE3A002ED14BDE1D87C781BE1CBC26P3
-TXXX=compatible_brands=M4A mp42isom
-TXXX=gapless_playback=0
-TXXX=iTunNORM= 00000201 000001EE 000026F6 00002370 00011C71 00020BFD 00004AD9 000047F6 0001DF5D 0001DF8B
-TXXX=iTunSMPB= 00000000 00000840 00000360 0000000000765C60 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
-TXXX=iTunes_CDDB_IDs=16++
-TXXX=major_brand=M4A 
-TXXX=minor_version=0
-TXXX=sort_artist=Lydia Mordkovitch
-[2025-04-26 23:09:34,352] {metadataCleaning.py:165} DEBUG - Text lengths: 
-{
-    "TALB": 42,
-    "TCOM": 9,
-    "TIT1": 34,
-    "TIT2": 8
-}
-[2025-04-26 23:09:40,169] {transcoding.py:164} INFO - Successfully converted troublesome file missing /Volumes/Media/Shared Music/Music Library/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-03 Sarabanda.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-03 Sarabanda.mp3. (9 of 11). 
-[2025-04-26 23:09:40,363] {metadataCleaning.py:154} INFO - 
 
-
-Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-03 Sarabanda.mp3:
+[2025-04-30 18:28:27,225] {metadataCleaning.py:144} INFO - 'Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-02 Stravinsky_ Firebird Suite - 2. Var. Of The Firebird.mp3'
+[2025-04-30 18:28:33,910] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-03 Stravinsky_ Firebird Suite - 3. The Princesses' Round.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-03 Stravinsky_ Firebird Suite - 3. The Princesses' Round.mp3. (3 of 17). 
+[2025-04-30 18:28:34,044] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-03 Stravinsky_ Firebird Suite - 3. The Princesses' Round.mp3:
 {'headerFlags': '0x0 The header is extended: False',
 'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
 'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
 'mp3Score': 3,
-'size': 4942600,
-'tagSize': '0x2, 0x2d, 0x55, 0x7e (= decimal 4942590 excluding 10 bytes for '
+'size': 156361,
+'tagSize': '0x0, 0x9, 0x45, 0x3f (= decimal 156351 excluding 10 bytes for '
            'header)',
 'unknown_frames': [],
 'version': (2, 4, 0)}
-[2025-04-26 23:09:40,363] {metadataCleaning.py:155} INFO - 
 
+
+
+[2025-04-30 18:28:34,044] {metadataCleaning.py:242} INFO - 
 MP3 info: 
   {'bitrate': 128000,
  'bitrate_mode': <BitrateMode.CBR: 1>,
  'channels': 2,
  'encoder_settings': '',
- 'frame_offset': 4942600,
+ 'frame_offset': 156361,
  'layer': 3,
- 'length': 271.9085714285714,
+ 'length': 323.8922448979592,
  'mode': 0,
  'padding': False,
  'protected': False,
  'sample_rate': 44100,
  'sketchy': False,
  'version': 1}
-[2025-04-26 23:09:40,364] {metadataCleaning.py:164} DEBUG - 
 
 
-Frame contents: 
-APIC=other,  (image/png, 4941659 bytes)
-TALB=Bach: Sonatas and Partitas for solo Violin
-TCOM=J.S. Bach
-TCON=Classical
-TDRC=1990
-TIT1=Partita No. 2 in D Minor, BWV 1004
-TIT2=Sarabanda
-TPE1=Lydia Mordkovitch
-TPE2=Lydia Mordkovitch
-TPOS=2/2
-TRCK=3/16
-TSSE=Lavf61.7.100
-TXXX=Encoding Params=vers
-TXXX=TCMP=0
-TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3N53R33991618U3781515E5253C01EC4EF654373F60DC6E76P0
-TXXX=compatible_brands=M4A mp42isom
-TXXX=gapless_playback=0
-TXXX=iTunNORM= 00000115 00000146 000023B9 00002F33 00017211 00017211 00003EB8 000043C4 00016518 00016518
-TXXX=iTunSMPB= 00000000 00000840 00000310 0000000000B6ECB0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
-TXXX=iTunes_CDDB_IDs=16++
-TXXX=major_brand=M4A 
-TXXX=minor_version=0
-TXXX=sort_artist=Lydia Mordkovitch
-[2025-04-26 23:09:40,364] {metadataCleaning.py:165} DEBUG - Text lengths: 
-{
-    "TALB": 42,
-    "TCOM": 9,
-    "TIT1": 34,
-    "TIT2": 9
-}
-[2025-04-26 23:09:45,957] {transcoding.py:164} INFO - Successfully converted troublesome file missing /Volumes/Media/Shared Music/Music Library/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-04 Giga.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-04 Giga.mp3. (10 of 11). 
-[2025-04-26 23:09:46,139] {metadataCleaning.py:154} INFO - 
 
-
-Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-04 Giga.mp3:
+[2025-04-30 18:28:34,046] {metadataCleaning.py:144} INFO - "Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-03 Stravinsky_ Firebird Suite - 3. The Princesses' Round.mp3"
+[2025-04-30 18:28:39,729] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-04 Stravinsky_ Firebird Suite - 4. Infernal Dance Of King Kashchei.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-04 Stravinsky_ Firebird Suite - 4. Infernal Dance Of King Kashchei.mp3. (4 of 17). 
+[2025-04-30 18:28:39,804] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-04 Stravinsky_ Firebird Suite - 4. Infernal Dance Of King Kashchei.mp3:
 {'headerFlags': '0x0 The header is extended: False',
 'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
 'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
 'mp3Score': 3,
-'size': 4942595,
-'tagSize': '0x2, 0x2d, 0x55, 0x79 (= decimal 4942585 excluding 10 bytes for '
+'size': 156372,
+'tagSize': '0x0, 0x9, 0x45, 0x4a (= decimal 156362 excluding 10 bytes for '
            'header)',
 'unknown_frames': [],
 'version': (2, 4, 0)}
-[2025-04-26 23:09:46,139] {metadataCleaning.py:155} INFO - 
 
+
+
+[2025-04-30 18:28:39,804] {metadataCleaning.py:242} INFO - 
 MP3 info: 
   {'bitrate': 128000,
  'bitrate_mode': <BitrateMode.CBR: 1>,
  'channels': 2,
  'encoder_settings': '',
- 'frame_offset': 4942595,
+ 'frame_offset': 156372,
  'layer': 3,
- 'length': 254.7983673469388,
+ 'length': 283.66367346938773,
  'mode': 0,
  'padding': False,
  'protected': False,
  'sample_rate': 44100,
  'sketchy': False,
  'version': 1}
-[2025-04-26 23:09:46,140] {metadataCleaning.py:164} DEBUG - 
 
 
-Frame contents: 
-APIC=other,  (image/png, 4941659 bytes)
-TALB=Bach: Sonatas and Partitas for solo Violin
-TCOM=J.S. Bach
-TCON=Classical
-TDRC=1990
-TIT1=Partita No. 2 in D Minor, BWV 1004
-TIT2=Giga
-TPE1=Lydia Mordkovitch
-TPE2=Lydia Mordkovitch
-TPOS=2/2
-TRCK=4/16
-TSSE=Lavf61.7.100
-TXXX=Encoding Params=vers
-TXXX=TCMP=0
-TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3N99R33991619U2380B3FC05D4402C8A0C41966B9477F70AAP2
-TXXX=compatible_brands=M4A mp42isom
-TXXX=gapless_playback=0
-TXXX=iTunNORM= 0000022B 00000206 00003D2B 00003F3A 00016104 00004CD3 00004CB1 000049E3 0000AA9C 000295C4
-TXXX=iTunSMPB= 00000000 00000840 0000015C 0000000000AB6E64 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
-TXXX=iTunes_CDDB_IDs=16++
-TXXX=major_brand=M4A 
-TXXX=minor_version=0
-TXXX=sort_artist=Lydia Mordkovitch
-[2025-04-26 23:09:46,140] {metadataCleaning.py:165} DEBUG - Text lengths: 
-{
-    "TALB": 42,
-    "TCOM": 9,
-    "TIT1": 34,
-    "TIT2": 4
-}
-[2025-04-26 23:10:08,013] {transcoding.py:164} INFO - Successfully converted troublesome file missing /Volumes/Media/Shared Music/Music Library/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-05 Ciaccona.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-05 Ciaccona.mp3. (11 of 11). 
-[2025-04-26 23:10:08,088] {metadataCleaning.py:154} INFO - 
 
-
-Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-05 Ciaccona.mp3:
+[2025-04-30 18:28:39,805] {metadataCleaning.py:144} INFO - 'Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-04 Stravinsky_ Firebird Suite - 4. Infernal Dance Of King Kashchei.mp3'
+[2025-04-30 18:28:44,765] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-05 Stravinsky_ Firebird Suite - 5. Lullaby.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-05 Stravinsky_ Firebird Suite - 5. Lullaby.mp3. (5 of 17). 
+[2025-04-30 18:28:44,772] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-05 Stravinsky_ Firebird Suite - 5. Lullaby.mp3:
 {'headerFlags': '0x0 The header is extended: False',
 'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
 'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
 'mp3Score': 3,
-'size': 4942598,
-'tagSize': '0x2, 0x2d, 0x55, 0x7c (= decimal 4942588 excluding 10 bytes for '
+'size': 156347,
+'tagSize': '0x0, 0x9, 0x45, 0x31 (= decimal 156337 excluding 10 bytes for '
            'header)',
 'unknown_frames': [],
 'version': (2, 4, 0)}
-[2025-04-26 23:10:08,088] {metadataCleaning.py:155} INFO - 
 
+
+
+[2025-04-30 18:28:44,772] {metadataCleaning.py:242} INFO - 
 MP3 info: 
   {'bitrate': 128000,
  'bitrate_mode': <BitrateMode.CBR: 1>,
  'channels': 2,
  'encoder_settings': '',
- 'frame_offset': 4942598,
+ 'frame_offset': 156347,
  'layer': 3,
- 'length': 949.890612244898,
+ 'length': 241.84163265306123,
  'mode': 0,
  'padding': False,
  'protected': False,
  'sample_rate': 44100,
  'sketchy': False,
  'version': 1}
-[2025-04-26 23:10:08,089] {metadataCleaning.py:164} DEBUG - 
 
 
+
+[2025-04-30 18:28:44,773] {metadataCleaning.py:144} INFO - 'Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-05 Stravinsky_ Firebird Suite - 5. Lullaby.mp3'
+[2025-04-30 18:28:48,247] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-06 Stravinsky_ Firebird Suite - 6. Finale.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-06 Stravinsky_ Firebird Suite - 6. Finale.mp3. (6 of 17). 
+[2025-04-30 18:28:48,253] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-06 Stravinsky_ Firebird Suite - 6. Finale.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 156346,
+'tagSize': '0x0, 0x9, 0x45, 0x30 (= decimal 156336 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-04-30 18:28:48,253] {metadataCleaning.py:242} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 156346,
+ 'layer': 3,
+ 'length': 191.47755102040816,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 18:28:48,254] {metadataCleaning.py:144} INFO - 'Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-06 Stravinsky_ Firebird Suite - 6. Finale.mp3'
+[2025-04-30 18:28:52,068] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-07 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 1. Introduction (Lento).m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-07 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 1. Introduction (Lento).mp3. (7 of 17). 
+[2025-04-30 18:28:52,074] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-07 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 1. Introduction (Lento).mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 156376,
+'tagSize': '0x0, 0x9, 0x45, 0x4e (= decimal 156366 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-04-30 18:28:52,074] {metadataCleaning.py:242} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 156376,
+ 'layer': 3,
+ 'length': 189.98857142857142,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 18:28:52,074] {metadataCleaning.py:255} INFO - 
 Frame contents: 
-APIC=other,  (image/png, 4941659 bytes)
-TALB=Bach: Sonatas and Partitas for solo Violin
-TCOM=J.S. Bach
+APIC=other,  (image/png, 155424 bytes)
+TALB=Stravinsky: The Firebird Suite, Le Sacre Du Printemps
+TCOM=Stravinsky, Igor (1882-1971)/Igor Stravinsky
 TCON=Classical
-TDRC=1990
-TIT1=Partita No. 2 in D Minor, BWV 1004
-TIT2=Ciaccona
-TPE1=Lydia Mordkovitch
-TPE2=Lydia Mordkovitch
-TPOS=2/2
-TRCK=5/16
+TDRC=1987
+TIT2=Stravinsky: Le Sacre Du Printemps - Pt. 1: 1. Introduction (Lento)
+TPE1=Claudio Abbado: London Symphony Orchestra
+TPOS=1/2
+TRCK=7/17
 TSSE=Lavf61.7.100
 TXXX=Encoding Params=vers
 TXXX=TCMP=0
-TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3N34R33991620V889FE29948F7951A461F90F68EA1EC50CAP2
+TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3M110S3293901U1588C0A4ACB8F8D0C8800B4F169BD3A204AP6
 TXXX=compatible_brands=M4A mp42isom
 TXXX=gapless_playback=0
-TXXX=iTunNORM= 000002B2 000002A0 00004B8E 00003D24 00043575 000177F6 00007029 00006D07 0008D8F1 000A91D9
-TXXX=iTunSMPB= 00000000 00000840 000002F8 00000000027F28C8 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
-TXXX=iTunes_CDDB_IDs=16++
+TXXX=iTunNORM= 0000004A 00000056 000006C3 00000A30 0002562F 00025D42 00002609 00003186 000249D9 00025A16
+TXXX=iTunSMPB= 00000000 00000840 000000C4 00000000007FCEFC 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=17++
 TXXX=major_brand=M4A 
 TXXX=minor_version=0
-TXXX=sort_artist=Lydia Mordkovitch
-[2025-04-26 23:10:08,089] {metadataCleaning.py:165} DEBUG - Text lengths: 
+[2025-04-30 18:28:52,074] {metadataCleaning.py:256} INFO - Text lengths: 
 {
-    "TALB": 42,
-    "TCOM": 9,
-    "TIT1": 34,
-    "TIT2": 8
+    "TIT2": 66,
+    "TCOM": 44,
+    "TALB": 53
 }
-[2025 Apr 26 23:16:54] {minimRescanWrapper.zsh} 
-+*rescan
-+:status=0
-+*rescan
-+:status=0
-[2025 Apr 26 23:45:58] {minimRescanWrapper.zsh} 
-+*rescan
-+:status=0
-+*rescan
-+:status=0
-[2025 Apr 27 00:11:55] {minimRescanWrapper.zsh} 
-+*rescan
-+:status=0
-+*rescan
-+:status=0
-[2025 Apr 27 00:28:50] {minimRescanWrapper.zsh} 
+
+
+
+[2025-04-30 18:28:52,076] {metadataCleaning.py:144} INFO - 'Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-07 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 1. Introduction (Lento).mp3'
+[2025-04-30 18:28:55,761] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-08 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 2. Dance Of The Young Girls.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-08 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 2. Dance Of The Young Girls.mp3. (8 of 17). 
+[2025-04-30 18:28:55,766] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-08 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 2. Dance Of The Young Girls.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 156378,
+'tagSize': '0x0, 0x9, 0x45, 0x50 (= decimal 156368 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-04-30 18:28:55,766] {metadataCleaning.py:242} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 156378,
+ 'layer': 3,
+ 'length': 188.73469387755102,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 18:28:55,766] {metadataCleaning.py:255} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 155424 bytes)
+TALB=Stravinsky: The Firebird Suite, Le Sacre Du Printemps
+TCOM=Stravinsky, Igor (1882-1971)/Igor Stravinsky
+TCON=Classical
+TDRC=1987
+TIT2=Stravinsky: Le Sacre Du Printemps - Pt. 1: 2. Dance Of The Young Girls
+TPE1=Claudio Abbado: London Symphony Orchestra
+TPOS=1/2
+TRCK=8/17
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=vers
+TXXX=TCMP=0
+TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3N45S3293902V486F156B320FB62EC62E7971EB6E878D15P0
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 0000015C 00000162 00008017 00001863 00004A03 000299F0 00006E63 0000759E 00003ADD 00013020
+TXXX=iTunSMPB= 00000000 00000840 000002F8 00000000007EF4C8 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=17++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+[2025-04-30 18:28:55,766] {metadataCleaning.py:256} INFO - Text lengths: 
+{
+    "TIT2": 70,
+    "TCOM": 44,
+    "TALB": 53
+}
+
+
+
+[2025-04-30 18:28:55,767] {metadataCleaning.py:144} INFO - 'Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-08 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 2. Dance Of The Young Girls.mp3'
+[2025-04-30 18:28:57,460] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-09 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 3. Mock Abduction.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-09 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 3. Mock Abduction.mp3. (9 of 17). 
+[2025-04-30 18:28:57,468] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-09 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 3. Mock Abduction.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 156369,
+'tagSize': '0x0, 0x9, 0x45, 0x47 (= decimal 156359 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-04-30 18:28:57,468] {metadataCleaning.py:242} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 156369,
+ 'layer': 3,
+ 'length': 79.33387755102041,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 18:28:57,469] {metadataCleaning.py:144} INFO - 'Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-09 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 3. Mock Abduction.mp3'
+[2025-04-30 18:29:01,884] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-10 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 4. Spring Round Dances.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-10 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 4. Spring Round Dances.mp3. (10 of 17). 
+[2025-04-30 18:29:01,892] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-10 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 4. Spring Round Dances.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 156375,
+'tagSize': '0x0, 0x9, 0x45, 0x4d (= decimal 156365 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-04-30 18:29:01,893] {metadataCleaning.py:242} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 156375,
+ 'layer': 3,
+ 'length': 220.26448979591837,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 18:29:01,893] {metadataCleaning.py:255} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 155424 bytes)
+TALB=Stravinsky: The Firebird Suite, Le Sacre Du Printemps
+TCOM=Stravinsky, Igor (1882-1971)/Igor Stravinsky
+TCON=Classical
+TDRC=1987
+TIT2=Stravinsky: Le Sacre Du Printemps - Pt. 1: 4. Spring Round Dances
+TPE1=Claudio Abbado: London Symphony Orchestra
+TPOS=1/2
+TRCK=10/17
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=vers
+TXXX=TCMP=0
+TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3N26S3293904U108BF8D7DE9E27C891328671332FC9DE4A4P0
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000143 00000198 00001162 00001C0A 0002B257 00022C30 000074BB 0000759B 0001EE9A 000273D8
+TXXX=iTunSMPB= 00000000 00000840 000002DC 0000000000942CE4 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=17++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+[2025-04-30 18:29:01,893] {metadataCleaning.py:256} INFO - Text lengths: 
+{
+    "TIT2": 65,
+    "TCOM": 44,
+    "TALB": 53
+}
+
+
+
+[2025-04-30 18:29:01,894] {metadataCleaning.py:144} INFO - 'Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-10 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 4. Spring Round Dances.mp3'
+[2025-04-30 18:29:05,066] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-11 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 5. Games Of The Rival Tribes, Adoration Of The Earth, The Wise Elder.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-11 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 5. Games Of The Rival Tribes, Adoration Of The Earth, The Wise Elder.mp3. (11 of 17). 
+[2025-04-30 18:29:05,082] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-11 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 5. Games Of The Rival Tribes, Adoration Of The Earth, The Wise Elder.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 156420,
+'tagSize': '0x0, 0x9, 0x45, 0x7a (= decimal 156410 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-04-30 18:29:05,082] {metadataCleaning.py:242} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 156420,
+ 'layer': 3,
+ 'length': 176.03918367346938,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 18:29:05,083] {metadataCleaning.py:255} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 155424 bytes)
+TALB=Stravinsky: The Firebird Suite, Le Sacre Du Printemps
+TCOM=Stravinsky, Igor (1882-1971)/Igor Stravinsky
+TCON=Classical
+TDRC=1987
+TIT2=Stravinsky: Le Sacre Du Printemps - Pt. 1: 5. Games Of The Rival Tribes, Adoration Of The Earth, The Wise Elder
+TPE1=Claudio Abbado: London Symphony Orchestra
+TPOS=1/2
+TRCK=11/17
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=vers
+TXXX=TCMP=0
+TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3N72S3293905V08B0ECA58C90796B88F40821ED0D009267P5
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 000002D5 0000036E 000041EA 000027FF 000132F0 0002065E 000067B3 00007735 0000E74A 00006BAA
+TXXX=iTunSMPB= 00000000 00000840 00000100 0000000000766EC0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=17++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+[2025-04-30 18:29:05,083] {metadataCleaning.py:256} INFO - Text lengths: 
+{
+    "TIT2": 111,
+    "TCOM": 44,
+    "TALB": 53
+}
+
+
+
+[2025-04-30 18:29:05,084] {metadataCleaning.py:144} INFO - 'Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-11 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 5. Games Of The Rival Tribes, Adoration Of The Earth, The Wise Elder.mp3'
+[2025-04-30 18:29:06,400] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-12 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 6. Dance Of The Earth.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-12 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 6. Dance Of The Earth.mp3. (12 of 17). 
+[2025-04-30 18:29:06,415] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-12 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 6. Dance Of The Earth.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 156372,
+'tagSize': '0x0, 0x9, 0x45, 0x4a (= decimal 156362 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-04-30 18:29:06,415] {metadataCleaning.py:242} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 156372,
+ 'layer': 3,
+ 'length': 75.15428571428572,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 18:29:06,416] {metadataCleaning.py:255} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 155424 bytes)
+TALB=Stravinsky: The Firebird Suite, Le Sacre Du Printemps
+TCOM=Stravinsky, Igor (1882-1971)/Igor Stravinsky
+TCON=Classical
+TDRC=1987
+TIT2=Stravinsky: Le Sacre Du Printemps - Pt. 1: 6. Dance Of The Earth
+TPE1=Claudio Abbado: London Symphony Orchestra
+TPOS=1/2
+TRCK=12/17
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=vers
+TXXX=TCMP=0
+TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3O7S3293906V689F4DCE7C0B8BE1A62FEF1ADBACF4466DP3
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000219 0000025E 00001DF9 0000202D 0000EEE9 0000EEE9 00006EE9 00007774 0000FCCA 00000A11
+TXXX=iTunSMPB= 00000000 00000840 00000174 0000000000328A4C 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=17++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+[2025-04-30 18:29:06,416] {metadataCleaning.py:256} INFO - Text lengths: 
+{
+    "TIT2": 64,
+    "TCOM": 44,
+    "TALB": 53
+}
+
+
+
+[2025-04-30 18:29:06,417] {metadataCleaning.py:144} INFO - 'Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-12 Stravinsky_ Le Sacre Du Printemps - Pt. 1_ 6. Dance Of The Earth.mp3'
+[2025-04-30 18:29:11,536] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-13 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 1. Introduction (Largo).m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-13 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 1. Introduction (Largo).mp3. (13 of 17). 
+[2025-04-30 18:29:11,550] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-13 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 1. Introduction (Largo).mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 156376,
+'tagSize': '0x0, 0x9, 0x45, 0x4e (= decimal 156366 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-04-30 18:29:11,550] {metadataCleaning.py:242} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 156376,
+ 'layer': 3,
+ 'length': 256.05224489795916,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 18:29:11,550] {metadataCleaning.py:255} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 155424 bytes)
+TALB=Stravinsky: The Firebird Suite, Le Sacre Du Printemps
+TCOM=Stravinsky, Igor (1882-1971)/Igor Stravinsky
+TCON=Classical
+TDRC=1987
+TIT2=Stravinsky: Le Sacre Du Printemps - Pt. 2: 1. Introduction (Largo)
+TPE1=Claudio Abbado: London Symphony Orchestra
+TPOS=1/2
+TRCK=13/17
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=vers
+TXXX=TCMP=0
+TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3N53S3293907U2983957D5A8DD333F8821DAB05C180FE02AP3
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000020 00000026 00000232 00000361 0000E0AB 0000AD3E 00002DC6 000034EA 0000E1F0 0000E165
+TXXX=iTunSMPB= 00000000 00000840 000003C0 0000000000AC4400 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=17++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+[2025-04-30 18:29:11,550] {metadataCleaning.py:256} INFO - Text lengths: 
+{
+    "TIT2": 66,
+    "TCOM": 44,
+    "TALB": 53
+}
+
+
+
+[2025-04-30 18:29:11,551] {metadataCleaning.py:144} INFO - 'Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-13 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 1. Introduction (Largo).mp3'
+[2025-04-30 18:29:15,336] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-14 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 2. Mystical Circles Of The Young Girls.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-14 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 2. Mystical Circles Of The Young Girls.mp3. (14 of 17). 
+[2025-04-30 18:29:15,341] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-14 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 2. Mystical Circles Of The Young Girls.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 156390,
+'tagSize': '0x0, 0x9, 0x45, 0x5c (= decimal 156380 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-04-30 18:29:15,342] {metadataCleaning.py:242} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 156390,
+ 'layer': 3,
+ 'length': 199.54938775510203,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 18:29:15,342] {metadataCleaning.py:255} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 155424 bytes)
+TALB=Stravinsky: The Firebird Suite, Le Sacre Du Printemps
+TCOM=Stravinsky, Igor (1882-1971)/Igor Stravinsky
+TCON=Classical
+TDRC=1987
+TIT2=Stravinsky: Le Sacre Du Printemps - Pt. 2: 2. Mystical Circles Of The Young Girls
+TPE1=Claudio Abbado: London Symphony Orchestra
+TPOS=1/2
+TRCK=14/17
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=vers
+TXXX=TCMP=0
+TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3N99S3293908V782F2C55604249411B82AE797D54D09C8CP3
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 0000003A 00000045 000041C7 0000316F 00030A98 00030A69 00005A4E 00005847 00030AC6 00030A52
+TXXX=iTunSMPB= 00000000 00000840 000001E8 0000000000863DD8 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=17++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+[2025-04-30 18:29:15,342] {metadataCleaning.py:256} INFO - Text lengths: 
+{
+    "TIT2": 81,
+    "TCOM": 44,
+    "TALB": 53
+}
+
+
+
+[2025-04-30 18:29:15,343] {metadataCleaning.py:144} INFO - 'Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-14 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 2. Mystical Circles Of The Young Girls.mp3'
+[2025-04-30 18:29:17,870] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-15 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 3. Glorification Of The Chosen Victim, Summoning Of The Ancestors.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-15 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 3. Glorification Of The Chosen Victim, Summoning Of The Ancestors.mp3. (15 of 17). 
+[2025-04-30 18:29:17,874] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-15 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 3. Glorification Of The Chosen Victim, Summoning Of The Ancestors.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 156418,
+'tagSize': '0x0, 0x9, 0x45, 0x78 (= decimal 156408 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-04-30 18:29:17,874] {metadataCleaning.py:242} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 156418,
+ 'layer': 3,
+ 'length': 137.2473469387755,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 18:29:17,874] {metadataCleaning.py:255} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 155424 bytes)
+TALB=Stravinsky: The Firebird Suite, Le Sacre Du Printemps
+TCOM=Stravinsky, Igor (1882-1971)/Igor Stravinsky
+TCON=Classical
+TDRC=1987
+TIT2=Stravinsky: Le Sacre Du Printemps - Pt. 2: 3. Glorification Of The Chosen Victim, Summoning Of The Ancestors
+TPE1=Claudio Abbado: London Symphony Orchestra
+TPOS=1/2
+TRCK=15/17
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=vers
+TXXX=TCMP=0
+TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3N34S3293909U268A768190F2C7D273B42DEBCEEE4326FC4P0
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 000002E3 000002B7 0000397F 00002A79 00005A3F 00012654 00006F22 00007233 00020348 0001266B
+TXXX=iTunSMPB= 00000000 00000840 000000E8 00000000005C52D8 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=17++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+[2025-04-30 18:29:17,874] {metadataCleaning.py:256} INFO - Text lengths: 
+{
+    "TIT2": 108,
+    "TCOM": 44,
+    "TALB": 53
+}
+
+
+
+[2025-04-30 18:29:17,875] {metadataCleaning.py:144} INFO - 'Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-15 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 3. Glorification Of The Chosen Victim, Summoning Of The Ancestors.mp3'
+[2025-04-30 18:29:21,656] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-16 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 4. Ritual Of The Ancestors.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-16 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 4. Ritual Of The Ancestors.mp3. (16 of 17). 
+[2025-04-30 18:29:21,663] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-16 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 4. Ritual Of The Ancestors.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 156379,
+'tagSize': '0x0, 0x9, 0x45, 0x51 (= decimal 156369 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-04-30 18:29:21,663] {metadataCleaning.py:242} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 156379,
+ 'layer': 3,
+ 'length': 197.22448979591837,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 18:29:21,663] {metadataCleaning.py:255} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 155424 bytes)
+TALB=Stravinsky: The Firebird Suite, Le Sacre Du Printemps
+TCOM=Stravinsky, Igor (1882-1971)/Igor Stravinsky
+TCON=Classical
+TDRC=1987
+TIT2=Stravinsky: Le Sacre Du Printemps - Pt. 2: 4. Ritual Of The Ancestors
+TPE1=Claudio Abbado: London Symphony Orchestra
+TPOS=1/2
+TRCK=16/17
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=vers
+TXXX=TCMP=0
+TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3N80S3293910U148A3BF30638F5265C145EA3D9A64337CD3P5
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 000002C0 00000291 0000249C 000021A0 00025430 00025430 000076BE 000076EB 00022CA4 00022208
+TXXX=iTunSMPB= 00000000 00000840 00000190 000000000084AE30 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=17++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+[2025-04-30 18:29:21,663] {metadataCleaning.py:256} INFO - Text lengths: 
+{
+    "TIT2": 69,
+    "TCOM": 44,
+    "TALB": 53
+}
+
+
+
+[2025-04-30 18:29:21,664] {metadataCleaning.py:144} INFO - 'Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-16 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 4. Ritual Of The Ancestors.mp3'
+[2025-04-30 18:29:26,817] {transcoding.py:181} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-17 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 5. Sacrifical Dance, The Chosen Victim.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-17 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 5. Sacrifical Dance, The Chosen Victim.mp3. (17 of 17). 
+[2025-04-30 18:29:26,825] {metadataCleaning.py:241} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-17 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 5. Sacrifical Dance, The Chosen Victim.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 156390,
+'tagSize': '0x0, 0x9, 0x45, 0x5c (= decimal 156380 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-04-30 18:29:26,826] {metadataCleaning.py:242} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 156390,
+ 'layer': 3,
+ 'length': 270.08,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 18:29:26,826] {metadataCleaning.py:255} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 155424 bytes)
+TALB=Stravinsky: The Firebird Suite, Le Sacre Du Printemps
+TCOM=Stravinsky, Igor (1882-1971)/Igor Stravinsky
+TCON=Classical
+TDRC=1987
+TIT2=Stravinsky: Le Sacre Du Printemps - Pt. 2: 5. Sacrifical Dance, The Chosen Victim
+TPE1=Claudio Abbado: London Symphony Orchestra
+TPOS=1/2
+TRCK=17/17
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=vers
+TXXX=TCMP=0
+TXXX=UFIDhttp://www.cddb.com/id3/taginfo1.html=3CD3N15S3293911V38F38488BE7038A032A8F8FEC1388E322DP2
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 0000031E 00000321 0000491C 00003760 0001BA44 0001BA16 000074BB 00007773 0001BA2D 000051E7
+TXXX=iTunSMPB= 00000000 00000840 00000370 0000000000B5B450 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=17++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+[2025-04-30 18:29:26,826] {metadataCleaning.py:256} INFO - Text lengths: 
+{
+    "TIT2": 81,
+    "TCOM": 44,
+    "TALB": 53
+}
+
+
+
+[2025-04-30 18:29:26,827] {metadataCleaning.py:144} INFO - 'Cleaning /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps/1-17 Stravinsky_ Le Sacre Du Printemps - Pt. 2_ 5. Sacrifical Dance, The Chosen Victim.mp3'
+[2025-04-30 18:29:26,965] {transcoding.py:256} INFO - Deleted empty directory /Volumes/Media/Shared Music/MusicMP3/Music/Claudio Abbado_ London Symphony Orchestra/Stravinsky_ The Firebird Suite, Le Sacre Du Printemps [Disc 1]
+[2025-04-30 18:29:26,965] {transcoding.py:258} INFO - Transcoding done
+[2025 Apr 30 18:32:20] {minimRescanWrapper.zsh} 
 +*rescan
 +:status=0
 +*rescan

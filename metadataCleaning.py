@@ -29,30 +29,69 @@
 import os, sys, logging, json
 from pathlib import Path
 from pprint import pformat, pprint
-from mutagen.id3 import ID3, TALB, TCOM, TIT1, TIT2, TIT3, TRCK, TPOS, APIC, TPE1, TPE2, TXXX  # TPE1, , TYER
+from mutagen.id3 import ID3, TALB, TCOM, TIT1, TIT2, TIT3, TRCK, TPOS, APIC, TPE1, TPE2, TXXX, TCON, TDRC, TENC, TSSE
 from mutagen.mp3 import MP3
+from PIL import Image
+from io import BytesIO
 from functools import reduce
 
+import unicodedata
+
+# Debussy Pelléas et Mélissande created problems for Pure radio...
+def strip_accents(text):
+    """
+    Strip accents from input String.
+
+    :param text: The input string.
+    :type text: String.
+
+    :returns: The processed String.
+    :rtype: String.
+    """
+    try:
+        text = unicode(text, 'utf-8')
+    except (TypeError, NameError): # unicode is a default on python 3
+        pass
+    text = unicodedata.normalize('NFD', text)
+    text = text.encode('ascii', 'ignore')
+    text = text.decode("utf-8")
+    return str(text)
 
 class Metadata:
-    def __init__(self, tags):
+    def __init__(self, frames):
         # Notes are from
         #   https://id3.org/id3v2.3.0#Declared_ID3v2_frames
         
-        ks = tags.keys()
-        if "TALB" in ks: self.album = tags["TALB"].text[0] # Album/Movie/Show title
-        if "TIT1" in ks: self.grouping = tags["TIT1"].text[0] # TIT1 Content group description
-        if "TIT2" in ks: self.title = tags["TIT2"].text[0] # Title/songname/content description
-        if "TCOM" in ks: self.composer = tags["TCOM"].text[0] # Composer
-        if "TRCK" in ks: self.trackNo = tags["TRCK"].text[0] # Track number/Position in set
-        if "TPOS" in ks: self.diskNo = tags["TPOS"].text[0] # Disk no in set
-        if "TIT3" in ks: self.subtitle = tags["TIT3"].text[0] # Subtitle/Description refinement
-        if "APIC" in ks: self.artwork = tags["APIC"] # Attached picture
-        if "TPE1" in ks: self.leadArtist = tags["TPE1"].text[0] # Lead artist(s)/Lead performer(s)/Soloist(s)/Performing group
-        if "TPE2" in ks: self.backingArtist = tags["TPE2"].text[0] # Band/Orchestra/Accompaniment (aka Album artist)
-        txs={tx.desc:tx.text[0] for tx in tags.getall("TXXX") if tx.desc=="comment"}
+        ks = frames.keys()
+        if "TALB" in ks: self.album = frames["TALB"].text[0] # Album/Movie/Show title
+        if "TIT1" in ks: self.grouping = frames["TIT1"].text[0] # TIT1 Content group description
+        if "TIT2" in ks: self.title = frames["TIT2"].text[0] # Title/songname/content description
+        if "TCOM" in ks: self.composer = frames["TCOM"].text[0] # Composer
+        elif "TXXX:TCM" in ks:
+            self.composer = frames["TXXX:TCM"].text[0] # early ID3V2.3
+        if "TRCK" in ks: self.trackNo = frames["TRCK"].text[0] # Track number/Position in set
+        elif "TXXX:TPA" in ks:
+            self.trackNo = frames["TXXX:TPA"].text[0]
+        if "TPOS" in ks: self.diskNo = frames["TPOS"].text[0] # Disk no in set
+        if "TDRC" in ks: self.recDate = frames["TDRC"].text[0] # Date of recording
+        if "TIT3" in ks: self.subtitle = frames["TIT3"].text[0] # Subtitle/Description refinement
+        if len([k for k in filter(lambda x: x.startswith("APIC"), ks)])>0:
+                    self.artworks = frames.getall("APIC") # Attached pictures
+                    aws={f.desc:len(f.data) for f in self.artworks}
+                    self.awMax=max(list(aws.values())) # Max length of any artwork (there may be multiple)
+                    self.sumAwLength = sum(list(aws.values()))
+                    if "" in list(aws.keys()): self.coverAwLength=aws[""]
+                    else: self.coverAwLength=aws[list(aws.keys())[0]] # The previous clean may have produced a more informative desc
+        if "TPE1" in ks: self.leadArtist = frames["TPE1"].text[0] # Lead artist(s)/Lead performer(s)/Soloist(s)/Performing group
+        if "TPE2" in ks: self.backingArtist = frames["TPE2"].text[0] # Band/Orchestra/Accompaniment (aka Album artist)
+        if "TENC" in ks: self.encoder = frames["TENC"].text[0] # Encoded by
+        if "TSSE" in ks: self.encoderSettings = frames["TSSE"].text[0] # Software/Hardware and settings used for encoding
+        txs={}
+        txs.update({tx.desc:tx.text[0] for tx in frames.getall("TXXX") if tx.desc=="comment"})
+        txs.update({tx.desc:tx.text[0] for tx in frames.getall("COMM") if tx.desc=="comment"})
         if "comment" in txs.keys(): self.comment = txs["comment"]
-        #tags['TYER'] # year
+        #frames['TYER'] # year
+
 
 class MDcleaner:
     def __init__(self,logger=None, dir='/Volumes/Media/Shared Music/MusicMP3'):
@@ -79,23 +118,26 @@ class MDcleaner:
             self.logger = logging.getLogger(__name__)
         else: self.logger=logger
         self.w=1220 # Width of output - some filenames are very long.
-        self.tlimit=63 # Longest length allowed. Truncation is done to this length
+        self.tlimit=63 # Longest text length allowed. Truncation is done to this length
+        self.plimit=500000 # Largest picture allowed.  Replaced with substitues or deleted.
         self.logger.debug(f"Metadatacleaning for files with ?? maybe over-long metadata (title over {self.tlimit} characters):")
         self.longList=[]
+        self.bigPicList=[]
                
-        self.changeLimit=500
+        self.changeLimit=1000
         self.changes=0
+        
 
 
     def clean(self,filePath):
         pathcs = list(Path(filePath).parts)
         if pathcs[-1] not in self.fnameExclusions and pathcs[-2] not in self.dnameExclusions and pathcs[-1] not in self.dnameExclusions:
-            tags = ID3(filePath)
-            metadata = Metadata(tags)
+            frames = ID3(filePath)
+            metadata = Metadata(frames)
             if self.changes < self.changeLimit:
-                if hasattr(metadata,'comment') and "Unplayable" in metadata.comment:
-                    breakpoint() # Unplayable detected
-                    self.logger.warning(pformat(f"Deleting {filePath} ({metadata.comment})",width=self.w))
+                if hasattr(metadata,'comment') and "nplayable" in metadata.comment:  # Unplayable or unplayable
+                    #breakpoint() # Unplayable detected
+                    self.logger.warning(pformat(f"Deleting unplayable {filePath} ({metadata.comment})",width=self.w))
                     os.remove(filePath)
                     self.changes=self.changes+1
                     return("Cleaned") # Brutal, but true
@@ -108,21 +150,62 @@ class MDcleaner:
                     else:
                         metadata.title=metadata.title[-self.tlimit:]
                 
-                else: # The default, brutal approach
+                else: # The default approach
                     metadata.title = metadata.title[-self.tlimit:] # The most pertinent title information is often at the end.
-                    metadata.album = metadata.album[0:self.tlimit] # It's best to keep the album name close to it's full title sort spot.
-                    
-                # Apply final, strict limits for the tags used in Pure and clear the TXXX frames (in case it matters)
-                fidVals={k:tags[k].text[0][0:self.tlimit] for k in \
-                    filter(lambda kl: kl in ["TALB","TIT1","TIT2","TCOM"], tags.keys())}
-                for k in fidVals.keys(): tags.add(eval(k)(text=[fidVals[k]]))
-                tags.delall("TXXX") # They could be converted to COMM frames
-                tags.delall("APIC")  # Try it - some pictures are seemingly huge.
+                    metadata.album = metadata.album[0:40] # It's best to keep the album name close to it's full title sort spot.
+                    if hasattr(metadata,"leadArtist"): metadata.leadArtist = metadata.leadArtist[0:30] # Not sure it actually makes a difference, but too many cooks...
+                    if hasattr(metadata,"composer"): metadata.composer = metadata.composer[0:20]
+                newFrames=ID3()
                 
-                tags.delete() # NEW! Scrap the whole thing...
+                # Consider adding the pictures to the new tag.
+                # ... if they're too long (tbd) this can makes files unplayable on Pure radio
+                if (hasattr(metadata,"coverAwLength") and metadata.coverAwLength<self.plimit) \
+                    and (not hasattr(metadata,'comment') or (hasattr(metadata,'comment') and "no artwork" not in metadata.comment)):
+                    for a in frames.getall("APIC"): newFrames.add(APIC(encoding=a.encoding, mime=a.mime, type=a.type, desc=a.desc, data=a.data))
+                else: # Compress the picture(s)
+                    self.logger.warning(pformat(f">>>>>>>Cover artwork too large (>{self.plimit} in "+filePath,width=self.w))
+                    self.bigPicList.append(filePath)
+                    for a in frames.getall("APIC"):
+                        img = Image.open(BytesIO(a.data))
+                        byteIO = BytesIO()
+                        img.save(byteIO, format='JPEG', optimize=True)
+                        a.data=byteIO.getvalue()
+                        a.mime="image/jpeg"
+                        a.desc="compressed by metadataCleaning"
+                        newFrames.add(a)
+                        self.logger.info(pformat(f"Artwork type {a.type} compressed to {len(a.data)} bytes."))
                 
+                # Apply carefully pruned and curated values to new frames
+                if hasattr(metadata,"album"): frames.add(TALB(text=[strip_accents(metadata.album)]))
+                if hasattr(metadata,"title"):  frames.add(TIT2(text=[strip_accents(metadata.title)]))
+                if hasattr(metadata,"leadArtist"): frames.add(TPE1(text=[strip_accents(metadata.leadArtist)]))
+                if hasattr(metadata,"backingArtist"): frames.add(TPE2(text=[strip_accents(metadata.backingArtist)]))
+                if hasattr(metadata,"composer"): frames.add(TCOM(text=[strip_accents(metadata.composer)]))
+                if hasattr(metadata,"trackNo"): frames.add(TRCK(text=[metadata.trackNo]))
+                if hasattr(metadata,"diskNo"): frames.add(TPOS(text=[metadata.diskNo]))
+                else: frames.add(TPOS(text=["1/1"]))
+                if hasattr(metadata,"encoder"): frames.add(TENC(text=["py-ffmpeg"]))
+                                                        
+                # Copy the minimum necessary old frames to the new tag and the apply the standard text limit for all of them.
+                # This clears extraneous TXXX frames (in case it matters)
+                fidVals={k:frames[k].text[0][0:self.tlimit] for k in \
+                    filter(lambda kl: kl in ["TALB","TIT1","TIT2","TCOM","TCON",
+                                            "TPE1","TPE2", "TRCK", "TPOS",
+                                            "TENC", "TSSE"
+                                            ], frames.keys())}
+                #breakpoint()
+                for k in fidVals.keys(): newFrames.add(eval(k)(text=[fidVals[k]]))
                 
-                tags.save(filePath,v2_version=3)
+                # Special case for timestamps
+                newFrames.add(frames.get("TDRC"))
+                
+                """
+                for k in fidVals.keys(): newFrames.add(eval(k)(text=[fidVals[k]]))
+                frames.delall("TXXX") # They could be converted to COMM frames
+                frames.delall("APIC")  # Try it - some pictures are seemingly huge.
+                """
+                frames.delete() # Scrap the whole old thing...
+                newFrames.save(filePath,v2_version=3) # and re-create it
                 self.changes=self.changes+1
                 return("Cleaned")
             else:
@@ -132,12 +215,12 @@ class MDcleaner:
                 
     def clean2(self,filePath):
         
-        return
+        return("Cleaned") # For debugging/fix-up use - pretend it worked.  Cleaning can be done separately.
 
     def report(self,filePath):
         pathcs = list(Path(filePath).parts)
         if pathcs[-1] not in self.fnameExclusions and pathcs[-2] not in self.dnameExclusions and pathcs[-1] not in self.dnameExclusions:
-            tags = ID3(filePath)
+            frames = ID3(filePath)
             #breakpoint() # MD inspection point
             mp3 = MP3(filePath)
             f=open(filePath,"rb")
@@ -154,20 +237,31 @@ class MDcleaner:
             headerReport["mp3Score"] = MP3.score(filePath,f,baseHeader)
             
             # Also report the decoding done by mutagen
-            for item in ["version","unknown_frames","size"]: headerReport[item] = getattr(tags,item)
-            self.logger.info(f"\n\n\nHeader report for {filePath}:\n{pformat(headerReport, depth=2, indent=0, sort_dicts=True)}")
-            self.logger.info(f"\n\nMP3 info: \n  {pformat(vars(mp3.info))}")
+            for item in ["version","unknown_frames","size"]: headerReport[item] = getattr(frames,item)
+            self.logger.info(f"\nID3 Header report for {filePath}:\n{pformat(headerReport, depth=2, indent=0, sort_dicts=True)}\n\n\n")
+            self.logger.info(f"\nMP3 info: \n  {pformat(vars(mp3.info))}\n\n\n")
+            
+            # Report Picture frame header info
+            datalessPics = [{"encoding":a.encoding,"mime":a.mime,"type":a.type,"desc":a.desc,"pictureSize":len(a.data) } for a in frames.getall("APIC")]
+            self.logger.debug("\nPictures: \n"+json.dumps(datalessPics)+"\n\n\n")
+            
+            # Use the mp3 header length as a clue to the size of the included picture
+            if mp3.info.frame_offset>1000000: overlengthPicture="Overlength picture"
+            else: overlengthPicture=""
             
             # Report the frame text lengths
-            fidReport={k:len(tags[k].text[0])for k in filter(lambda kl: kl in ["TALB","TIT1","TIT2","TCOM"], tags.keys())}
+            fidReport={k:len(frames[k].text[0])for k in filter(lambda kl: kl in ["TALB","TIT1","TIT2","TCOM"], frames.keys())}
             if any(l > self.tlimit for l in iter(fidReport.values())):
-                self.logger.info("\n\n\nFrame contents: \n"+tags.pprint())
-                self.logger.info("Text lengths: \n"+json.dumps(fidReport, indent=4, sort_keys=True))
-                return("Overlength")
+                self.logger.info("\nFrame contents: \n"+frames.pprint())
+                self.logger.info("Text lengths: \n"+json.dumps(fidReport, indent=4)+"\n\n\n")# , sort_keys=True))
+                overlength=True
             else:
-                self.logger.debug("\n\n\nFrame contents: \n"+tags.pprint())
-                self.logger.debug("Text lengths: \n"+json.dumps(fidReport, indent=4, sort_keys=True))
-                return
+                self.logger.debug("\nFrame contents: \n"+frames.pprint())
+                self.logger.debug("Text lengths: \n"+json.dumps(fidReport, indent=4)+"\n\n\n")#, sort_keys=True))
+                overlength=False
+           
+            if overlength: return("Overlength"+" "+overlengthPicture)
+            else: return(overlengthPicture)
                 
 # Match a string in any item in a list of strings
 def smatch(string,matchList):
@@ -177,7 +271,15 @@ def smatch(string,matchList):
     return rlist
             
 def main():
-    albumNamesTracks={"Sonatas and Partitas?":"2-02","Goldberg Variation":"3-10"} # Match partial album name (distinct values) and track number prefix
+    albumNamesTracks={   # Match partial album name (distinct values) and track number prefix
+                    #"Sonatas and Partitas":"2-08",
+                    "Sonatas and Partitas!":"2-01",
+                    "Goldberg Variations!":"3-04",
+                    "Pelleas":"",
+                    "Ostinata!":"01",
+                    "Best Of Satie!":"",
+                    "Rake's Progress!":"2-27"
+                    }
     cleaner=MDcleaner()
     cleaner.logger.setLevel(logging.DEBUG)
     cleaner.logger.info(f"Searching for paths in {cleaner.dir} matching any of {pformat(albumNamesTracks)}.")
@@ -188,18 +290,19 @@ def main():
                 filePath = os.path.join(r,l)#  lcleaner.dir+"/"+r[cleaner.dlen+1:]+"/"+l
                 if l.startswith(albumNamesTracks[an]):
                     
-                    if cleaner.report(filePath)=="Overlength" :#and cleaner.clean(filePath) == "Cleaned":
+                    if cleaner.report(filePath).startswith("Overlength"):
                         cleaner.longList.append(filePath)
-                    else:
-                        cleaner.report(filePath)
-                       # cleaner.clean(filePath) == "Cleaned" # Cleans dubious TXXX frames
+                    
+                    if len(sys.argv)>1 and sys.argv[1]=="clean":
+                        cleaner.clean(filePath) # Cleans all frames (including dubious TXXX and  frames) and creates a new ID3v2.2 tag
+                                                # using simplified original data.
                         
                     
                     
     if len(cleaner.longList)==0:
         cleaner.logger.info("No updates")
     else:
-        cleaner.logger.info(f"Changed {len(cleaner.longList)} files: \n{cleaner.longList} ")
+        cleaner.logger.info(f"Changed {len(cleaner.longList)} files: \n{pformat(cleaner.longList)} ")
     
 
     
