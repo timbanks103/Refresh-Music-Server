@@ -34,13 +34,16 @@ from mutagen.mp3 import MP3
 from PIL import Image
 from io import BytesIO
 from functools import reduce
-
 import unicodedata
+import urllib.parse
+
 
 # Debussy Pelléas et Mélissande created problems for Pure radio...
-def strip_accents(text):
+def pureMangle(text,filePath=False):
     """
-    Strip accents from input String.
+    Pure radios can't accept long metadata or urls
+    Modify the input string to be consumable.  The length restrictions on metadata fields were
+    discovered by experiment, so can't be explained and could be over-zealous.
 
     :param text: The input string.
     :type text: String.
@@ -48,6 +51,27 @@ def strip_accents(text):
     :returns: The processed String.
     :rtype: String.
     """
+    if filePath:
+        if text.endswith("\n"):
+            newline="\n"
+            text=text[0:-1]
+        else: newline=""
+        pathParts = list(Path(text).parts)
+        root = pathParts[0:-3] if len(pathParts)>3 else []
+        artistDir=pathParts[-3] if len(pathParts)>2 else ""
+        albumDir=pathParts[-2] if len(pathParts)>1 else ""
+        file = pathParts[-1]
+        """
+        root,file=os.path.split(text) # One of these operations strips newline from the end
+        root,album=os.path.split(root)
+        root,artist=os.path.split(root)
+        """
+        fn,ext=os.path.splitext(file)
+        text=os.path.join(  *root,
+                            artistDir[0:MDcleaner.class_slimit],
+                            albumDir[0:MDcleaner.class_alimit],
+                            fn[0:MDcleaner.class_tlimit]+ext+newline)
+        
     try:
         text = unicode(text, 'utf-8')
     except (TypeError, NameError): # unicode is a default on python 3
@@ -55,6 +79,7 @@ def strip_accents(text):
     text = unicodedata.normalize('NFD', text)
     text = text.encode('ascii', 'ignore')
     text = text.decode("utf-8")
+    
     return str(text)
 
 class Metadata:
@@ -91,9 +116,38 @@ class Metadata:
         txs.update({tx.desc:tx.text[0] for tx in frames.getall("COMM") if tx.desc=="comment"})
         if "comment" in txs.keys(): self.comment = txs["comment"]
         #frames['TYER'] # year
+        
+class CleaningReport:
+    def __init__(self):
+    
+        self.overlengthAlbum=False
+        self.overlengthArtist=False
+        self.overlengthTitle=False
+        self.overlengthPicture=False
+        self.overlengthComposer=False
+        self.overlengthUrl=False
 
 
 class MDcleaner:
+    
+    
+    class_alimit=40 # Longest text for album name
+    class_slimit=30 # Longest text for lead artist
+    class_tlimit=63 # Longest text for track title
+    class_climit=20 # Longest text for composer
+    # Total length = 133
+    class_ulimit=215 # Url limit check - a longer URL causes a warning.
+    
+    """ 
+        The length, plus the added length of the root directory and path serparators must be limited. 
+        Experiments have shown that with a root diretory on the server of "/http://192.168.0.52:9795/minimserver/*/", (40 characters)  
+        the known limit for music library components is reached near 215 characters.  (total 255)
+        
+        Observations show that minimserver seems to mangle/truncate urls to achieve a length near to 172 characters.
+    """
+    class_chlimit=5000 # Maximum number of files to be cleaned.
+    
+    
     def __init__(self,logger=None, dir='/Volumes/Media/Shared Music/MusicMP3'):
 
     
@@ -110,7 +164,10 @@ class MDcleaner:
         if logger==None:
             file_handler = logging.FileHandler(filename='MDclean.log')
             stdout_handler = logging.StreamHandler(stream=sys.stdout)
-            handlers = [file_handler, stdout_handler]
+            warnings_handler = logging.FileHandler(filename='Warnings.log')
+            warnings_handler.setLevel(logging.WARNING)
+            
+            handlers = [file_handler, stdout_handler, warnings_handler]
             logging.basicConfig(
                     format='[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s',
                     handlers=handlers,
@@ -118,110 +175,127 @@ class MDcleaner:
             self.logger = logging.getLogger(__name__)
         else: self.logger=logger
         self.w=1220 # Width of output - some filenames are very long.
-        self.tlimit=63 # Longest text length allowed. Truncation is done to this length
-        self.plimit=500000 # Largest picture allowed.  Replaced with substitues or deleted.
+        self.tlimit=MDcleaner.class_tlimit # Longest text length allowed. Truncation is done to this length
+        self.alimit=MDcleaner.class_alimit # Longest text for album name
+        self.slimit=MDcleaner.class_slimit # Longest text for lead artist (a folder name if Music organises the folders (it does))
+        self.plimit=500000 # Largest picture allowed. If in excess, the image is compressed. Or deleted?
+        self.ulimit=MDcleaner.class_ulimit # Largest encoded filepath. Maybe Pure can tolerate bigger - certainly lower that 229 # NB old limit was 256
+        self.climit=MDcleaner.class_climit # Longest text for composer name.
         self.logger.debug(f"Metadatacleaning for files with ?? maybe over-long metadata (title over {self.tlimit} characters):")
         self.longList=[]
         self.bigPicList=[]
                
-        self.changeLimit=1000
+        self.changeLimit=MDcleaner.class_chlimit
         self.changes=0
         
 
 
     def clean(self,filePath):
         pathcs = list(Path(filePath).parts)
+        cr=CleaningReport()
         if pathcs[-1] not in self.fnameExclusions and pathcs[-2] not in self.dnameExclusions and pathcs[-1] not in self.dnameExclusions:
-            frames = ID3(filePath)
-            metadata = Metadata(frames)
-            if self.changes < self.changeLimit:
-                if hasattr(metadata,'comment') and "nplayable" in metadata.comment:  # Unplayable or unplayable
-                    #breakpoint() # Unplayable detected
-                    self.logger.warning(pformat(f"Deleting unplayable {filePath} ({metadata.comment})",width=self.w))
-                    os.remove(filePath)
+            try:
+                frames = ID3(filePath)
+                metadata = Metadata(frames)
+               
+                if self.changes < self.changeLimit:
+                    if hasattr(metadata,'comment') and "nplayable" in metadata.comment:  # Unplayable or unplayable
+                       
+                        self.logger.warning(pformat(f"Deleting unplayable {filePath} ({metadata.comment})",width=self.w))
+                        os.remove(filePath)
+                        self.changes=self.changes+1
+                        return("Cleaned - deleted unplayable file") # Brutal, but true
+                    
+                    # Try to extract/create a meaningful but short title algorithmicly. These are compoinents of the Url (in minimserver)
+                    # This matches what happens in the filename mangler.
+                    if hasattr(metadata,"title") and len(metadata.title)>self.tlimit:
+                        metadata.title = metadata.title[0:self.tlimit]
+                        cr.overlengthTitle=True
+                    if hasattr(metadata,"album") and len(metadata.album)>self.alimit:
+                        # It's best to keep the album name close to it's full title sort spot for easy recognition
+                        metadata.album = metadata.album[0:self.alimit]
+                        cr.overlengthAlbum=True
+                    if hasattr(metadata,"leadArtist") and len(metadata.leadArtist)>self.slimit:
+                        metadata.leadArtist = metadata.leadArtist[0:self.slimit]
+                        cr.overlengthArtist=True
+                    if hasattr(metadata,"composer") and len(metadata.composer)> self.climit:
+                        metadata.composer = metadata.composer[0:self.climit]
+                        cr.overlengthComposer=True
+                        
+                    newFrames=ID3()
+                    
+                    # Consider adding the pictures to the new tag.
+                    # ... if they're too long (tbd) this can makes files unplayable on Pure radio
+                    if (hasattr(metadata,"coverAwLength") and metadata.coverAwLength<self.plimit) \
+                        and (not hasattr(metadata,'comment') or (hasattr(metadata,'comment') and "no artwork" not in metadata.comment)):
+                        for a in frames.getall("APIC"): newFrames.add(APIC(encoding=a.encoding, mime=a.mime, type=a.type, desc=a.desc, data=a.data))
+                    else: # Compress the picture(s)
+                        self.logger.info(pformat(f"Cover artwork too large (>{self.plimit}) in {filePath}. ",width=self.w))
+                        self.bigPicList.append(filePath)
+                        cr.overlengthPicture=True
+                        for a in frames.getall("APIC"):
+                            img = Image.open(BytesIO(a.data))
+                            byteIO = BytesIO()
+                            # Make sure it's suitable for conversion to jpg (remove the alpha channel if there is one)
+                            if img.mode in ("RGBA", "P"): img = img.convert("RGB")
+                            img.save(byteIO, format='JPEG', optimize=True)
+                            a.data=byteIO.getvalue()
+                            a.mime="image/jpeg"
+                            a.desc="compressed by metadataCleaning"
+                            newFrames.add(a)
+                            self.logger.info(pformat(f"Artwork type {a.type} compressed by jpeg to {len(a.data)} bytes."))
+                    
+                    # Apply carefully pruned and curated values to new frames
+                    if hasattr(metadata,"album"): frames.add(TALB(text=[pureMangle(metadata.album)]))
+                    if hasattr(metadata,"title"):  frames.add(TIT2(text=[pureMangle(metadata.title)]))
+                    if hasattr(metadata,"leadArtist"): frames.add(TPE1(text=[pureMangle(metadata.leadArtist)]))
+                    if hasattr(metadata,"backingArtist"): frames.add(TPE2(text=[pureMangle(metadata.backingArtist)]))
+                    if hasattr(metadata,"composer"): frames.add(TCOM(text=[pureMangle(metadata.composer)]))
+                    if hasattr(metadata,"trackNo"): frames.add(TRCK(text=[metadata.trackNo]))
+                    if hasattr(metadata,"diskNo"): frames.add(TPOS(text=[metadata.diskNo]))
+                    else: frames.add(TPOS(text=["1/1"]))
+                    if hasattr(metadata,"encoder"): frames.add(TENC(text=["py-ffmpeg"]))
+                                                            
+                    # Copy the minimum necessary old frames to the new tag and the apply the standard text limit for all of them.
+                    # This clears extraneous TXXX frames (in case it matters)
+                    fidVals={k:frames[k].text[0][0:self.tlimit] for k in \
+                        filter(lambda kl: kl in ["TALB","TIT1","TIT2","TCOM","TCON",
+                                                "TPE1","TPE2", "TRCK", "TPOS",
+                                                "TENC", "TSSE"
+                                                ], frames.keys())}
+                   
+                    for k in fidVals.keys(): newFrames.add(eval(k)(text=[fidVals[k]]))
+                    
+                    # Special case for timestamps
+                    if frames.get("TDRC"): newFrames.add(frames.get("TDRC"))
+            
+                    frames.delete() # Scrap the whole old thing...
+                    newFrames.save(filePath,v2_version=3) # and re-create it
                     self.changes=self.changes+1
-                    return("Cleaned") # Brutal, but true
-                self.logger.info(pformat("Cleaning "+filePath,width=self.w))
-                # Try to extract/create a meaningful title algorithmicly
-                if hasattr(metadata,'grouping') and (metadata.grouping=='Italian Concerto in F, BWV 971' or metadata.grouping=='Aria mit 30 Veränderungen, BWV 988 "Goldberg Variations"'):
-                    if metadata.title.find('ations": ')>0:
-                        metadata.title = metadata.title[metadata.title.find('ations": ')+9:]
-                        metadata.title= metadata.title.replace('Var. ','Variatio ')
-                    else:
-                        metadata.title=metadata.title[-self.tlimit:]
-                
-                else: # The default approach
-                    metadata.title = metadata.title[-self.tlimit:] # The most pertinent title information is often at the end.
-                    metadata.album = metadata.album[0:40] # It's best to keep the album name close to it's full title sort spot.
-                    if hasattr(metadata,"leadArtist"): metadata.leadArtist = metadata.leadArtist[0:30] # Not sure it actually makes a difference, but too many cooks...
-                    if hasattr(metadata,"composer"): metadata.composer = metadata.composer[0:20]
-                newFrames=ID3()
-                
-                # Consider adding the pictures to the new tag.
-                # ... if they're too long (tbd) this can makes files unplayable on Pure radio
-                if (hasattr(metadata,"coverAwLength") and metadata.coverAwLength<self.plimit) \
-                    and (not hasattr(metadata,'comment') or (hasattr(metadata,'comment') and "no artwork" not in metadata.comment)):
-                    for a in frames.getall("APIC"): newFrames.add(APIC(encoding=a.encoding, mime=a.mime, type=a.type, desc=a.desc, data=a.data))
-                else: # Compress the picture(s)
-                    self.logger.warning(pformat(f">>>>>>>Cover artwork too large (>{self.plimit} in "+filePath,width=self.w))
-                    self.bigPicList.append(filePath)
-                    for a in frames.getall("APIC"):
-                        img = Image.open(BytesIO(a.data))
-                        byteIO = BytesIO()
-                        img.save(byteIO, format='JPEG', optimize=True)
-                        a.data=byteIO.getvalue()
-                        a.mime="image/jpeg"
-                        a.desc="compressed by metadataCleaning"
-                        newFrames.add(a)
-                        self.logger.info(pformat(f"Artwork type {a.type} compressed to {len(a.data)} bytes."))
-                
-                # Apply carefully pruned and curated values to new frames
-                if hasattr(metadata,"album"): frames.add(TALB(text=[strip_accents(metadata.album)]))
-                if hasattr(metadata,"title"):  frames.add(TIT2(text=[strip_accents(metadata.title)]))
-                if hasattr(metadata,"leadArtist"): frames.add(TPE1(text=[strip_accents(metadata.leadArtist)]))
-                if hasattr(metadata,"backingArtist"): frames.add(TPE2(text=[strip_accents(metadata.backingArtist)]))
-                if hasattr(metadata,"composer"): frames.add(TCOM(text=[strip_accents(metadata.composer)]))
-                if hasattr(metadata,"trackNo"): frames.add(TRCK(text=[metadata.trackNo]))
-                if hasattr(metadata,"diskNo"): frames.add(TPOS(text=[metadata.diskNo]))
-                else: frames.add(TPOS(text=["1/1"]))
-                if hasattr(metadata,"encoder"): frames.add(TENC(text=["py-ffmpeg"]))
-                                                        
-                # Copy the minimum necessary old frames to the new tag and the apply the standard text limit for all of them.
-                # This clears extraneous TXXX frames (in case it matters)
-                fidVals={k:frames[k].text[0][0:self.tlimit] for k in \
-                    filter(lambda kl: kl in ["TALB","TIT1","TIT2","TCOM","TCON",
-                                            "TPE1","TPE2", "TRCK", "TPOS",
-                                            "TENC", "TSSE"
-                                            ], frames.keys())}
-                #breakpoint()
-                for k in fidVals.keys(): newFrames.add(eval(k)(text=[fidVals[k]]))
-                
-                # Special case for timestamps
-                newFrames.add(frames.get("TDRC"))
-                
-                """
-                for k in fidVals.keys(): newFrames.add(eval(k)(text=[fidVals[k]]))
-                frames.delall("TXXX") # They could be converted to COMM frames
-                frames.delall("APIC")  # Try it - some pictures are seemingly huge.
-                """
-                frames.delete() # Scrap the whole old thing...
-                newFrames.save(filePath,v2_version=3) # and re-create it
+                    results=[k for k in vars(cr).keys() if getattr(cr,k)]
+                    self.logger.info(f"Overlength: {results}" if any(results) else "No Cleaning needed")
+                    return(f"Overlength: {results}" if any(results) else "No Cleaning needed")
+                else:
+                    self.logger.info(f"Cleaning change limit ({self.changeLimit}) reached")
+                    return("Limit Reached")
+                    
+            except Exception as e:
+                self.logger.warning(f"File {filePath} could not be cleaned: {e}. The file will be removed if it exists. ")
                 self.changes=self.changes+1
-                return("Cleaned")
-            else:
-                self.logger.info(f"Change limit ({self.changeLimit}) reached")
-                return("Limit Reached")
-                
+                if os.path.isfile(filePath): os.remove(filePath)
+                return
                 
     def clean2(self,filePath):
         
         return("Cleaned") # For debugging/fix-up use - pretend it worked.  Cleaning can be done separately.
 
     def report(self,filePath):
+    
+        rr=CleaningReport()
         pathcs = list(Path(filePath).parts)
         if pathcs[-1] not in self.fnameExclusions and pathcs[-2] not in self.dnameExclusions and pathcs[-1] not in self.dnameExclusions:
             frames = ID3(filePath)
-            #breakpoint() # MD inspection point
+            
             mp3 = MP3(filePath)
             f=open(filePath,"rb")
             baseHeader=f.read(10)
@@ -246,23 +320,22 @@ class MDcleaner:
             self.logger.debug("\nPictures: \n"+json.dumps(datalessPics)+"\n\n\n")
             
             # Use the mp3 header length as a clue to the size of the included picture
-            if mp3.info.frame_offset>1000000: overlengthPicture="Overlength picture"
-            else: overlengthPicture=""
+            if mp3.info.frame_offset>1000000: rr.overlengthPicture=True
+            else: pass
             
             # Report the frame text lengths
             fidReport={k:len(frames[k].text[0])for k in filter(lambda kl: kl in ["TALB","TIT1","TIT2","TCOM"], frames.keys())}
+            url=urllib.parse.quote(filePath)
+            self.logger.info("\nFrame contents: \n"+frames.pprint())
+            self.logger.info("Text lengths: \n"+json.dumps(fidReport, indent=4)+ f"\nURL length: {len(url)}." + "\n\n\n")# , sort_keys=True))
             if any(l > self.tlimit for l in iter(fidReport.values())):
-                self.logger.info("\nFrame contents: \n"+frames.pprint())
-                self.logger.info("Text lengths: \n"+json.dumps(fidReport, indent=4)+"\n\n\n")# , sort_keys=True))
-                overlength=True
-            else:
-                self.logger.debug("\nFrame contents: \n"+frames.pprint())
-                self.logger.debug("Text lengths: \n"+json.dumps(fidReport, indent=4)+"\n\n\n")#, sort_keys=True))
-                overlength=False
-           
-            if overlength: return("Overlength"+" "+overlengthPicture)
-            else: return(overlengthPicture)
-                
+                rr.overlengthTitle=True
+            else: pass
+
+            if len(url)>self.ulimit: self.logger.warning(f"\n{filePath} encodes to a url of length {len(url)} which exceeds the limit of {self.ulimit}. Truncation of titles and/or artist info will be applied.")
+            results=[k for k in vars(rr).keys() if getattr(rr,k)]
+            return(f"Overlength: {results}" if any(results) else None )
+
 # Match a string in any item in a list of strings
 def smatch(string,matchList):
     rlist=[]
@@ -275,10 +348,13 @@ def main():
                     #"Sonatas and Partitas":"2-08",
                     "Sonatas and Partitas!":"2-01",
                     "Goldberg Variations!":"3-04",
-                    "Pelleas":"",
+                    "Pelleas!":"",
+                    "6 Cello!":"2-18",
                     "Ostinata!":"01",
                     "Best Of Satie!":"",
-                    "Rake's Progress!":"2-27"
+                    "Grumiaux":"1-0",
+                    "Hot Rocks":"2-0",
+                    "!!!":"" # Do Everything
                     }
     cleaner=MDcleaner()
     cleaner.logger.setLevel(logging.DEBUG)
@@ -287,11 +363,12 @@ def main():
         #if ds==[]:
         for an in smatch(r,albumNamesTracks.keys()):
             for l in filter(lambda m: m.endswith(".mp3") and m not in cleaner.fnameExclusions, ls):
-                filePath = os.path.join(r,l)#  lcleaner.dir+"/"+r[cleaner.dlen+1:]+"/"+l
+                filePath = os.path.join(r,l)
                 if l.startswith(albumNamesTracks[an]):
-                    
-                    if cleaner.report(filePath).startswith("Overlength"):
-                        cleaner.longList.append(filePath)
+                    logger.info(pformat(f"Cleaning {filePath} - {cleaner.changes+1} of {min(self.changeLimit)}",
+                    width=self.w))
+                    rep=cleaner.report(filePath)
+                    if rep: cleaner.longList.append(filePath+" "+pformat(rep))
                     
                     if len(sys.argv)>1 and sys.argv[1]=="clean":
                         cleaner.clean(filePath) # Cleans all frames (including dubious TXXX and  frames) and creates a new ID3v2.2 tag
