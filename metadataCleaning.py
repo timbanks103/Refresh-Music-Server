@@ -174,7 +174,7 @@ class MDcleaner:
                     level=logging.INFO)
             self.logger = logging.getLogger(__name__)
         else: self.logger=logger
-        self.w=1220 # Width of output - some filenames are very long.
+        self.logWidth=1220 # Width of output - some filenames are very long.
         self.tlimit=MDcleaner.class_tlimit # Longest text length allowed. Truncation is done to this length
         self.alimit=MDcleaner.class_alimit # Longest text for album name
         self.slimit=MDcleaner.class_slimit # Longest text for lead artist (a folder name if Music organises the folders (it does))
@@ -201,7 +201,7 @@ class MDcleaner:
                 if self.changes < self.changeLimit:
                     if hasattr(metadata,'comment') and "nplayable" in metadata.comment:  # Unplayable or unplayable
                        
-                        self.logger.warning(pformat(f"Deleting unplayable {filePath} ({metadata.comment})",width=self.w))
+                        self.logger.warning(pformat(f"Deleting unplayable {filePath} ({metadata.comment})",width=self.logWidth))
                         os.remove(filePath)
                         self.changes=self.changes+1
                         return("Cleaned - deleted unplayable file") # Brutal, but true
@@ -230,7 +230,7 @@ class MDcleaner:
                         and (not hasattr(metadata,'comment') or (hasattr(metadata,'comment') and "no artwork" not in metadata.comment)):
                         for a in frames.getall("APIC"): newFrames.add(APIC(encoding=a.encoding, mime=a.mime, type=a.type, desc=a.desc, data=a.data))
                     else: # Compress the picture(s)
-                        self.logger.info(pformat(f"Cover artwork too large (>{self.plimit}) in {filePath}. ",width=self.w))
+                        self.logger.info(pformat(f"Cover artwork too large (>{self.plimit}) in {filePath}. ",width=self.logWidth))
                         self.bigPicList.append(filePath)
                         cr.overlengthPicture=True
                         for a in frames.getall("APIC"):
@@ -346,15 +346,8 @@ def smatch(string,matchList):
 def main():
     albumNamesTracks={   # Match partial album name (distinct values) and track number prefix
                     #"Sonatas and Partitas":"2-08",
-                    "Sonatas and Partitas!":"2-01",
-                    "Goldberg Variations!":"3-04",
-                    "Pelleas!":"",
-                    "6 Cello!":"2-18",
-                    "Ostinata!":"01",
-                    "Best Of Satie!":"",
-                    "Grumiaux":"1-0",
-                    "Hot Rocks":"2-0",
-                    "!!!":"" # Do Everything
+                    "Santana":"",
+                    "!!!":"" # If blank, do Everything
                     }
     cleaner=MDcleaner()
     cleaner.logger.setLevel(logging.DEBUG)
@@ -365,8 +358,8 @@ def main():
             for l in filter(lambda m: m.endswith(".mp3") and m not in cleaner.fnameExclusions, ls):
                 filePath = os.path.join(r,l)
                 if l.startswith(albumNamesTracks[an]):
-                    logger.info(pformat(f"Cleaning {filePath} - {cleaner.changes+1} of {min(self.changeLimit)}",
-                    width=self.w))
+                    cleaner.logger.info(pformat(f"Cleaning {filePath} - {cleaner.changes+1} of {min([cleaner.changeLimit])}",
+                    width=cleaner.logWidth))
                     rep=cleaner.report(filePath)
                     if rep: cleaner.longList.append(filePath+" "+pformat(rep))
                     
