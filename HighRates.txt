@@ -1,0 +1,281 @@
+{("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-01 Act I Prologue_ The woods are green (Anne, Rakewell, '
+  'Trulove).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-02 Act I Scene 1_ Anne, my dear (Trulove, Anne, Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-04 Act I Scene 1_ Tom Rakewell_ (Shadow, Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-05 Act I Scene 1_ Fair lady, gracious gentlemen (Shadow).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-06 Act I Scene 1_ I wished but once (Rakewell, Shadow, Anne, '
+  'Trulove).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-07 Act I Scene 1_ My Anne, behold (Rakewell, Anne, Trulove, '
+  'Shadow).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-08 Act I Scene 1_ Farewell for now (Anne, Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-09 Act I Scene 1_ All is ready, sir (Shadow, Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-10 Act I Scene 1_ Dear father Trulove (Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-11 Act I Scene 1_ Laughter and light (Rakewell, Anne, Trulove, '
+  'Shadow).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-12 Act I Scene 2_ With air commanding and weapon handy (Roaring '
+  'Boys, Whores).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-13 Act I Scene 2_ Come, Tom (Shadow, Rakewell, Mother Goose).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-14 Act I Scene 2_ Soon dawn will glitter (Whores, Roaring Boys, '
+  'Shadow).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-15 Act I Scene 2_ Love, too frequently betrayed (Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-16 Act I Scene 2_ How sad a song (Whores, Mother Goose).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-17 Act I Scene 2_ The sun is bright, the grass is green (Whores, '
+  'Roaring Boys, Shadow).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-20 Act II Scene 1_ Vary the song, O London (Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-21 Act II Scene 1_ O Nature, green unnatural mother '
+  '(Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-22 Act II Scene 1_ Always the quarry that I stalk (Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-23 Act II Scene 1_ Master, are you alone_ (Shadow, Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-24 Act II Scene 1_ Come, master, observe the host of mankind '
+  '(Shadow).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-25 Act II Scene 1_ In youth the panting slave pursues '
+  '(Shadow).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-26 Act II Scene 1_ My tale shall be told (Rakewell, Shadow).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-27 Act II Scene 2_ Introduction.mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-28 Act II Scene 2_ How strange! à O heart, be stronger '
+  '(Anne).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-29 Act II Scene 2_ What can this mean_ (Anne, Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-30 Act II Scene 2_ My love, am I to remain in here for ever_ '
+  '(Baba, Anne, Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-31 Act II Scene 2_ Could it then have been known (Anne, '
+  'Rakewell, Baba).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/1-32 Act II Scene 2_ I have not run away (Baba, Rakewell, Voices, '
+  'Town People).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-01 Act II Scene 3_ As I was saying... Come, sweet. (Baba, '
+  'Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-02 Act II Scene 3_ Fa la la (Shadow).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-03 Act II Scene 3_ Thanks to this excellent device (Rakewell, '
+  'Shadow).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-04 Act II Scene 3_ Forgive me, master, for intruding (Shadow, '
+  'Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-05 Act III Scene 1_ Ruin. Disaster. Shame. (Crowd, Anne, '
+  'Sellem).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-06 Act III Scene 1_ Ladies both fair and gracious (Sellem).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-07 Act III Scene 1_ Who hears me, knows me (Sellem, Crowd).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-08 Act III Scene 1_ Sold! Annoyed! (Baba, Crowd, Rakewell, '
+  'Shadow).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-09 Act III Scene 1_ You love him, seek to set him right (Baba, '
+  'Anne, Crowd, Sellem, Rakewell, Shadow).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-10 Act III Scene 1_ I go to him (Anne, Rakewell, Shadow, Baba, '
+  'Crowd).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-11 Act III Scene 2_ Prelude.mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-12 Act III Scene 2_ How dark and dreadful is this place '
+  '(Rakewell, Shadow).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-13 Act III Scene 2_ Very well then, my dear and good Tom '
+  '(Shadow, Tom).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-15 Act III Scene 2_ The simpler the trick (Shadow, Rakewell, '
+  'Anne).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-16 Act III Scene 2_ I burn, I burn! I freeze! (Shadow).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-17 Act III Scene 2_ With roses crowned (Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-18 Act III Scene 3_ Prepare yourselves, heroic shades (Rakewell, '
+  'Madmen).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-19 Act III Scene 3_ There he is. Have no fear (Keeper, Anne, '
+  'Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-21 Act III Scene 3_ I am exceeding weary (Rakewell).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-22 Act III Scene 3_ Gently, little boat (Anne, Madmen).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-23 Act III Scene 3_ Anne, my dear (Trulove, Anne).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-24 Act III Scene 3_ Every wearied body (Anne, Trulove).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-25 Act III Scene 3_ Where art thou, Venus_ (Rakewell, '
+  'Madmen).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-26 Act III Scene 3_ Mourn for Adonis (Chorus).mp3',
+  320),
+ ("Metropolitan Opera Orchestra, Igor Stravinsky/Stravinsky_ The Rake's "
+  'Progress/2-27 Epilogue_ Good people, just a moment (Anne, Baba, Rakewell, '
+  'Shadow, Trulove).mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/01 Act I_ Prologue.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/02 Act I_ Jet Song.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  "Story/03 Act I_ Something's Coming.mp3",
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/04 Act I_ Blues.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/05 Act I_ Promenade.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/06 Act I_ Mambo.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/07 Act I_ Maria.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/08 Act I_ Balcony Scene _ Tonight.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/09 Act I_ America.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/10 Act I_ Cool.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/11 Act I_ One Hand, One Heart.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/12 Act I_ Tonight.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/13 Act I_ The Rumble.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/14 Act II_ I Feel Pretty.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/15 Act II_ Ballet Sequence.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/16 Act II_ Transition to Scherzo.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/17 Act II_ Scherzo.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/18 Act II_ Somewhere.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/19 Act II_ Procession and Nightmare.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/20 Act II_ Gee Officer Krupke.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/21 Act II_ A Boy Like That _ I Have a Love.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/22 Act II_ Taunting Scene.mp3',
+  320),
+ ('Nashville Symphony Orchestra, Kenneth Schermerhorn/Bernstein_ West Side '
+  'Story/23 Act II_ Finale.mp3',
+  320),
+ ('Polish National Radio Symphony Orchestra/Glazunov_Dvořák_ Violin '
+  'Concertos/01 Glazunov Violin Concerto_ Moderato - Andante sostenuto - '
+  'Allegro.mp3',
+  320),
+ ('Polish National Radio Symphony Orchestra/Glazunov_Dvořák_ Violin '
+  'Concertos/02 Dvořák Violin Concerto_ I. Allegro ma non troppo.mp3',
+  320),
+ ('Polish National Radio Symphony Orchestra/Glazunov_Dvořák_ Violin '
+  'Concertos/03 Dvořák Violin Concerto_ II. Adagio ma non troppo.mp3',
+  320),
+ ('Polish National Radio Symphony Orchestra/Glazunov_Dvořák_ Violin '
+  'Concertos/04 Dvořák Violin Concerto_ III. Finale_ Allegro giocoso, ma non '
+  'troppo.mp3',
+  320),
+ ('Polish National Radio Symphony Orchestra/Glazunov_Dvořák_ Violin '
+  'Concertos/05 Dvořák_ Romance for Violin and Orchestra in F minor, Op. '
+  '1.mp3',
+  320),
+ ('The Royal Philharmonic Orchestra, Sir Thomas Beecham/Grieg_ An Old '
+  "Norwegian Folksong With Variations, Concert Overture 'In Autumn'/01 An Old "
+  'Norwegian Folksong With Variations, Op. 51.mp3',
+  320)}

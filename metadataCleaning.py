@@ -108,7 +108,7 @@ class Metadata:
                     if "" in list(aws.keys()): self.coverAwLength=aws[""]
                     else: self.coverAwLength=aws[list(aws.keys())[0]] # The previous clean may have produced a more informative desc
         if "TPE1" in ks: self.leadArtist = frames["TPE1"].text[0] # Lead artist(s)/Lead performer(s)/Soloist(s)/Performing group
-        if "TPE2" in ks: self.backingArtist = frames["TPE2"].text[0] # Band/Orchestra/Accompaniment (aka Album artist)
+        if "TPE2" in ks: self.albumArtist = frames["TPE2"].text[0] # Album Artist/Band/Orchestra/Accompaniment
         if "TENC" in ks: self.encoder = frames["TENC"].text[0] # Encoded by
         if "TSSE" in ks: self.encoderSettings = frames["TSSE"].text[0] # Software/Hardware and settings used for encoding
         txs={}
@@ -119,9 +119,10 @@ class Metadata:
         
 class CleaningReport:
     def __init__(self):
-    
+        self.overlengthSomething=False
         self.overlengthAlbum=False
         self.overlengthArtist=False
+        self.overlengthAlbumArtist=False
         self.overlengthTitle=False
         self.overlengthPicture=False
         self.overlengthComposer=False
@@ -130,14 +131,20 @@ class CleaningReport:
 
 class MDcleaner:
     
-    
+    class_tlimit=63 # Longest text for track title
     class_alimit=40 # Longest text for album name
     class_slimit=30 # Longest text for lead artist
-    class_tlimit=63 # Longest text for track title
     class_climit=20 # Longest text for composer
     # Total length = 133
     class_ulimit=215 # Url limit check - a longer URL causes a warning.
-    
+    #Make-ready for reporting of lengths.
+    maxes={
+            "TIT2":class_tlimit,
+            "TALB":class_alimit,
+            "TPE1":class_slimit,
+            "TPE2":class_slimit,
+            "TCOM":class_climit
+    }
     """ 
         The length, plus the added length of the root directory and path serparators must be limited. 
         Experiments have shown that with a root diretory on the server of "/http://192.168.0.52:9795/minimserver/*/", (40 characters)  
@@ -218,6 +225,9 @@ class MDcleaner:
                     if hasattr(metadata,"leadArtist") and len(metadata.leadArtist)>self.slimit:
                         metadata.leadArtist = metadata.leadArtist[0:self.slimit]
                         cr.overlengthArtist=True
+                    if hasattr(metadata,"albumArtist") and len(metadata.albumArtist)>self.slimit:
+                        metadata.albumArtist = metadata.albumArtist[0:self.slimit]
+                        cr.overlengthAlbumArtist=True
                     if hasattr(metadata,"composer") and len(metadata.composer)> self.climit:
                         metadata.composer = metadata.composer[0:self.climit]
                         cr.overlengthComposer=True
@@ -249,7 +259,7 @@ class MDcleaner:
                     if hasattr(metadata,"album"): frames.add(TALB(text=[pureMangle(metadata.album)]))
                     if hasattr(metadata,"title"):  frames.add(TIT2(text=[pureMangle(metadata.title)]))
                     if hasattr(metadata,"leadArtist"): frames.add(TPE1(text=[pureMangle(metadata.leadArtist)]))
-                    if hasattr(metadata,"backingArtist"): frames.add(TPE2(text=[pureMangle(metadata.backingArtist)]))
+                    if hasattr(metadata,"albumArtist"): frames.add(TPE2(text=[pureMangle(metadata.albumArtist)]))
                     if hasattr(metadata,"composer"): frames.add(TCOM(text=[pureMangle(metadata.composer)]))
                     if hasattr(metadata,"trackNo"): frames.add(TRCK(text=[metadata.trackNo]))
                     if hasattr(metadata,"diskNo"): frames.add(TPOS(text=[metadata.diskNo]))
@@ -324,12 +334,17 @@ class MDcleaner:
             else: pass
             
             # Report the frame text lengths
-            fidReport={k:len(frames[k].text[0])for k in filter(lambda kl: kl in ["TALB","TIT1","TIT2","TCOM"], frames.keys())}
+            reportFrameIds =["TALB","TIT1","TIT2","TCOM","TPE1","TPE2"]
+            fidReport={k:len(frames[k].text[0]) for k in filter(lambda kl: kl in reportFrameIds, frames.keys())}
             url=urllib.parse.quote(filePath)
+            fidTextReport= {k:f"{len(frames[k].text[0])} / {MDcleaner.maxes[k]}" for k in filter(lambda kl: kl in reportFrameIds, frames.keys())}
+
             self.logger.info("\nFrame contents: \n"+frames.pprint())
-            self.logger.info("Text lengths: \n"+json.dumps(fidReport, indent=4)+ f"\nURL length: {len(url)}." + "\n\n\n")# , sort_keys=True))
-            if any(l > self.tlimit for l in iter(fidReport.values())):
-                rr.overlengthTitle=True
+            self.logger.info("Text lengths: \n"+json.dumps(fidTextReport, indent=4)+ f"\nURL length: {len(url)}." + "\n\n\n")# , sort_keys=True))
+            if any(fidReport[k] > MDcleaner.maxes[k] for k in iter(fidReport.keys())):
+                rr.overlengthSomething=True # This should report the correct field...
+                for k in iter(fidReport.keys()):
+                    pass
             else: pass
 
             if len(url)>self.ulimit: self.logger.warning(f"\n{filePath} encodes to a url of length {len(url)} which exceeds the limit of {self.ulimit}. Truncation of titles and/or artist info will be applied.")
@@ -346,7 +361,7 @@ def smatch(string,matchList):
 def main():
     albumNamesTracks={   # Match partial album name (distinct values) and track number prefix
                     #"Sonatas and Partitas":"2-08",
-                    "Santana":"",
+                    "Tosca":"2-03",
                     "!!!":"" # If blank, do Everything
                     }
     cleaner=MDcleaner()
@@ -366,13 +381,14 @@ def main():
                     if len(sys.argv)>1 and sys.argv[1]=="clean":
                         cleaner.clean(filePath) # Cleans all frames (including dubious TXXX and  frames) and creates a new ID3v2.2 tag
                                                 # using simplified original data.
-                        
+                        function="Cleaned"
+                    else: function="Reported"
                     
-                    
+    
     if len(cleaner.longList)==0:
         cleaner.logger.info("No updates")
     else:
-        cleaner.logger.info(f"Changed {len(cleaner.longList)} files: \n{pformat(cleaner.longList)} ")
+        cleaner.logger.info(f"{function} {len(cleaner.longList)} files: \n{pformat(cleaner.longList)} ")
     
 
     

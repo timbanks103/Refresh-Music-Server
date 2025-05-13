@@ -1,0 +1,120 @@
+[2025-04-26 21:50:14,370] {metadataCleaning.py:179} INFO - Searching for paths in /Volumes/Media/Shared Music/MusicMP3 matching any of {'Goldberg Variation': '1-01', 'Goldberg Variations': '1-07'}.
+[2025-04-26 21:50:14,976] {metadataCleaning.py:154} INFO - 
+
+
+Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Trevor Pinnock/Bach_ 6 Partitas, Goldberg Variations, French Overture, Italian Concerto/1-07 Partita No. 2 in C Minor, BWV 826_ I. Sinfonia (Grave adagio.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x2, 0x0  (means ID3v2.2.0)',
+'mp3Score': 3,
+'size': 44745,
+'tagSize': '0x0, 0x2, 0x5d, 0x3f (= decimal 44735 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 2, 0)}
+[2025-04-26 21:50:14,977] {metadataCleaning.py:155} INFO - 
+
+MP3 info: 
+  {'bitrate': 160000,
+ 'channels': 2,
+ 'frame_offset': 44745,
+ 'layer': 3,
+ 'length': 276.7412,
+ 'mode': 1,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+[2025-04-26 21:50:14,977] {metadataCleaning.py:164} DEBUG - 
+
+
+Frame contents: 
+APIC=other,   (image/jpeg, 16865 bytes)
+APIC=other,  (image/jpeg, 16865 bytes)
+COMM==eng=Unplayable on Pure - in spite of reducing metadata to bare minimum (delete (via Mp3tag) and  recreate with shortened names, no artwork, no TXXX frames.)
+COMM=iTunNORM=eng= 000002A6 00000220 00001801 00001476 00006672 00004634 000070D5 0000641B 0000D387 00004634
+COMM=iTunPGAP=eng=0
+COMM=iTunSMPB=eng= 00000000 00000210 00000AC8 0000000000BA2C28 00000000 00546415 00000000 00000000 00000000 00000000 00000000 00000000
+GRP1=Partita No. 2 in C Minor, BWV 826
+TALB=Bach: 6 Partitas, Goldberg Variations, French Overture, Conver
+TCOM=J.S. Bach
+TCON=Classical
+TDRC=1985
+TENC=Music 1.5.4.70
+TIT2=Partita No. 2 in C Minor, BWV 826: I. Sinfonia (Grave adagio
+TPE1=Trevor Pinnock
+TPE2=Trevor Pinnock
+TPOS=1/3
+TRCK=7/26
+[2025-04-26 21:50:14,977] {metadataCleaning.py:165} DEBUG - Text lengths: 
+{
+    "TALB": 62,
+    "TCOM": 9,
+    "TIT2": 60
+}
+[2025-04-26 21:50:14,987] {metadataCleaning.py:154} INFO - 
+
+
+Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Trevor Pinnock/Bach_ 6 Partitas, Goldberg Variations, French Overture, Italian Concerto/1-01 Partita No. 1 in B-Flat, BWV 825_ I. Praeludium.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x3, 0x0  (means ID3v2.3.0)',
+'mp3Score': 3,
+'size': 395711,
+'tagSize': '0x0, 0x18, 0x13, 0x35 (= decimal 395701 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 3, 0)}
+[2025-04-26 21:50:14,988] {metadataCleaning.py:155} INFO - 
+
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 395711,
+ 'layer': 3,
+ 'length': 118.46530612244898,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+[2025-04-26 21:50:14,988] {metadataCleaning.py:164} DEBUG - 
+
+
+Frame contents: 
+APIC=other,  (image/png, 390435 bytes)
+TALB=Bach: 6 Partitas, Goldberg Variations, French Overture, Italian
+TCOM=J.S. Bach
+TCON=Classical
+TCOP=This Compilation ℗ 2003 Deutsche Grammophon GmbH, Berlin
+TDRC=1985-01-01 12:00
+TIT1=Partita No. 1 in B-Flat, BWV 825
+TIT2=Partita No. 1 in B-Flat, BWV 825: I. Praeludium
+TPE1=Trevor Pinnock
+TPE2=Trevor Pinnock
+TPOS=1/3
+TRCK=1/26
+TSSE=Lavf61.7.100
+TXXX=TCMP=0
+TXXX=compatible_brands=M4A mp42isom
+TXXX=iTunNORM= 0000030A 0000025C 00000DA8 00000D34 00009D47 00006380 00006668 00004BAE 00018F18 000191FF
+TXXX=iTunSMPB= 00000000 00000840 00000134 00000000004FAE8C 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=major_brand=M4A 
+TXXX=media_type=1
+TXXX=minor_version=0
+TXXX=purchase_date=2025-03-31 14:29:01
+TXXX=sort_album=Bach: 6 Partitas, Goldberg Variations, French Overture, Italian Concerto
+TXXX=sort_artist=Trevor Pinnock
+TXXX=sort_name=Partita No. 1 in B-Flat, BWV 825: I. Praeludium
+[2025-04-26 21:50:14,988] {metadataCleaning.py:165} DEBUG - Text lengths: 
+{
+    "TALB": 63,
+    "TCOM": 9,
+    "TIT1": 32,
+    "TIT2": 47
+}
+[2025-04-26 21:50:14,998] {metadataCleaning.py:192} INFO - No updates

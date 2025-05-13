@@ -1,24 +1,1898 @@
-[2025-05-12 18:39:20,089] {transcoding.py:62} INFO - Export of playlists from Music was successful.
-[2025-05-12 18:39:21,396] {transcoding.py:163} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
-[2025-05-12 18:39:21,396] {transcoding.py:164} INFO - []
-[2025-05-12 18:39:21,396] {transcoding.py:166} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
-[2025-05-12 18:39:21,396] {transcoding.py:167} INFO - []
-[2025-05-12 18:39:21,396] {transcoding.py:169} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
-[2025-05-12 18:39:21,396] {transcoding.py:170} INFO - ['1970-1995.m3u8', 'Bedtime.m3u8', 'Brahms Piano Concerto no 2.m3u8']
-[2025-05-12 18:39:21,397] {transcoding.py:171} INFO - of 7
-[2025-05-12 18:39:21,397] {transcoding.py:177} INFO - Source rate statistics: 
+[2025-05-12 21:53:33,928] {transcoding.py:62} INFO - Export of playlists from Music was successful.
+[2025-05-12 21:53:34,901] {transcoding.py:163} INFO - Additions to /Volumes/Media/Shared Music/Music Library not in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-05-12 21:53:34,901] {transcoding.py:164} INFO - []
+[2025-05-12 21:53:34,901] {transcoding.py:166} INFO - Removals from /Volumes/Media/Shared Music/Music Library present in /Volumes/Media/Shared Music/MusicMP3/Music:
+[2025-05-12 21:53:34,901] {transcoding.py:167} INFO - []
+[2025-05-12 21:53:34,901] {transcoding.py:169} INFO - Updates to /Volumes/Media/Shared Music/Music Library needing refresh:
+[2025-05-12 21:53:34,901] {transcoding.py:170} INFO - ['1970-1995.m3u8', 'Bedtime.m3u8', 'Brahms Piano Concerto no 2.m3u8']
+[2025-05-12 21:53:34,901] {transcoding.py:171} INFO - of 34
+[2025-05-12 21:53:34,901] {transcoding.py:177} INFO - Source rate statistics: 
 {}
-[2025-05-12 18:39:21,423] {transcoding.py:198} INFO - Empty Directories: 
-[2025-05-12 18:39:21,423] {transcoding.py:199} INFO - []
-[2025-05-12 18:39:21,443] {transcoding.py:301} INFO - Copied/translated updated 1970-1995.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music/1970-1995.m3u8. (1 of 7). 
-[2025-05-12 18:39:21,447] {transcoding.py:301} INFO - Copied/translated updated Bedtime.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music/Bedtime.m3u8. (2 of 7). 
-[2025-05-12 18:39:21,448] {transcoding.py:301} INFO - Copied/translated updated Brahms Piano Concerto no 2.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music/Brahms Piano Concerto no 2.m3u8. (3 of 7). 
-[2025-05-12 18:39:21,452] {transcoding.py:301} INFO - Copied/translated updated Christmas.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music/Christmas.m3u8. (4 of 7). 
-[2025-05-12 18:39:21,453] {transcoding.py:301} INFO - Copied/translated updated May 17.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music/May 17.m3u8. (5 of 7). 
-[2025-05-12 18:39:21,453] {transcoding.py:301} INFO - Copied/translated updated MusicRadio.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music/MusicRadio.m3u8. (6 of 7). 
-[2025-05-12 18:39:21,454] {transcoding.py:301} INFO - Copied/translated updated Test.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music/Test.m3u8. (7 of 7). 
-[2025-05-12 18:39:21,454] {transcoding.py:333} INFO - Transcoding done
-[2025 May 12 18:42:31] {minimRescanWrapper.zsh} 
+[2025-05-12 21:53:34,920] {transcoding.py:198} INFO - Empty Directories: 
+[2025-05-12 21:53:34,920] {transcoding.py:199} INFO - []
+[2025-05-12 21:53:34,939] {transcoding.py:301} INFO - Copied/translated updated 1970-1995.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music/1970-1995.m3u8. (1 of 34). 
+[2025-05-12 21:53:34,942] {transcoding.py:301} INFO - Copied/translated updated Bedtime.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music/Bedtime.m3u8. (2 of 34). 
+[2025-05-12 21:53:34,943] {transcoding.py:301} INFO - Copied/translated updated Brahms Piano Concerto no 2.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music/Brahms Piano Concerto no 2.m3u8. (3 of 34). 
+[2025-05-12 21:53:34,947] {transcoding.py:301} INFO - Copied/translated updated Christmas.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music/Christmas.m3u8. (4 of 34). 
+[2025-05-12 21:53:34,948] {transcoding.py:301} INFO - Copied/translated updated May 17.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music/May 17.m3u8. (5 of 34). 
+[2025-05-12 21:53:38,519] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/1-01 Act 1_ Ah Finalmente.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-01 Act 1_ Ah Finalmente.mp3. (6 of 34). 
+[2025-05-12 21:53:38,675] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-01 Act 1_ Ah Finalmente.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135650,
+'tagSize': '0x0, 0x8, 0x23, 0x58 (= decimal 135640 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:53:38,676] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135650,
+ 'layer': 3,
+ 'length': 163.10857142857142,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:53:38,676] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 1: Ah Finalmente
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=1/2
+TRCK=1/10
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 000000F8 000001DA 0000177C 00004300 000024BC 00002402 00006CB3 00005C67 00001D63 00002447
+TXXX=iTunSMPB= 00000000 00000840 000000F8 00000000006DBAC8 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=10++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:53:38,676] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "20 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 138.
+
+
+
+[2025-05-12 21:53:38,757] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:53:41,890] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/1-02 Act 1_ E Sempre Lava!.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-02 Act 1_ E Sempre Lava!.mp3. (7 of 34). 
+[2025-05-12 21:53:41,953] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-02 Act 1_ E Sempre Lava!.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135651,
+'tagSize': '0x0, 0x8, 0x23, 0x59 (= decimal 135641 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:53:41,953] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135651,
+ 'layer': 3,
+ 'length': 154.46204081632652,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:53:41,953] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 1: E Sempre Lava!
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=1/2
+TRCK=2/10
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 000000CA 0000006C 000011D0 00000AC1 00023C55 00023C55 00003152 00002E19 000049BD 00023812
+TXXX=iTunSMPB= 00000000 00000840 000001F0 000000000067E5D0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=10++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:53:41,954] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "21 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 143.
+
+
+
+[2025-05-12 21:53:42,024] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:53:47,529] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/1-03 Act 1_ Dammi I Colon... Recondita Armonica.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-03 Act 1_ Dammi I Colon... Recondita Armonica.mp3. (8 of 34). 
+[2025-05-12 21:53:47,610] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-03 Act 1_ Dammi I Colon... Recondita Armonica.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135672,
+'tagSize': '0x0, 0x8, 0x23, 0x6e (= decimal 135662 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:53:47,610] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135672,
+ 'layer': 3,
+ 'length': 273.2408163265306,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:53:47,610] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 1: Dammi I Colon... Recondita Armonica
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=1/2
+TRCK=3/10
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000204 00000193 0000265B 000019EE 00041CE1 00025033 00004EB9 000043C6 00022DA4 00022DE9
+TXXX=iTunSMPB= 00000000 00000840 000000C8 0000000000B7D6F8 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=10++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:53:47,610] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "42 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 166.
+
+
+
+[2025-05-12 21:53:47,873] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:53:48,791] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/1-04 Act 1_ Voi! Cavaradossi!.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-04 Act 1_ Voi! Cavaradossi!.mp3. (9 of 34). 
+[2025-05-12 21:53:48,798] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-04 Act 1_ Voi! Cavaradossi!.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135654,
+'tagSize': '0x0, 0x8, 0x23, 0x5c (= decimal 135644 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:53:48,799] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135654,
+ 'layer': 3,
+ 'length': 36.59755102040816,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:53:48,799] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 1: Voi! Cavaradossi!
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=1/2
+TRCK=4/10
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000322 00000347 00001D2E 00002695 00008583 000010F6 00005B8B 000055D3 0000616A 000010F6
+TXXX=iTunSMPB= 00000000 00000840 00000250 0000000000189570 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=10++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:53:48,799] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "24 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 146.
+
+
+
+[2025-05-12 21:53:48,805] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:54:04,960] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/1-05 Act 1_ Mario! Mario! Mario!.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-05 Act 1_ Mario! Mario! Mario!.mp3. (10 of 34). 
+[2025-05-12 21:54:05,025] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-05 Act 1_ Mario! Mario! Mario!.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135657,
+'tagSize': '0x0, 0x8, 0x23, 0x5f (= decimal 135647 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:54:05,025] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135657,
+ 'layer': 3,
+ 'length': 774.974693877551,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:54:05,025] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 1: Mario! Mario! Mario!
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=1/2
+TRCK=5/10
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000305 000001E1 00005060 00003273 00063605 0004953E 00007689 00005F2A 0004966B 00049683
+TXXX=iTunSMPB= 00000000 00000840 00000160 0000000002097660 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=10++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:54:05,025] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "27 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 153.
+
+
+
+[2025-05-12 21:54:05,523] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:54:09,551] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/1-06 Act 1_ E' Buona La Mia Tosca.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-06 Act 1_ E' Buona La Mia Tosca.mp3. (11 of 34). 
+[2025-05-12 21:54:09,705] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-06 Act 1_ E' Buona La Mia Tosca.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135658,
+'tagSize': '0x0, 0x8, 0x23, 0x60 (= decimal 135648 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:54:09,705] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135658,
+ 'layer': 3,
+ 'length': 204.094693877551,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:54:09,705] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 1: E' Buona La Mia Tosca
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=1/2
+TRCK=6/10
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 000000F0 00000319 00001171 00006103 00031137 0001C7B1 0000442E 00005757 00027CBC 0001B774
+TXXX=iTunSMPB= 00000000 00000840 000002AC 0000000000894D14 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=10++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:54:09,705] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "28 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 154.
+
+
+
+[2025-05-12 21:54:09,793] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:54:11,611] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/1-07 Act 1_ Sommo Gubilo, Eccellenza!.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-07 Act 1_ Sommo Gubilo, Eccellenza!.mp3. (12 of 34). 
+[2025-05-12 21:54:11,624] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-07 Act 1_ Sommo Gubilo, Eccellenza!.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135662,
+'tagSize': '0x0, 0x8, 0x23, 0x64 (= decimal 135652 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:54:11,625] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135662,
+ 'layer': 3,
+ 'length': 86.93551020408164,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:54:11,625] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 1: Sommo Gubilo, Eccellenza!
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=1/2
+TRCK=7/10
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000428 0000023F 000025D5 00001A44 0001422D 000141E7 00005BB6 00004BFE 00014272 000141E7
+TXXX=iTunSMPB= 00000000 00000840 0000039C 00000000003A7424 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=10++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:54:11,625] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "32 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 156.
+
+
+
+[2025-05-12 21:54:11,635] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:54:16,293] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/1-08 Act 1_ Un Tal Baccano In Chiesa!.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-08 Act 1_ Un Tal Baccano In Chiesa!.mp3. (13 of 34). 
+[2025-05-12 21:54:16,661] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-08 Act 1_ Un Tal Baccano In Chiesa!.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135662,
+'tagSize': '0x0, 0x8, 0x23, 0x64 (= decimal 135652 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:54:16,661] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135662,
+ 'layer': 3,
+ 'length': 230.53061224489795,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:54:16,661] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 1: Un Tal Baccano In Chiesa!
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=1/2
+TRCK=8/10
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000161 000001A7 00002BA4 000039D2 00028EB1 00000EF7 000061E2 000055E1 00000A3F 00000EC8
+TXXX=iTunSMPB= 00000000 00000840 00000244 00000000009B157C 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=10++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:54:16,661] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "32 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 158.
+
+
+
+[2025-05-12 21:54:16,780] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:54:26,479] {transcoding.py:253} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/1-09 Act 1_ Or Tutto È Chiaro.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-09 Act 1_ Or Tutto E Chiaro.mp3. (14 of 34). 
+[2025-05-12 21:54:26,502] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-09 Act 1_ Or Tutto E Chiaro.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135655,
+'tagSize': '0x0, 0x8, 0x23, 0x5d (= decimal 135645 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:54:26,502] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135655,
+ 'layer': 3,
+ 'length': 448.05224489795916,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:54:26,502] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 1: Or Tutto È Chiaro
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=1/2
+TRCK=9/10
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000228 00000158 00003561 0000245A 00038B35 0002B8C7 0000551F 00004C9D 0002B853 0005C277
+TXXX=iTunSMPB= 00000000 00000840 000000C0 00000000012D7700 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=10++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:54:26,502] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "24 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 146.
+
+
+
+[2025-05-12 21:54:26,798] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:54:32,378] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/1-10 Act 1_ Tre Shirra, Una Carrozza.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-10 Act 1_ Tre Shirra, Una Carrozza.mp3. (15 of 34). 
+[2025-05-12 21:54:32,556] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/1-10 Act 1_ Tre Shirra, Una Carrozza.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135662,
+'tagSize': '0x0, 0x8, 0x23, 0x64 (= decimal 135652 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:54:32,556] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135662,
+ 'layer': 3,
+ 'length': 278.59591836734694,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:54:32,557] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 1: Tre Shirra, Una Carrozza
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=1/2
+TRCK=10/10
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000322 00000690 00001CE1 00003028 0003FEDB 0003445F 00007A6B 00007A9F 0003435F 0003435F
+TXXX=iTunSMPB= 00000000 00000840 00000170 0000000000BB7250 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=10++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:54:32,557] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "31 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 155.
+
+
+
+[2025-05-12 21:54:32,693] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:54:36,363] {transcoding.py:253} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-01 Act 2_ _Tosca è un buon falco!_.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-01 Act 2_ _Tosca e un buon falco!_.mp3. (16 of 34). 
+[2025-05-12 21:54:36,512] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-01 Act 2_ _Tosca e un buon falco!_.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135662,
+'tagSize': '0x0, 0x8, 0x23, 0x64 (= decimal 135652 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:54:36,512] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135662,
+ 'layer': 3,
+ 'length': 188.42122448979592,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:54:36,512] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 2: "Tosca è un buon falco!"
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=1/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000098 0000004A 00001D4B 00001047 0000D26E 0000DA23 0000641E 00004C2E 0000DA52 0000DADD
+TXXX=iTunSMPB= 00000000 00000840 00000180 00000000007EC240 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:54:36,512] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "31 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 157.
+
+
+
+[2025-05-12 21:54:36,595] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:54:38,331] {transcoding.py:253} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-02 Act 2_ _Ha più forte sapore_ - _Spoletta è giunto_.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-02 Act 2_ _Ha piu forte sapore_ - _Spoletta e giunto_.mp3. (17 of 34). 
+[2025-05-12 21:54:38,336] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-02 Act 2_ _Ha piu forte sapore_ - _Spoletta e giunto_.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135682,
+'tagSize': '0x0, 0x8, 0x23, 0x78 (= decimal 135672 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:54:38,336] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135682,
+ 'layer': 3,
+ 'length': 82.12897959183674,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:54:38,336] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 2: "Ha più forte sapore" - "Spoletta è giunto"
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=2/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 000002FF 000000E0 000023E9 00000D6A 0000B94E 0000A7FB 00006210 00003FAC 0000A787 00010C7B
+TXXX=iTunSMPB= 00000000 00000840 0000027C 0000000000373944 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:54:38,336] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "50 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 180.
+
+
+
+[2025-05-12 21:54:38,346] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:54:42,946] {transcoding.py:253} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-04 Act 2_ _Ov'è Angelotti__ - _Mario, tu qui_!_.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-04 Act 2_ _Ov'e Angelotti__ - _Mario, tu qui_!_.mp3. (18 of 34). 
+[2025-05-12 21:54:43,061] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-04 Act 2_ _Ov'e Angelotti__ - _Mario, tu qui_!_.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135675,
+'tagSize': '0x0, 0x8, 0x23, 0x71 (= decimal 135665 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:54:43,061] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135675,
+ 'layer': 3,
+ 'length': 226.45551020408163,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:54:43,061] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 2: "Ov'è Angelotti?" - "Mario, tu qui?!"
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=4/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000252 00000108 00004032 000020D0 0000FA57 00034CCE 00005C12 000044CD 0000DF21 00013A8E
+TXXX=iTunSMPB= 00000000 00000840 000002D0 00000000009858F0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:54:43,062] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "44 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 176.
+
+
+
+[2025-05-12 21:54:43,227] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:54:46,980] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-05 Act 2_ _Sciarrone_ che dice il cavalier__.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-05 Act 2_ _Sciarrone_ che dice il cavalier__.mp3. (19 of 34). 
+[2025-05-12 21:54:47,133] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-05 Act 2_ _Sciarrone_ che dice il cavalier__.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135671,
+'tagSize': '0x0, 0x8, 0x23, 0x6d (= decimal 135661 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:54:47,133] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135671,
+ 'layer': 3,
+ 'length': 167.9934693877551,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:54:47,133] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 2: "Sciarrone: che dice il cavalier?"
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=5/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000275 000002EE 0000293B 0000554D 0000B40B 0000B422 000058E9 000060FF 0000B40B 0000B40B
+TXXX=iTunSMPB= 00000000 00000840 0000029C 0000000000710124 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:54:47,133] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "41 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 165.
+
+
+
+[2025-05-12 21:54:47,210] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:54:51,716] {transcoding.py:253} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-06 Act 2_ _Orsù, Tosca, parlate._ - _Mario, consenti ch'io parli__.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-06 Act 2_ _Orsu, Tosca, parlate._ - _Mario, consenti ch'io p.mp3. (20 of 34). 
+[2025-05-12 21:54:51,884] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-06 Act 2_ _Orsu, Tosca, parlate._ - _Mario, consenti ch'io p.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135694,
+'tagSize': '0x0, 0x8, 0x24, 0x4 (= decimal 135684 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:54:51,885] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135694,
+ 'layer': 3,
+ 'length': 215.3012244897959,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:54:51,885] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 2: "Orsù, Tosca, parlate." - "Mario, consenti ch'io parli?"
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=6/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 000002BE 00000483 00003899 00005514 000170B5 000170B5 00005939 00005FDF 00015280 00016FFB
+TXXX=iTunSMPB= 00000000 00000840 000000B4 000000000090DB0C 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:54:51,885] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "63 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 195.
+
+
+
+[2025-05-12 21:54:51,980] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:54:54,184] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-07 Act 2_ _Floria..._ - _Amore..._.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-07 Act 2_ _Floria..._ - _Amore..._.mp3. (21 of 34). 
+[2025-05-12 21:54:54,189] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-07 Act 2_ _Floria..._ - _Amore..._.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135661,
+'tagSize': '0x0, 0x8, 0x23, 0x63 (= decimal 135651 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:54:54,189] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135661,
+ 'layer': 3,
+ 'length': 88.0065306122449,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:54:54,190] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 2: "Floria..." - "Amore..."
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=7/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000199 00000192 00003BF2 00003B13 00012455 00012455 00004FAC 00004FC2 00012455 0001249B
+TXXX=iTunSMPB= 00000000 00000840 00000344 00000000003B307C 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:54:54,190] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "31 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 151.
+
+
+
+[2025-05-12 21:54:54,201] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:54:57,738] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-08 Act 2_ Vittoria! Vittoria!.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-08 Act 2_ Vittoria! Vittoria!.mp3. (22 of 34). 
+[2025-05-12 21:54:57,888] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-08 Act 2_ Vittoria! Vittoria!.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135656,
+'tagSize': '0x0, 0x8, 0x23, 0x5e (= decimal 135646 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:54:57,888] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135656,
+ 'layer': 3,
+ 'length': 161.14938775510205,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:54:57,888] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 2: Vittoria! Vittoria!
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=8/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000467 000003CB 00004C72 00003620 0000CFB5 0000EDBB 00005FDB 00005ABE 0000E5A8 0000E9EC
+TXXX=iTunSMPB= 00000000 00000840 0000029C 00000000006C6924 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:54:57,889] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "26 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 148.
+
+
+
+[2025-05-12 21:54:57,974] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:55:04,246] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-09 Act 2_ Quanto_ Quanto_ Il prezzo!.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-09 Act 2_ Quanto_ Quanto_ Il prezzo!.mp3. (23 of 34). 
+[2025-05-12 21:55:04,412] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-09 Act 2_ Quanto_ Quanto_ Il prezzo!.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135663,
+'tagSize': '0x0, 0x8, 0x23, 0x65 (= decimal 135653 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:55:04,412] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135663,
+ 'layer': 3,
+ 'length': 265.8742857142857,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:55:04,412] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 2: Quanto? Quanto? Il prezzo!
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=9/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 000003C5 000002A3 00003E5E 00003BC7 00023F82 00030853 00005E73 00005E49 00022DBB 00022DBB
+TXXX=iTunSMPB= 00000000 00000840 000002F4 0000000000B2E0CC 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:55:04,412] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "33 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 157.
+
+
+
+[2025-05-12 21:55:04,661] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:55:11,540] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-10 Act 2_ _Vissi d'arte, vissi d'amore_.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-10 Act 2_ _Vissi d'arte, vissi d'amore_.mp3. (24 of 34). 
+[2025-05-12 21:55:11,696] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-10 Act 2_ _Vissi d'arte, vissi d'amore_.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135667,
+'tagSize': '0x0, 0x8, 0x23, 0x69 (= decimal 135657 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:55:11,697] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135667,
+ 'layer': 3,
+ 'length': 261.8775510204082,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:55:11,697] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 2: "Vissi d'arte, vissi d'amore"
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=10/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 0000026E 00000192 00002D3F 00002EE6 0003F1CB 0003FE0A 00005201 00004BAC 0003593B 0003FE67
+TXXX=iTunSMPB= 00000000 00000840 000001B8 0000000000B03208 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:55:11,697] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "36 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 164.
+
+
+
+[2025-05-12 21:55:11,812] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:55:15,131] {transcoding.py:253} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-11 Act 2_ Chi è là_.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-11 Act 2_ Chi e la_.mp3. (25 of 34). 
+[2025-05-12 21:55:15,138] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-11 Act 2_ Chi e la_.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135649,
+'tagSize': '0x0, 0x8, 0x23, 0x57 (= decimal 135639 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:55:15,138] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135649,
+ 'layer': 3,
+ 'length': 116.58448979591837,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:55:15,139] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 2: Chi è là?
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=11/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000151 0000010D 00002328 00001E3A 000027D1 000020D5 00005354 00004AC9 000020EC 000020D5
+TXXX=iTunSMPB= 00000000 00000840 00000110 00000000004E6AB0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:55:15,139] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "16 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 136.
+
+
+
+[2025-05-12 21:55:15,153] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:55:26,918] {transcoding.py:253} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-12 Act 2_ _Io tenni la promessa..._ - _E qual via scegliete__ - _Tosca, finalmente mia!_.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-12 Act 2_ _Io tenni la promessa..._ - _E qual via scegliete__.mp3. (26 of 34). 
+[2025-05-12 21:55:26,978] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-12 Act 2_ _Io tenni la promessa..._ - _E qual via scegliete__.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135716,
+'tagSize': '0x0, 0x8, 0x24, 0x1a (= decimal 135706 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:55:26,979] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135716,
+ 'layer': 3,
+ 'length': 401.3975510204082,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:55:26,979] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 2: "Io tenni la promessa..." - "E qual via scegliete?" - "Tosca, finalmente mia!"
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=12/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 000001A2 00000142 0000355C 000027AA 000245AD 0002457F 0000698D 00005A87 00022EBA 00022E5E
+TXXX=iTunSMPB= 00000000 00000840 000003D0 00000000010E0FF0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:55:26,979] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "85 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 190.
+
+
+
+[2025-05-12 21:55:27,178] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist', 'overlengthTitle']
+[2025-05-12 21:55:37,235] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-13 Act 3_ Prelude - _Io de' sospiri_.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-13 Act 3_ Prelude - _Io de' sospiri_.mp3. (27 of 34). 
+[2025-05-12 21:55:37,415] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-13 Act 3_ Prelude - _Io de' sospiri_.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135664,
+'tagSize': '0x0, 0x8, 0x23, 0x66 (= decimal 135654 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:55:37,415] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135664,
+ 'layer': 3,
+ 'length': 328.5681632653061,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:55:37,415] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 3: Prelude - "Io de' sospiri"
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=13/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000080 0000003B 0000170A 00000599 000040DA 00002AA1 00004C33 00002A7E 000040DA 000006FB
+TXXX=iTunSMPB= 00000000 00000840 000000C0 0000000000DD1300 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:55:37,415] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "33 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 159.
+
+
+
+[2025-05-12 21:55:37,578] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:55:44,633] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-14 Act 3_ _Mario Cavaradossi__ - _A voi_.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-14 Act 3_ _Mario Cavaradossi__ - _A voi_.mp3. (28 of 34). 
+[2025-05-12 21:55:44,802] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-14 Act 3_ _Mario Cavaradossi__ - _A voi_.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135668,
+'tagSize': '0x0, 0x8, 0x23, 0x6a (= decimal 135658 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:55:44,802] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135668,
+ 'layer': 3,
+ 'length': 265.43020408163267,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:55:44,802] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 3: "Mario Cavaradossi?" - "A voi"
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=14/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 0000010A 0000005F 000025E5 000007CE 0001F994 0001F6DB 00006179 0000425D 00013BD3 00013BEB
+TXXX=iTunSMPB= 00000000 00000840 00000358 0000000000B29068 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:55:44,802] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "37 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 161.
+
+
+
+[2025-05-12 21:55:44,949] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:55:49,662] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-15 Act 3_ E Lucevan Le Stelle.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-15 Act 3_ E Lucevan Le Stelle.mp3. (29 of 34). 
+[2025-05-12 21:55:49,808] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-15 Act 3_ E Lucevan Le Stelle.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135657,
+'tagSize': '0x0, 0x8, 0x23, 0x5f (= decimal 135647 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:55:49,809] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135657,
+ 'layer': 3,
+ 'length': 182.64816326530612,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:55:49,809] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 3: E Lucevan Le Stelle
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=15/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000328 00000102 000031F7 0000111C 0001FF90 00025C43 00004AAE 00003AFA 00021DC4 00025B89
+TXXX=iTunSMPB= 00000000 00000840 0000000C 00000000007ADFB4 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:55:49,809] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "26 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 148.
+
+
+
+[2025-05-12 21:55:49,902] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:55:53,678] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-16 Act 3_ Franchigia A Floria Tosca.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-16 Act 3_ Franchigia A Floria Tosca.mp3. (30 of 34). 
+[2025-05-12 21:55:53,825] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-16 Act 3_ Franchigia A Floria Tosca.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135663,
+'tagSize': '0x0, 0x8, 0x23, 0x65 (= decimal 135653 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:55:53,825] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135663,
+ 'layer': 3,
+ 'length': 162.03755102040816,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:55:53,826] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 3: Franchigia A Floria Tosca
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=16/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000287 00000337 000038FA 0000422C 0001B5D2 0001E986 00005466 00005681 000075D2 0001B518
+TXXX=iTunSMPB= 00000000 00000840 000000B8 00000000006D0308 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:55:53,826] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "32 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 154.
+
+
+
+[2025-05-12 21:55:53,924] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:56:05,403] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-17 Act 3_ O Dolci Mani.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-17 Act 3_ O Dolci Mani.mp3. (31 of 34). 
+[2025-05-12 21:56:05,467] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-17 Act 3_ O Dolci Mani.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135650,
+'tagSize': '0x0, 0x8, 0x23, 0x58 (= decimal 135640 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:56:05,467] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135650,
+ 'layer': 3,
+ 'length': 504.9730612244898,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:56:05,467] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 3: O Dolci Mani
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=17/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 00000200 000001E7 00003646 000040FE 00063DA4 00041957 00005B65 000054D2 00064957 0006442C
+TXXX=iTunSMPB= 00000000 00000840 00000118 000000000153C6A8 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:56:05,467] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "19 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 139.
+
+
+
+[2025-05-12 21:56:05,739] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:56:08,685] {transcoding.py:253} INFO - Successfully converted missing /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-18 Act 3_ Come È Lunga L'Attesta!.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-18 Act 3_ Come E Lunga L'Attesta!.mp3. (32 of 34). 
+[2025-05-12 21:56:08,696] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-18 Act 3_ Come E Lunga L'Attesta!.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135662,
+'tagSize': '0x0, 0x8, 0x23, 0x64 (= decimal 135652 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:56:08,696] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135662,
+ 'layer': 3,
+ 'length': 131.63102040816327,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:56:08,696] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TDRC=1966
+TIT2=Act 3: Come È Lunga L'Attesta!
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=18/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 0000030C 00000253 00002FDB 000024F0 000134C0 0001347B 00007A61 0000643E 000134A9 0001337B
+TXXX=iTunSMPB= 00000000 00000840 00000230 0000000000588990 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:56:08,697] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "30 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 156.
+
+
+
+[2025-05-12 21:56:08,714] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:56:10,574] {transcoding.py:253} INFO - Successfully converted updated /Volumes/Media/Shared Music/Music Library/Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel/Puccini_ Tosca/2-19 Act 3_ _Presto, su! Mario!_.m4a to /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-19 Act 3_ _Presto, su! Mario!_.mp3. (33 of 34). 
+[2025-05-12 21:56:10,579] {metadataCleaning.py:325} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Orchestra dell'Accademia di Sa/Puccini_ Tosca/2-19 Act 3_ _Presto, su! Mario!_.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x4, 0x0  (means ID3v2.4.0)',
+'mp3Score': 3,
+'size': 135642,
+'tagSize': '0x0, 0x8, 0x23, 0x50 (= decimal 135632 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 4, 0)}
+
+
+
+[2025-05-12 21:56:10,579] {metadataCleaning.py:326} INFO - 
+MP3 info: 
+  {'bitrate': 256000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 135642,
+ 'layer': 3,
+ 'length': 81.52816326530612,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-05-12 21:56:10,580] {metadataCleaning.py:342} INFO - 
+Frame contents: 
+APIC=other,  (image/png, 134814 bytes)
+TALB=Puccini: Tosca
+TCOM=Giacomo Puccini
+TCON=Classical
+TIT2=Act 3: "Presto, su! Mario!"
+TPE2=Orchestra dell'Accademia di Santa Cecilia, Lorin Maazel
+TPOS=2/2
+TRCK=19/19
+TSSE=Lavf61.7.100
+TXXX=Encoding Params=iTunes 10.1.2, QuickTime 7.6.6
+TXXX=compatible_brands=M4A mp42isom
+TXXX=gapless_playback=0
+TXXX=iTunNORM= 000008D1 000009D6 0000335F 00007405 0000F588 000018C3 00008000 00007C69 0001101B 0001101B
+TXXX=iTunSMPB= 00000000 00000840 000001D8 000000000036D1E8 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+TXXX=iTunes_CDDB_IDs=19++
+TXXX=major_brand=M4A 
+TXXX=minor_version=0
+TXXX=sort_album=Puccini: Tosca
+TXXX=tool=iTunes 10.1.2, QuickTime 7.6.6
+[2025-05-12 21:56:10,580] {metadataCleaning.py:343} INFO - Text lengths: 
+{
+    "TPE2": "55 / 30",
+    "TALB": "14 / 40",
+    "TIT2": "27 / 63",
+    "TCOM": "15 / 20"
+}
+URL length: 153.
+
+
+
+[2025-05-12 21:56:10,680] {metadataCleaning.py:286} INFO - Overlength: ['overlengthAlbumArtist']
+[2025-05-12 21:56:10,719] {transcoding.py:301} INFO - Copied/translated updated Test.m3u8 to /Volumes/Media/Shared Music/MusicMP3/Music/Test.m3u8. (34 of 34). 
+[2025-05-12 21:56:10,719] {transcoding.py:333} INFO - Transcoding done
+[2025 May 12 21:59:18] {minimRescanWrapper.zsh} 
 +*rescan
 +:status=0
 Server not available: 192.168.0.16:9790

@@ -1,0 +1,567 @@
+[2025-04-30 09:28:56,103] {extractId3.py:69} INFO - Searching for paths in /Volumes/Media/Shared Music/MusicMP3 matching any of {'Best Of Satie!': '',
+ 'Goldberg Variations!': '3-04',
+ 'Nocturnes!': '',
+ "Rake's Progress!": '1-0',
+ 'Sonatas and Partitas': '2-16'}.
+[2025-04-30 09:29:21,382] {extractId3.py:76} INFO - Searching for paths in /Volumes/Media/Shared Music/MusicMP3 matching any of {'Best Of Satie!': '',
+ 'Goldberg Variations!': '3-04',
+ 'Nocturnes!': '',
+ "Rake's Progress!": '1-0',
+ 'Sonatas and Partitas': '2-16'}.
+[2025-04-30 09:29:21,420] {metadataCleaning.py:206} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-16 Gigue (Partitia No. 3 in E major) BWV 1006.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x3, 0x0  (means ID3v2.3.0)',
+'mp3Score': 3,
+'size': 4241480,
+'tagSize': '0x2, 0x2, 0x70, 0x3e (= decimal 4241470 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 3, 0)}
+
+
+
+[2025-04-30 09:29:21,420] {metadataCleaning.py:207} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 4241480,
+ 'layer': 3,
+ 'length': 119.09224489795919,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 09:29:21,420] {metadataCleaning.py:211} DEBUG - 
+Pictures: 
+[{"encoding": 1, "mime": "image/png", "type": 0, "desc": "", "pictureSize": 4238045}]
+
+
+
+[2025-04-30 09:29:21,420] {metadataCleaning.py:224} DEBUG - 
+Frame contents: 
+APIC=other,  (image/png, 4238045 bytes)
+TALB=Bach: Sonatas and Partitas for solo Violin
+TCOM=J.S. Bach
+TCON=Classical
+TDRC=1990
+TIT2=Gigue (Partitia No. 3 in E major) BWV 1006
+TPE1=Lydia Mordkovitch
+TPE2=Lydia Mordkovitch
+TPOS=2/2
+TRCK=16/16
+TSSE=Lavf61.7.100
+[2025-04-30 09:29:21,420] {metadataCleaning.py:225} DEBUG - Text lengths: 
+{
+    "TIT2": 42,
+    "TALB": 42,
+    "TCOM": 9
+}
+
+
+
+[2025-04-30 09:39:57,117] {extractId3.py:76} INFO - Searching for paths in /Volumes/Media/Shared Music/MusicMP3 matching any of {'Best Of Satie!': '',
+ 'Goldberg Variations!': '3-04',
+ 'Nocturnes!': '',
+ "Rake's Progress!": '1-0',
+ 'Sonatas and Partitas': '2-16'}.
+[2025-04-30 09:44:00,328] {extractId3.py:76} INFO - Searching for paths in /Volumes/Media/Shared Music/MusicMP3 matching any of {'Best Of Satie!': '',
+ 'Goldberg Variations!': '3-04',
+ 'Nocturnes!': '',
+ "Rake's Progress!": '1-0',
+ 'Sonatas and Partitas': '2-16'}.
+[2025-04-30 09:44:10,929] {extractId3.py:76} INFO - Searching for paths in /Volumes/Media/Shared Music/MusicMP3 matching any of {'Best Of Satie!': '',
+ 'Goldberg Variations!': '3-04',
+ 'Nocturnes!': '',
+ "Rake's Progress!": '1-0',
+ 'Sonatas and Partitas': '2-16'}.
+[2025-04-30 09:53:44,911] {extractId3.py:77} INFO - Searching for paths in /Volumes/Media/Shared Music/MusicMP3 matching any of {'Best Of Satie!': '',
+ 'Goldberg Variations!': '3-04',
+ 'Nocturnes!': '',
+ "Rake's Progress!": '1-0',
+ 'Sonatas and Partitas': '2-16'}.
+[2025-04-30 10:04:35,277] {metadataCleaning.py:98} DEBUG - Metadatacleaning for files with ?? maybe over-long metadata (title over 63 characters):
+[2025-04-30 10:04:35,277] {extractId3.py:77} INFO - Searching for paths in /Volumes/Media/Shared Music/MusicMP3 matching any of {'Best Of Satie!': '',
+ 'Goldberg Variations!': '3-04',
+ 'Nocturnes!': '',
+ "Rake's Progress!": '1-0',
+ 'Sonatas and Partitas': '2-16'}.
+[2025-04-30 10:05:06,267] {metadataCleaning.py:206} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/1-01 Adagio (Sonata No. 1 G minor) BWV 1001.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x3, 0x0  (means ID3v2.3.0)',
+'mp3Score': 3,
+'size': 113607,
+'tagSize': '0x0, 0x6, 0x77, 0x3d (= decimal 113597 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 3, 0)}
+
+
+
+[2025-04-30 10:05:06,268] {metadataCleaning.py:207} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 113607,
+ 'layer': 3,
+ 'length': 305.44979591836733,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 10:05:06,268] {metadataCleaning.py:211} DEBUG - 
+Pictures: 
+[{"encoding": 0, "mime": "image/jpeg", "type": 3, "desc": "", "pictureSize": 107098}]
+
+
+
+[2025-04-30 10:05:06,268] {metadataCleaning.py:224} DEBUG - 
+Frame contents: 
+APIC=cover front,  (image/jpeg, 107098 bytes)
+TALB=Bach: Sonatas and Partitas for solo Violin
+TCOM=J.S. Bach
+TCON=Classical
+TDRC=1990
+TIT1=Sonata No. 1 in G minor for solo violin BWV 1001
+TIT2=Adagio (Sonata No. 1 G minor) BWV 1001
+TPE1=Lydia Mordkovitch
+TPE2=Lydia Mordkovitch
+TPOS=1/2
+TRCK=1/16
+TSSE=Lavf61.7.100
+[2025-04-30 10:05:06,268] {metadataCleaning.py:225} DEBUG - Text lengths: 
+{
+    "TIT2": 38,
+    "TALB": 42,
+    "TCOM": 9,
+    "TIT1": 48
+}
+
+
+
+[2025-04-30 10:06:41,093] {metadataCleaning.py:98} DEBUG - Metadatacleaning for files with ?? maybe over-long metadata (title over 63 characters):
+[2025-04-30 10:06:41,094] {extractId3.py:77} INFO - Searching for paths in /Volumes/Media/Shared Music/MusicMP3 matching any of {'Best Of Satie!': '',
+ 'Goldberg Variations!': '3-04',
+ 'Nocturnes!': '',
+ "Rake's Progress!": '1-0',
+ 'Sonatas and Partitas': '2-16'}.
+[2025-04-30 10:06:41,569] {metadataCleaning.py:206} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-16 Gigue (Partitia No. 3 in E major) BWV 1006.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x3, 0x0  (means ID3v2.3.0)',
+'mp3Score': 3,
+'size': 4241480,
+'tagSize': '0x2, 0x2, 0x70, 0x3e (= decimal 4241470 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 3, 0)}
+
+
+
+[2025-04-30 10:06:41,570] {metadataCleaning.py:207} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 4241480,
+ 'layer': 3,
+ 'length': 119.09224489795919,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 10:06:41,570] {metadataCleaning.py:211} DEBUG - 
+Pictures: 
+[{"encoding": 1, "mime": "image/png", "type": 0, "desc": "", "pictureSize": 4238045}]
+
+
+
+[2025-04-30 10:06:41,570] {metadataCleaning.py:224} DEBUG - 
+Frame contents: 
+APIC=other,  (image/png, 4238045 bytes)
+TALB=Bach: Sonatas and Partitas for solo Violin
+TCOM=J.S. Bach
+TCON=Classical
+TDRC=1990
+TIT2=Gigue (Partitia No. 3 in E major) BWV 1006
+TPE1=Lydia Mordkovitch
+TPE2=Lydia Mordkovitch
+TPOS=2/2
+TRCK=16/16
+TSSE=Lavf61.7.100
+[2025-04-30 10:06:41,570] {metadataCleaning.py:225} DEBUG - Text lengths: 
+{
+    "TIT2": 42,
+    "TALB": 42,
+    "TCOM": 9
+}
+
+
+
+[2025-04-30 10:06:52,485] {PngImagePlugin.py:200} DEBUG - STREAM b'IHDR' 16 13
+[2025-04-30 10:06:52,486] {PngImagePlugin.py:200} DEBUG - STREAM b'pHYs' 41 9
+[2025-04-30 10:06:52,486] {PngImagePlugin.py:200} DEBUG - STREAM b'iCCP' 62 1088
+[2025-04-30 10:06:52,486] {PngImagePlugin.py:430} DEBUG - iCCP profile name b'icc'
+[2025-04-30 10:06:52,487] {PngImagePlugin.py:432} DEBUG - Compression method 0
+[2025-04-30 10:06:52,487] {PngImagePlugin.py:200} DEBUG - STREAM b'IDAT' 1162 4096
+[2025-04-30 10:07:00,797] {metadataCleaning.py:98} DEBUG - Metadatacleaning for files with ?? maybe over-long metadata (title over 63 characters):
+[2025-04-30 10:07:00,797] {extractId3.py:77} INFO - Searching for paths in /Volumes/Media/Shared Music/MusicMP3 matching any of {'Best Of Satie!': '',
+ 'Goldberg Variations!': '3-04',
+ 'Nocturnes!': '',
+ "Rake's Progress!": '1-0',
+ 'Sonatas and Partitas': '2-16'}.
+[2025-04-30 10:07:01,223] {metadataCleaning.py:206} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-16 Gigue (Partitia No. 3 in E major) BWV 1006.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x3, 0x0  (means ID3v2.3.0)',
+'mp3Score': 3,
+'size': 4241480,
+'tagSize': '0x2, 0x2, 0x70, 0x3e (= decimal 4241470 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 3, 0)}
+
+
+
+[2025-04-30 10:07:01,223] {metadataCleaning.py:207} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 4241480,
+ 'layer': 3,
+ 'length': 119.09224489795919,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 10:07:01,223] {metadataCleaning.py:211} DEBUG - 
+Pictures: 
+[{"encoding": 1, "mime": "image/png", "type": 0, "desc": "", "pictureSize": 4238045}]
+
+
+
+[2025-04-30 10:07:01,224] {metadataCleaning.py:224} DEBUG - 
+Frame contents: 
+APIC=other,  (image/png, 4238045 bytes)
+TALB=Bach: Sonatas and Partitas for solo Violin
+TCOM=J.S. Bach
+TCON=Classical
+TDRC=1990
+TIT2=Gigue (Partitia No. 3 in E major) BWV 1006
+TPE1=Lydia Mordkovitch
+TPE2=Lydia Mordkovitch
+TPOS=2/2
+TRCK=16/16
+TSSE=Lavf61.7.100
+[2025-04-30 10:07:01,224] {metadataCleaning.py:225} DEBUG - Text lengths: 
+{
+    "TIT2": 42,
+    "TALB": 42,
+    "TCOM": 9
+}
+
+
+
+[2025-04-30 10:07:08,827] {PngImagePlugin.py:200} DEBUG - STREAM b'IHDR' 16 13
+[2025-04-30 10:07:08,827] {PngImagePlugin.py:200} DEBUG - STREAM b'pHYs' 41 9
+[2025-04-30 10:07:08,828] {PngImagePlugin.py:200} DEBUG - STREAM b'iCCP' 62 1088
+[2025-04-30 10:07:08,828] {PngImagePlugin.py:430} DEBUG - iCCP profile name b'icc'
+[2025-04-30 10:07:08,828] {PngImagePlugin.py:432} DEBUG - Compression method 0
+[2025-04-30 10:07:08,828] {PngImagePlugin.py:200} DEBUG - STREAM b'IDAT' 1162 4096
+[2025-04-30 10:15:42,475] {metadataCleaning.py:98} DEBUG - Metadatacleaning for files with ?? maybe over-long metadata (title over 63 characters):
+[2025-04-30 10:15:42,475] {extractId3.py:77} INFO - Searching for paths in /Volumes/Media/Shared Music/MusicMP3 matching any of {'Best Of Satie!': '',
+ 'Goldberg Variations!': '3-04',
+ 'Nocturnes!': '',
+ "Rake's Progress!": '1-0',
+ 'Sonatas and Partitas': '2-16'}.
+[2025-04-30 10:15:43,316] {metadataCleaning.py:206} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-16 Gigue (Partitia No. 3 in E major) BWV 1006.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x3, 0x0  (means ID3v2.3.0)',
+'mp3Score': 3,
+'size': 4241480,
+'tagSize': '0x2, 0x2, 0x70, 0x3e (= decimal 4241470 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 3, 0)}
+
+
+
+[2025-04-30 10:15:43,316] {metadataCleaning.py:207} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 4241480,
+ 'layer': 3,
+ 'length': 119.09224489795919,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 10:15:43,316] {metadataCleaning.py:211} DEBUG - 
+Pictures: 
+[{"encoding": 1, "mime": "image/png", "type": 0, "desc": "", "pictureSize": 4238045}]
+
+
+
+[2025-04-30 10:15:43,317] {metadataCleaning.py:224} DEBUG - 
+Frame contents: 
+APIC=other,  (image/png, 4238045 bytes)
+TALB=Bach: Sonatas and Partitas for solo Violin
+TCOM=J.S. Bach
+TCON=Classical
+TDRC=1990
+TIT2=Gigue (Partitia No. 3 in E major) BWV 1006
+TPE1=Lydia Mordkovitch
+TPE2=Lydia Mordkovitch
+TPOS=2/2
+TRCK=16/16
+TSSE=Lavf61.7.100
+[2025-04-30 10:15:43,317] {metadataCleaning.py:225} DEBUG - Text lengths: 
+{
+    "TIT2": 42,
+    "TALB": 42,
+    "TCOM": 9
+}
+
+
+
+[2025-04-30 10:15:46,170] {PngImagePlugin.py:200} DEBUG - STREAM b'IHDR' 16 13
+[2025-04-30 10:15:46,170] {PngImagePlugin.py:200} DEBUG - STREAM b'pHYs' 41 9
+[2025-04-30 10:15:46,171] {PngImagePlugin.py:200} DEBUG - STREAM b'iCCP' 62 1088
+[2025-04-30 10:15:46,171] {PngImagePlugin.py:430} DEBUG - iCCP profile name b'icc'
+[2025-04-30 10:15:46,171] {PngImagePlugin.py:432} DEBUG - Compression method 0
+[2025-04-30 10:15:46,172] {PngImagePlugin.py:200} DEBUG - STREAM b'IDAT' 1162 4096
+[2025-04-30 10:54:05,211] {metadataCleaning.py:98} DEBUG - Metadatacleaning for files with ?? maybe over-long metadata (title over 63 characters):
+[2025-04-30 10:54:05,211] {extractId3.py:77} INFO - Searching for paths in /Volumes/Media/Shared Music/MusicMP3 matching any of {'Best Of Satie!': '',
+ 'Goldberg Variations!': '3-04',
+ 'Nocturnes!': '',
+ "Rake's Progress!": '1-0',
+ 'Sonatas and Partitas': '2-16'}.
+[2025-04-30 10:54:06,097] {metadataCleaning.py:206} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-16 Gigue (Partitia No. 3 in E major) BWV 1006.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x3, 0x0  (means ID3v2.3.0)',
+'mp3Score': 3,
+'size': 4241480,
+'tagSize': '0x2, 0x2, 0x70, 0x3e (= decimal 4241470 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 3, 0)}
+
+
+
+[2025-04-30 10:54:06,097] {metadataCleaning.py:207} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 4241480,
+ 'layer': 3,
+ 'length': 119.09224489795919,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 10:54:06,097] {metadataCleaning.py:211} DEBUG - 
+Pictures: 
+[{"encoding": 1, "mime": "image/png", "type": 0, "desc": "", "pictureSize": 4238045}]
+
+
+
+[2025-04-30 10:54:06,097] {metadataCleaning.py:224} DEBUG - 
+Frame contents: 
+APIC=other,  (image/png, 4238045 bytes)
+TALB=Bach: Sonatas and Partitas for solo Violin
+TCOM=J.S. Bach
+TCON=Classical
+TDRC=1990
+TIT2=Gigue (Partitia No. 3 in E major) BWV 1006
+TPE1=Lydia Mordkovitch
+TPE2=Lydia Mordkovitch
+TPOS=2/2
+TRCK=16/16
+TSSE=Lavf61.7.100
+[2025-04-30 10:54:06,098] {metadataCleaning.py:225} DEBUG - Text lengths: 
+{
+    "TIT2": 42,
+    "TALB": 42,
+    "TCOM": 9
+}
+
+
+
+[2025-04-30 10:54:06,926] {PngImagePlugin.py:200} DEBUG - STREAM b'IHDR' 16 13
+[2025-04-30 10:54:06,926] {PngImagePlugin.py:200} DEBUG - STREAM b'pHYs' 41 9
+[2025-04-30 10:54:06,926] {PngImagePlugin.py:200} DEBUG - STREAM b'iCCP' 62 1088
+[2025-04-30 10:54:06,926] {PngImagePlugin.py:430} DEBUG - iCCP profile name b'icc'
+[2025-04-30 10:54:06,926] {PngImagePlugin.py:432} DEBUG - Compression method 0
+[2025-04-30 10:54:06,927] {PngImagePlugin.py:200} DEBUG - STREAM b'IDAT' 1162 4096
+[2025-04-30 10:54:07,149] {Image.py:399} DEBUG - Importing AvifImagePlugin
+[2025-04-30 10:54:07,150] {Image.py:399} DEBUG - Importing BlpImagePlugin
+[2025-04-30 10:54:07,151] {Image.py:399} DEBUG - Importing BmpImagePlugin
+[2025-04-30 10:54:07,152] {Image.py:399} DEBUG - Importing BufrStubImagePlugin
+[2025-04-30 10:54:07,152] {Image.py:399} DEBUG - Importing CurImagePlugin
+[2025-04-30 10:54:07,153] {Image.py:399} DEBUG - Importing DcxImagePlugin
+[2025-04-30 10:54:07,155] {Image.py:399} DEBUG - Importing DdsImagePlugin
+[2025-04-30 10:54:07,159] {Image.py:399} DEBUG - Importing EpsImagePlugin
+[2025-04-30 10:54:07,160] {Image.py:399} DEBUG - Importing FitsImagePlugin
+[2025-04-30 10:54:07,162] {Image.py:399} DEBUG - Importing FliImagePlugin
+[2025-04-30 10:54:07,163] {Image.py:399} DEBUG - Importing FpxImagePlugin
+[2025-04-30 10:54:07,164] {Image.py:402} DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+[2025-04-30 10:54:07,164] {Image.py:399} DEBUG - Importing FtexImagePlugin
+[2025-04-30 10:54:07,165] {Image.py:399} DEBUG - Importing GbrImagePlugin
+[2025-04-30 10:54:07,165] {Image.py:399} DEBUG - Importing GifImagePlugin
+[2025-04-30 10:54:07,165] {Image.py:399} DEBUG - Importing GribStubImagePlugin
+[2025-04-30 10:54:07,166] {Image.py:399} DEBUG - Importing Hdf5StubImagePlugin
+[2025-04-30 10:54:07,166] {Image.py:399} DEBUG - Importing IcnsImagePlugin
+[2025-04-30 10:54:07,169] {Image.py:399} DEBUG - Importing IcoImagePlugin
+[2025-04-30 10:54:07,170] {Image.py:399} DEBUG - Importing ImImagePlugin
+[2025-04-30 10:54:07,171] {Image.py:399} DEBUG - Importing ImtImagePlugin
+[2025-04-30 10:54:07,172] {Image.py:399} DEBUG - Importing IptcImagePlugin
+[2025-04-30 10:54:07,173] {Image.py:399} DEBUG - Importing JpegImagePlugin
+[2025-04-30 10:54:07,173] {Image.py:399} DEBUG - Importing Jpeg2KImagePlugin
+[2025-04-30 10:54:07,173] {Image.py:399} DEBUG - Importing McIdasImagePlugin
+[2025-04-30 10:54:07,173] {Image.py:399} DEBUG - Importing MicImagePlugin
+[2025-04-30 10:54:07,174] {Image.py:402} DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+[2025-04-30 10:54:07,174] {Image.py:399} DEBUG - Importing MpegImagePlugin
+[2025-04-30 10:54:07,174] {Image.py:399} DEBUG - Importing MpoImagePlugin
+[2025-04-30 10:54:07,179] {Image.py:399} DEBUG - Importing MspImagePlugin
+[2025-04-30 10:54:07,180] {Image.py:399} DEBUG - Importing PalmImagePlugin
+[2025-04-30 10:54:07,182] {Image.py:399} DEBUG - Importing PcdImagePlugin
+[2025-04-30 10:54:07,183] {Image.py:399} DEBUG - Importing PcxImagePlugin
+[2025-04-30 10:54:07,183] {Image.py:399} DEBUG - Importing PdfImagePlugin
+[2025-04-30 10:54:07,282] {Image.py:399} DEBUG - Importing PixarImagePlugin
+[2025-04-30 10:54:07,282] {Image.py:399} DEBUG - Importing PngImagePlugin
+[2025-04-30 10:54:07,282] {Image.py:399} DEBUG - Importing PpmImagePlugin
+[2025-04-30 10:54:07,283] {Image.py:399} DEBUG - Importing PsdImagePlugin
+[2025-04-30 10:54:07,283] {Image.py:399} DEBUG - Importing QoiImagePlugin
+[2025-04-30 10:54:07,284] {Image.py:399} DEBUG - Importing SgiImagePlugin
+[2025-04-30 10:54:07,284] {Image.py:399} DEBUG - Importing SpiderImagePlugin
+[2025-04-30 10:54:07,285] {Image.py:399} DEBUG - Importing SunImagePlugin
+[2025-04-30 10:54:07,286] {Image.py:399} DEBUG - Importing TgaImagePlugin
+[2025-04-30 10:54:07,287] {Image.py:399} DEBUG - Importing TiffImagePlugin
+[2025-04-30 10:54:07,287] {Image.py:399} DEBUG - Importing WebPImagePlugin
+[2025-04-30 10:54:07,392] {Image.py:399} DEBUG - Importing WmfImagePlugin
+[2025-04-30 10:54:07,393] {Image.py:399} DEBUG - Importing XbmImagePlugin
+[2025-04-30 10:54:07,394] {Image.py:399} DEBUG - Importing XpmImagePlugin
+[2025-04-30 10:54:07,395] {Image.py:399} DEBUG - Importing XVThumbImagePlugin
+[2025-04-30 10:56:58,691] {metadataCleaning.py:98} DEBUG - Metadatacleaning for files with ?? maybe over-long metadata (title over 63 characters):
+[2025-04-30 10:56:58,691] {extractId3.py:77} INFO - Searching for paths in /Volumes/Media/Shared Music/MusicMP3 matching any of {'Best Of Satie!': '',
+ 'Goldberg Variations!': '3-04',
+ 'Nocturnes!': '',
+ "Rake's Progress!": '1-0',
+ 'Sonatas and Partitas': '2-16'}.
+[2025-04-30 10:56:59,383] {metadataCleaning.py:206} INFO - 
+ID3 Header report for /Volumes/Media/Shared Music/MusicMP3/Music/Lydia Mordkovitch/Bach_ Sonatas and Partitas for solo Violin/2-16 Gigue (Partitia No. 3 in E major) BWV 1006.mp3:
+{'headerFlags': '0x0 The header is extended: False',
+'headerID': '0x49, 0x44, 0x33 ( = "ID3")',
+'headerVersion': '0x3, 0x0  (means ID3v2.3.0)',
+'mp3Score': 3,
+'size': 4241480,
+'tagSize': '0x2, 0x2, 0x70, 0x3e (= decimal 4241470 excluding 10 bytes for '
+           'header)',
+'unknown_frames': [],
+'version': (2, 3, 0)}
+
+
+
+[2025-04-30 10:56:59,383] {metadataCleaning.py:207} INFO - 
+MP3 info: 
+  {'bitrate': 128000,
+ 'bitrate_mode': <BitrateMode.CBR: 1>,
+ 'channels': 2,
+ 'encoder_settings': '',
+ 'frame_offset': 4241480,
+ 'layer': 3,
+ 'length': 119.09224489795919,
+ 'mode': 0,
+ 'padding': False,
+ 'protected': False,
+ 'sample_rate': 44100,
+ 'sketchy': False,
+ 'version': 1}
+
+
+
+[2025-04-30 10:56:59,383] {metadataCleaning.py:211} DEBUG - 
+Pictures: 
+[{"encoding": 1, "mime": "image/png", "type": 0, "desc": "", "pictureSize": 4238045}]
+
+
+
+[2025-04-30 10:56:59,383] {metadataCleaning.py:224} DEBUG - 
+Frame contents: 
+APIC=other,  (image/png, 4238045 bytes)
+TALB=Bach: Sonatas and Partitas for solo Violin
+TCOM=J.S. Bach
+TCON=Classical
+TDRC=1990
+TIT2=Gigue (Partitia No. 3 in E major) BWV 1006
+TPE1=Lydia Mordkovitch
+TPE2=Lydia Mordkovitch
+TPOS=2/2
+TRCK=16/16
+TSSE=Lavf61.7.100
+[2025-04-30 10:56:59,383] {metadataCleaning.py:225} DEBUG - Text lengths: 
+{
+    "TIT2": 42,
+    "TALB": 42,
+    "TCOM": 9
+}
+
+
+
+[2025-04-30 10:57:01,119] {PngImagePlugin.py:200} DEBUG - STREAM b'IHDR' 16 13
+[2025-04-30 10:57:01,119] {PngImagePlugin.py:200} DEBUG - STREAM b'pHYs' 41 9
+[2025-04-30 10:57:01,119] {PngImagePlugin.py:200} DEBUG - STREAM b'iCCP' 62 1088
+[2025-04-30 10:57:01,119] {PngImagePlugin.py:430} DEBUG - iCCP profile name b'icc'
+[2025-04-30 10:57:01,119] {PngImagePlugin.py:432} DEBUG - Compression method 0
+[2025-04-30 10:57:01,119] {PngImagePlugin.py:200} DEBUG - STREAM b'IDAT' 1162 4096
