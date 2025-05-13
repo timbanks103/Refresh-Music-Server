@@ -337,7 +337,7 @@ class MDcleaner:
             reportFrameIds =["TALB","TIT1","TIT2","TCOM","TPE1","TPE2"]
             fidReport={k:len(frames[k].text[0]) for k in filter(lambda kl: kl in reportFrameIds, frames.keys())}
             url=urllib.parse.quote(filePath)
-            fidTextReport= {k:f"{len(frames[k].text[0])} / {MDcleaner.maxes[k]}" for k in filter(lambda kl: kl in reportFrameIds, frames.keys())}
+            fidTextReport= {k:f"{len(frames[k].text[0]):02} / {MDcleaner.maxes[k]} {('*') if (len(frames[k].text[0]) >  MDcleaner.maxes[k]) else ('') }" for k in filter(lambda kl: kl in reportFrameIds, frames.keys())}
 
             self.logger.info("\nFrame contents: \n"+frames.pprint())
             self.logger.info("Text lengths: \n"+json.dumps(fidTextReport, indent=4)+ f"\nURL length: {len(url)}." + "\n\n\n")# , sort_keys=True))

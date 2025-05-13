@@ -1,7 +1,8 @@
 ##!/usr/bin/env python3
 """
 //
-//  Refresh Music Server
+//  Prototype  -  now incorporated into metadataCleaning.
+// 
 //
 //  Utility to
 //  o Extract Id3 tags to Json
