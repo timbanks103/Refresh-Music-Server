@@ -1,0 +1,6 @@
+# Ignore files
+*.log      # all .log files
+*Stats*
+*Rates*
+exportPlaylists/
+Recovery Utilities/
