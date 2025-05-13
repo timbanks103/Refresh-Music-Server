@@ -14,7 +14,9 @@ source=" {minimRescanWrapper.zsh} "
 echo $date$source >> transcoding.log 2>&1 
 
 # Rescan the server library.  Annoyingly... minim will not execute commands as root.
-sudo -u timbanks /Applications/MinimServer.app/Contents/mscript -a 192.168.0.52:9795 -c rescan >> transcoding.log 2>&1
+# Do Mac Media Server first and ignore the return code.
 sudo -u timbanks /Applications/MinimServer.app/Contents/mscript -a 192.168.0.16:9790 -c rescan >> transcoding.log 2>&1
-# 192.168.0.16:9790Fickle MBP 
+# NAS Media Server
+sudo -u timbanks /Applications/MinimServer.app/Contents/mscript -a 192.168.0.52:9795 -c rescan >> transcoding.log 2>&1
+# 192.168.0.16:9790Fickle MBP
 exit $?
