@@ -10,6 +10,7 @@
 		AA2E05472D84A31E000B2457 /* notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
 		AA3956122DB014F2002C1137 /* extractId3.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = extractId3.py; sourceTree = "<group>"; };
 		AA439EDB2DB6A47300DE53C4 /* metadataCleaning.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = metadataCleaning.py; sourceTree = "<group>"; };
+		AA868FB02DD35ADE009DAC3F /* ExportPlaylistsAppleScript.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = ExportPlaylistsAppleScript.applescript; sourceTree = "<group>"; };
 		AAAFAA572DAE699000777A9F /* minimRescanWrapper.zsh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = minimRescanWrapper.zsh; sourceTree = "<group>"; };
 		AAAFAA582DAE699000777A9F /* playlistAssembly.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = playlistAssembly.py; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
 		AAAFAA592DAE699000777A9F /* transcodingWrapper.zsh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = transcodingWrapper.zsh; sourceTree = "<group>"; };
@@ -32,6 +33,7 @@
 		AAD9DA462D7B3B7B0015CB57 = {
 			isa = PBXGroup;
 			children = (
+				AA868FB02DD35ADE009DAC3F /* ExportPlaylistsAppleScript.applescript */,
 				AA2E05472D84A31E000B2457 /* notes.txt */,
 				AAAFAA592DAE699000777A9F /* transcodingWrapper.zsh */,
 				AAD9DA512D7B49CB0015CB57 /* transcoding.py */,
