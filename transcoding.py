@@ -79,7 +79,7 @@ musicKinds =[".m4a",".mp3",".M4A",".MP3"]
 transcodeConstraint = 5000
 copyConstraint = 5000
 removalConstraint = 5000
-searchConstraint = ""
+searchConstraint = "" # Use some part of an album name to restrict transcoding.  Bank means Do Everything.
 # This query reports if a higher quality version ould be made...  Need to erase the old version and let the search fill the missing pieces.
 # grep -m 1 'Ostinata' sourceRates.txt & grep -m 1 'Ostinata'  mp3Rates.txt
 

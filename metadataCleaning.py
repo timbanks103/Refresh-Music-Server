@@ -29,7 +29,7 @@
 import os, sys, logging, json
 from pathlib import Path
 from pprint import pformat, pprint
-from mutagen.id3 import ID3, TALB, TCOM, TIT1, TIT2, TIT3, TRCK, TPOS, APIC, TPE1, TPE2, TXXX, TCON, TDRC, TENC, TSSE
+from mutagen.id3 import ID3, TALB, TCOM, TIT1, TIT2, TIT3, TRCK, TPOS, APIC, TPE1, TPE2, TXXX, TCON, TDRC, TENC, TSSE, TSOC, TSOA, COMM
 from mutagen.mp3 import MP3
 from PIL import Image
 from io import BytesIO
@@ -89,11 +89,18 @@ class Metadata:
         
         ks = frames.keys()
         if "TALB" in ks: self.album = frames["TALB"].text[0] # Album/Movie/Show title
+        if "TSOA" in ks: self.albumSort = frames["TSOA"].text[0] # Album sort order
+        elif "TXXX:sort_album" in ks:
+            self.albumSort = frames["TXXX:sort_album"].text[0] # early ID3V2.3? Used by Mac OS Music
         if "TIT1" in ks: self.grouping = frames["TIT1"].text[0] # TIT1 Content group description
         if "TIT2" in ks: self.title = frames["TIT2"].text[0] # Title/songname/content description
-        if "TCOM" in ks: self.composer = frames["TCOM"].text[0] # Composer
+        if "TCOM" in ks: self.composer = frames["TCOM"].text[0] # Compose
         elif "TXXX:TCM" in ks:
-            self.composer = frames["TXXX:TCM"].text[0] # early ID3V2.3
+            self.composer = frames["TXXX:TCM"].text[0] # early ID3V2.3?  Used by Mac OS Music
+        if "TSOC" in ks: self.composerSort = frames["TSOC"].text[0] # Composer sort order
+        elif "TXXX:sort_composer" in ks:
+            self.composerSort = frames["TXXX:sort_composer"].text[0] # Used by Mac OS Music
+        
         if "TRCK" in ks: self.trackNo = frames["TRCK"].text[0] # Track number/Position in set
         elif "TXXX:TPA" in ks:
             self.trackNo = frames["TXXX:TPA"].text[0]
@@ -121,29 +128,38 @@ class CleaningReport:
     def __init__(self):
         self.overlengthSomething=False
         self.overlengthAlbum=False
+        self.overlengthAlbumSort=False
         self.overlengthArtist=False
         self.overlengthAlbumArtist=False
         self.overlengthTitle=False
+        self.repetitiveTitle=False
+        self.overlengthGrouping=False
         self.overlengthPicture=False
         self.overlengthComposer=False
+        self.overlengthComposerSort=False # Probably(?) never transmitted to the renderer and only used in the server for creating indices.
         self.overlengthUrl=False
 
 
 class MDcleaner:
-    
-    class_tlimit=63 # Longest text for track title
     class_alimit=40 # Longest text for album name
-    class_slimit=30 # Longest text for lead artist
+    class_glimit=40 # Longest text for grouping name
+    class_tlimit=63 # Longest text for track title
+    class_slimit=30 # Longest text for lead/album artist
     class_climit=20 # Longest text for composer
-    # Total length = 133
-    class_ulimit=215 # Url limit check - a longer URL causes a warning.
+    class_plimit=20000 # Longest header size allowed (bytes).  Picture resizing and compression is done beyond this (it may not succeed in reducing the size)
+    class_psize=250 # New picture size (pixels, longest edge) for shrinking. This produces an compressed picture about 8K long.
+    # Total length of url components (album artist/album/title) = 133 + 4 for file extension + root directory length (on server - about 37) total about 204
+    class_ulimit=215 # Url limit check - a longer URL causes a warning (and should be impossible)
     #Make-ready for reporting of lengths.
     maxes={
-            "TIT2":class_tlimit,
             "TALB":class_alimit,
+            "TSOA":class_alimit,
+            "TIT1":class_glimit,
+            "TIT2":class_tlimit,
             "TPE1":class_slimit,
             "TPE2":class_slimit,
-            "TCOM":class_climit
+            "TCOM":class_climit,
+            "TSOC":class_climit
     }
     """ 
         The length, plus the added length of the root directory and path serparators must be limited. 
@@ -184,8 +200,10 @@ class MDcleaner:
         self.logWidth=1220 # Width of output - some filenames are very long.
         self.tlimit=MDcleaner.class_tlimit # Longest text length allowed. Truncation is done to this length
         self.alimit=MDcleaner.class_alimit # Longest text for album name
+        self.glimit=MDcleaner.class_glimit # Longest text for grouping name
         self.slimit=MDcleaner.class_slimit # Longest text for lead artist (a folder name if Music organises the folders (it does))
-        self.plimit=500000 # Largest picture allowed. If in excess, the image is compressed. Or deleted?
+        self.plimit=MDcleaner.class_plimit # Largest picture allowed. If in excess, the image is compressed. Or deleted?
+        self.psize= MDcleaner.class_psize # Embedded picture size if resizing happens.
         self.ulimit=MDcleaner.class_ulimit # Largest encoded filepath. Maybe Pure can tolerate bigger - certainly lower that 229 # NB old limit was 256
         self.climit=MDcleaner.class_climit # Longest text for composer name.
         self.logger.debug(f"Metadatacleaning for files with ?? maybe over-long metadata (title over {self.tlimit} characters):")
@@ -194,6 +212,7 @@ class MDcleaner:
                
         self.changeLimit=MDcleaner.class_chlimit
         self.changes=0
+        self.inspections=0
         
 
 
@@ -215,22 +234,39 @@ class MDcleaner:
                     
                     # Try to extract/create a meaningful but short title algorithmicly. These are compoinents of the Url (in minimserver)
                     # This matches what happens in the filename mangler.
-                    if hasattr(metadata,"title") and len(metadata.title)>self.tlimit:
-                        metadata.title = metadata.title[0:self.tlimit]
-                        cr.overlengthTitle=True
-                    if hasattr(metadata,"album") and len(metadata.album)>self.alimit:
-                        # It's best to keep the album name close to it's full title sort spot for easy recognition
-                        metadata.album = metadata.album[0:self.alimit]
-                        cr.overlengthAlbum=True
+                    
+                    if hasattr(metadata,"album"):
+                        if len(metadata.album)>self.alimit:
+                            # It's best to keep the album name close to it's full title sort spot for easy recognition
+                            metadata.album = metadata.album[0:self.alimit]
+                            cr.overlengthAlbum=True
+                    else: metadata.album=""
+                    if hasattr(metadata,"albumSort") and len(metadata.albumSort)> self.alimit:
+                        metadata.albumSort = metadata.albumSort[0:self.alimit]
+                        cr.overlengthAlbumSort=True
+                    if hasattr(metadata,"composer") and len(metadata.composer)> self.climit:
+                        metadata.composer = metadata.composer[0:self.climit]
+                        cr.overlengthComposer=True
+                    if hasattr(metadata,"title"):
+                        for albWord in metadata.album.split(" "):  # Remove selected repetitive information.
+                            if albWord in metadata.title and albWord.endswith(":"):
+                                metadata.title=metadata.title.replace(albWord+" ","")
+                                cr.overlengthTitle=True # Note that the title was changed.
+                        if len(metadata.title)>self.tlimit: # Still too long?
+                            metadata.title = metadata.title[0:self.tlimit]
+                            cr.overlengthTitle=True
                     if hasattr(metadata,"leadArtist") and len(metadata.leadArtist)>self.slimit:
                         metadata.leadArtist = metadata.leadArtist[0:self.slimit]
                         cr.overlengthArtist=True
                     if hasattr(metadata,"albumArtist") and len(metadata.albumArtist)>self.slimit:
                         metadata.albumArtist = metadata.albumArtist[0:self.slimit]
                         cr.overlengthAlbumArtist=True
-                    if hasattr(metadata,"composer") and len(metadata.composer)> self.climit:
-                        metadata.composer = metadata.composer[0:self.climit]
-                        cr.overlengthComposer=True
+                    if hasattr(metadata,"composerSort") and len(metadata.composerSort)> self.climit:
+                        metadata.composerSort = metadata.composerSort[0:self.climit]
+                        cr.overlengthComposerSort=True
+                    if hasattr(metadata,"grouping") and len(metadata.grouping)> self.glimit:
+                        metadata.grouping = metadata.grouping[0:self.glimit]
+                        cr.overlengthGrouping=True
                         
                     newFrames=ID3()
                     
@@ -240,27 +276,52 @@ class MDcleaner:
                         and (not hasattr(metadata,'comment') or (hasattr(metadata,'comment') and "no artwork" not in metadata.comment)):
                         for a in frames.getall("APIC"): newFrames.add(APIC(encoding=a.encoding, mime=a.mime, type=a.type, desc=a.desc, data=a.data))
                     else: # Compress the picture(s)
-                        self.logger.info(pformat(f"Cover artwork too large (>{self.plimit}) in {filePath}. ",width=self.logWidth))
+                        self.logger.info(pformat(f"Cover artwork too large (>{self.plimit}) in {filePath}.",width=self.logWidth))
                         self.bigPicList.append(filePath)
                         cr.overlengthPicture=True
                         for a in frames.getall("APIC"):
                             img = Image.open(BytesIO(a.data))
+                            self.logger.info(pformat(f"Image metadata: size={img.size}."))
                             byteIO = BytesIO()
                             # Make sure it's suitable for conversion to jpg (remove the alpha channel if there is one)
                             if img.mode in ("RGBA", "P"): img = img.convert("RGB")
+                            
+                            width, height = img.size[:2]
+                            nwidth, nheight = self.psize, self.psize
+                            if height > width:
+                                baseheight = self.psize
+                                hpercent = (baseheight/float(img.size[1]))
+                                wsize = int((float(img.size[0])*float(hpercent)))
+                                img = img.resize((wsize, baseheight), Image.Resampling.LANCZOS)
+                                nwidth=wsize
+                            else:
+                                basewidth = self.psize
+                                wpercent = (basewidth/float(img.size[0]))
+                                hsize = int((float(img.size[1])*float(wpercent)))
+                                img = img.resize((basewidth,hsize), Image.Resampling.LANCZOS)
+                                nheight=hsize
+                            
                             img.save(byteIO, format='JPEG', optimize=True)
                             a.data=byteIO.getvalue()
                             a.mime="image/jpeg"
                             a.desc="compressed by metadataCleaning"
                             newFrames.add(a)
-                            self.logger.info(pformat(f"Artwork type {a.type} compressed by jpeg to {len(a.data)} bytes."))
+                            self.logger.info(pformat(f"Artwork type {a.type} compressed by jpeg to {len(a.data)} bytes, size(wxh) = {nwidth}x{nheight}. ", width=self.logWidth))
                     
                     # Apply carefully pruned and curated values to new frames
                     if hasattr(metadata,"album"): frames.add(TALB(text=[pureMangle(metadata.album)]))
+                    if hasattr(metadata,"albumSort"): frames.add(TSOA(text=[pureMangle(metadata.albumSort)]))
+                    if hasattr(metadata,"grouping"):  frames.add(TIT1(text=[pureMangle(metadata.grouping)]))
                     if hasattr(metadata,"title"):  frames.add(TIT2(text=[pureMangle(metadata.title)]))
                     if hasattr(metadata,"leadArtist"): frames.add(TPE1(text=[pureMangle(metadata.leadArtist)]))
                     if hasattr(metadata,"albumArtist"): frames.add(TPE2(text=[pureMangle(metadata.albumArtist)]))
                     if hasattr(metadata,"composer"): frames.add(TCOM(text=[pureMangle(metadata.composer)]))
+                    if hasattr(metadata,"composerSort"): frames.add(TSOC(text=[pureMangle(metadata.composerSort)]))
+                    elif hasattr(metadata,"composer"):
+                        # Does it look like "Firstname Lastname"?  If so - reverse it to Lastname, Firstname
+                        if len(metadata.composer.split(" "))==2: frames.add(TSOC(text=[  ", ".join(pureMangle(metadata.composer).split(" ")[::-1])]))
+                        # Otherwise use the composer info as-is.
+                        else: frames.add(TSOC(text=[pureMangle(metadata.composer)]))
                     if hasattr(metadata,"trackNo"): frames.add(TRCK(text=[metadata.trackNo]))
                     if hasattr(metadata,"diskNo"): frames.add(TPOS(text=[metadata.diskNo]))
                     else: frames.add(TPOS(text=["1/1"]))
@@ -269,10 +330,12 @@ class MDcleaner:
                     # Copy the minimum necessary old frames to the new tag and the apply the standard text limit for all of them.
                     # This clears extraneous TXXX frames (in case it matters)
                     fidVals={k:frames[k].text[0][0:self.tlimit] for k in \
-                        filter(lambda kl: kl in ["TALB","TIT1","TIT2","TCOM","TCON",
-                                                "TPE1","TPE2", "TRCK", "TPOS",
-                                                "TENC", "TSSE"
-                                                ], frames.keys())}
+                        filter(lambda kl: kl in ["TALB","TIT1","TIT2","TPE1","TPE2",
+                             "TCOM","TCON",
+                             "TRCK", "TPOS",
+                             "TENC", "TSSE",
+                             "TSOC", "TSOA"
+                            ], frames.keys())}
                    
                     for k in fidVals.keys(): newFrames.add(eval(k)(text=[fidVals[k]]))
                     
@@ -281,8 +344,8 @@ class MDcleaner:
             
                     frames.delete() # Scrap the whole old thing...
                     newFrames.save(filePath,v2_version=3) # and re-create it
-                    self.changes=self.changes+1
                     results=[k for k in vars(cr).keys() if getattr(cr,k)]
+                    if any(results): self.changes=self.changes+1
                     self.logger.info(f"Overlength: {results}" if any(results) else "No Cleaning needed")
                     return(f"Overlength: {results}" if any(results) else "No Cleaning needed")
                 else:
@@ -330,7 +393,8 @@ class MDcleaner:
             self.logger.debug("\nPictures: \n"+json.dumps(datalessPics)+"\n\n\n")
             
             # Use the mp3 header length as a clue to the size of the included picture
-            if mp3.info.frame_offset>1000000: rr.overlengthPicture=True
+            if mp3.info.frame_offset>self.plimit:
+                rr.overlengthPicture=True
             else: pass
             
             # Report the frame text lengths
@@ -340,12 +404,15 @@ class MDcleaner:
             fidTextReport= {k:f"{len(frames[k].text[0]):02} / {MDcleaner.maxes[k]} {('*') if (len(frames[k].text[0]) >  MDcleaner.maxes[k]) else ('') }" for k in filter(lambda kl: kl in reportFrameIds, frames.keys())}
 
             self.logger.info("\nFrame contents: \n"+frames.pprint())
-            self.logger.info("Text lengths: \n"+json.dumps(fidTextReport, indent=4)+ f"\nURL length: {len(url)}." + "\n\n\n")# , sort_keys=True))
+            self.logger.info("Text lengths: \n"+json.dumps(fidTextReport, indent=4)+ f"\nURL length: {len(url)} / {self.ulimit}  {('*') if (len(url) >  self.ulimit) else ('') }    " + "\n\n")# , sort_keys=True))
             if any(fidReport[k] > MDcleaner.maxes[k] for k in iter(fidReport.keys())):
                 rr.overlengthSomething=True # This should report the correct field...
                 for k in iter(fidReport.keys()):
                     pass
             else: pass
+            
+            if pathcs[-2].split(" ")[0] == pathcs[-1].split(" ")[1]: # Track name (omitting track number) begins like album name.
+                rr.repetitiveTitle=True
 
             if len(url)>self.ulimit: self.logger.warning(f"\n{filePath} encodes to a url of length {len(url)} which exceeds the limit of {self.ulimit}. Truncation of titles and/or artist info will be applied.")
             results=[k for k in vars(rr).keys() if getattr(rr,k)]
@@ -361,34 +428,47 @@ def smatch(string,matchList):
 def main():
     albumNamesTracks={   # Match partial album name (distinct values) and track number prefix
                     #"Sonatas and Partitas":"2-08",
-                    "Tosca":"2-03",
-                    "!!!":"" # If blank, do Everything
+                    #"Tosca":"2-03",
+                    "Unforgettable":"", # If blank, do Everything
+                    "!":""
                     }
     cleaner=MDcleaner()
     cleaner.logger.setLevel(logging.DEBUG)
     cleaner.logger.info(f"Searching for paths in {cleaner.dir} matching any of {pformat(albumNamesTracks)}.")
+    filesCount=sum(1 for x in Path(cleaner.dir).rglob('*') if x.is_file() and smatch(str(x),albumNamesTracks.keys())  )
+    
+    if len(sys.argv)>1 and sys.argv[1]=="clean":
+        function="Clean"
+    else: function="Report"
+    
     for (r,ds,ls) in os.walk(cleaner.dir,topdown=True):
         #if ds==[]:
         for an in smatch(r,albumNamesTracks.keys()):
             for l in filter(lambda m: m.endswith(".mp3") and m not in cleaner.fnameExclusions, ls):
                 filePath = os.path.join(r,l)
                 if l.startswith(albumNamesTracks[an]):
-                    cleaner.logger.info(pformat(f"Cleaning {filePath} - {cleaner.changes+1} of {min([cleaner.changeLimit])}",
-                    width=cleaner.logWidth))
+                    
+                    cleaner.logger.info(pformat(f"Inspecting {filePath} - {cleaner.inspections+1} of {filesCount}. ",
+                        width=cleaner.logWidth))
                     rep=cleaner.report(filePath)
+                    cleaner.inspections=cleaner.inspections+1
+                    
                     if rep: cleaner.longList.append(filePath+" "+pformat(rep))
                     
-                    if len(sys.argv)>1 and sys.argv[1]=="clean":
+                    if function=="Clean" and rep:
+                        cleaner.logger.info(f"Reported: {rep} - Cleaning.")
                         cleaner.clean(filePath) # Cleans all frames (including dubious TXXX and  frames) and creates a new ID3v2.2 tag
                                                 # using simplified original data.
-                        function="Cleaned"
-                    else: function="Reported"
-                    
+                                                
+                        cleaner.logger.info(pformat(f"Cleaned {cleaner.changes} of {min([cleaner.changeLimit])}. ",
+                        width=cleaner.logWidth))
+                    elif function=="Clean" and not rep: cleaner.logger.info(pformat(f"Nothing reported, no Cleaning needed."))
     
+   
     if len(cleaner.longList)==0:
         cleaner.logger.info("No updates")
     else:
-        cleaner.logger.info(f"{function} {len(cleaner.longList)} files: \n{pformat(cleaner.longList)} ")
+        cleaner.logger.info(f"{function}ed {len(cleaner.longList)} files: \n{pformat(cleaner.longList)} ")
     
 
     
