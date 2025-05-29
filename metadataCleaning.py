@@ -429,7 +429,7 @@ def main():
     albumNamesTracks={   # Match partial album name (distinct values) and track number prefix
                     #"Sonatas and Partitas":"2-08",
                     #"Tosca":"2-03",
-                    "Unforgettable":"", # If blank, do Everything
+                    "maninov_ Piano":"", # If blank, do Everything
                     "!":""
                     }
     cleaner=MDcleaner()

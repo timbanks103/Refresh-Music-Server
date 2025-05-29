@@ -43,10 +43,36 @@ def transLogger(level):
             level=level or logging.DEBUG)
     logger = logging.getLogger(__name__)
     return logger
+ 
+
+
+
 """
     Export the playlists from Music 
 """
-def exportPlaylists(logger):
+
+def exportPlaylists(sourceDir,mp3Dir,logger):
+   
+    """
+        Clean all .m3u* playlists from the source and mp3dir directories
+        leaving the special playlist 'MusicRadio" intact
+        
+    """
+    def cleanPlaylists(sourceDir,mp3Dir,logger):
+            removeCount=0
+            import glob, os
+            for f in glob.glob(mp3Dir+"/"+"*.m3u8"):
+                os.remove(f) # Remove ephemeral copies
+            for f in glob.glob(sourceDir+"/"+"*.m3u8"):
+                if "MusicRadio" not in f:
+                    os.remove(f) # Remove playlists manufactured by Music
+                    removeCount=removeCount+1
+            logger.info(f"Removed {removeCount} playlists.  Ready for new exports/copies.")
+            return
+        
+    
+    
+    cleanPlaylists(sourceDir,mp3Dir,logger)
     scriptPath = "/Users/timbanks/MyWork/Refresh Music Server/ExportPlaylists.scpt"
     args = []#["args are not used", 3]
     p = Popen(
@@ -64,7 +90,10 @@ def exportPlaylists(logger):
 
 #proto main
 logger=transLogger(level=logging.INFO)
-exportPlaylists(logger)
+sourceDir = '/Volumes/Media/Shared Music/Music Library' # Source of all music
+mp3Dir = '/Volumes/Media/Shared Music/MusicMP3/Music'
+
+exportPlaylists(sourceDir, mp3Dir, logger)
 
 
 
@@ -83,7 +112,7 @@ searchConstraint = "" # Use some part of an album name to restrict transcoding. 
 # This query reports if a higher quality version ould be made...  Need to erase the old version and let the search fill the missing pieces.
 # grep -m 1 'Ostinata' sourceRates.txt & grep -m 1 'Ostinata'  mp3Rates.txt
 
-sourceDir = '/Volumes/Media/Shared Music/Music Library' # Source of all music
+
 sourceList=[]
 sourceDates={}
 sourceRates={}
@@ -101,8 +130,6 @@ for (r,ds,ls) in ((x,ys,zs) for (x,ys,zs) in os.walk(sourceDir,topdown=True) if 
 
 sourceList.sort()
 
-
-mp3Dir = '/Volumes/Media/Shared Music/MusicMP3/Music'
 mp3List=[]
 mp3Dates={}
 mp3Rates={}
@@ -159,16 +186,19 @@ updates=[f for f in sourceList if (f not in additions and \
     or\
      sourceDates[f]>mp3Dates[pureMangle(f,filePath=True).replace(".m4a", ".mp3").replace(".M4A", ".mp3")])) ]
 
-if len(additions)>3: print ("of "+str(len(additions)))
+
 logger.info("Additions to "+sourceDir+" not in "+mp3Dir+":")
 logger.info(pformat(additions[0:3]))
 if len(additions)>3: print ("of "+str(len(additions)))
+
 logger.info("Removals from "+sourceDir+" present in "+mp3Dir+":")
 logger.info(pformat(removals[0:3]))
 if len(removals)>3: logger.info("of "+str(len(removals)))
+
 logger.info("Updates to "+sourceDir+" needing refresh:")
 logger.info(pformat(updates[0:3]))
 if len(updates)>3: logger.info("of "+str(len(updates)))
+
 """
 logger.info("Input Rates are:")
 logger.info(pformat(updates[0:3]))

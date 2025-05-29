@@ -1,5 +1,6 @@
 #!/bin/zsh
 # This script may run as root when called as a postflight script by Carbon Copy Cloner
+# Rescan (and restart) the server to pick up the latest updates.
 
 cd /Users/timbanks/MyWork/Refresh\ Music\ Server
 

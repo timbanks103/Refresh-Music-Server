@@ -1,4 +1,6 @@
 -- In the Music app, export playlists from the "For Export" folder to the Music Library root folder.
+-- This is a copy of what is executed... see ExportPlaylists.scpt which can be editted in
+-- the MAC os script editor).  That script is called from the exportPlaylists function of transcoding.py
 
 set folderName to "For Export"
 set musicLibraryRoot to "Media:Shared Music:Music Library:"

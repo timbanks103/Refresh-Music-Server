@@ -2745,3 +2745,11 @@ WARNING /Volumes/Media/Shared Music/MusicMP3/Music/Bournemouth Symphony Orchestr
 /Volumes/Media/Shared Music/MusicMP3/Music/St. John's College Choir, Camb/Tavener_ Song For Athene, Svyati/08 Tavener_ 2 Hymns To The Mother Of God - Hymn To The Mother O.mp3 encodes to a url of length 226 which exceeds the limit of 215. Truncation of titles and/or artist info will be applied.
 [2025-05-19 20:22:44,243] {metadataCleaning.py:407} WARNING - 
 /Volumes/Media/Shared Music/MusicMP3/Music/St. John's College Choir, Camb/Tavener_ Song For Athene, Svyati/09 Tavener_ 2 Hymns To The Mother Of God - Hymn For The Dormiti.mp3 encodes to a url of length 224 which exceeds the limit of 215. Truncation of titles and/or artist info will be applied.
+[2025-05-29 19:01:35,413] {metadataCleaning.py:417} WARNING - 
+/Volumes/Media/Shared Music/MusicMP3/Music/Vienna Philharmonic Orchestra/Sibelius_ Symphonies Nos. 1 & 4/1-01 Symphony No. 1 In E Minor, Op. 39 - 1. Andante Ma Non Trop.mp3 encodes to a url of length 220 which exceeds the limit of 215. Truncation of titles and/or artist info will be applied.
+[2025-05-29 19:02:09,361] {metadataCleaning.py:417} WARNING - 
+/Volumes/Media/Shared Music/MusicMP3/Music/Vienna Philharmonic Orchestra/Sibelius_ Symphonies Nos. 1 & 4/1-04 Symphony No. 1 In E Minor, Op. 39 - 4. Finale_ Quasi Una F.mp3 encodes to a url of length 220 which exceeds the limit of 215. Truncation of titles and/or artist info will be applied.
+[2025-05-29 19:02:24,634] {metadataCleaning.py:417} WARNING - 
+/Volumes/Media/Shared Music/MusicMP3/Music/Vienna Philharmonic Orchestra/Sibelius_ Symphonies Nos. 1 & 4/1-05 Symphony No. 4 In A Minor, Op. 63 - 1. Tempo Molto Moderat.mp3 encodes to a url of length 218 which exceeds the limit of 215. Truncation of titles and/or artist info will be applied.
+[2025-05-29 19:02:32,419] {metadataCleaning.py:417} WARNING - 
+/Volumes/Media/Shared Music/MusicMP3/Music/Vienna Philharmonic Orchestra/Sibelius_ Symphonies Nos. 1 & 4/1-06 Symphony No. 4 In A Minor, Op. 63 - 2. Allegro Molto Vivac.mp3 encodes to a url of length 218 which exceeds the limit of 215. Truncation of titles and/or artist info will be applied.
