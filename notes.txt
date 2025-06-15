@@ -1,0 +1,14 @@
+
+Restoring a library to managementment under the Mac OS Music app
+
+1. Go to Music->Settings->Files-> Media location
+    and identify the top level directory (which contains the "Automatically Add To Music" folder)
+
+2. Set "Keep Media Folder organised" to On  and "Copy files to Media folder..." to on.
+
+3. When the pop-up asks, Say "Yes" to allow Music to reorganise.   This will do Nothing.
+
+4. Import all of the music files.
+
+5. Use FIle -> Library -> Import Playlist to recover playlists previously exported.
+    Note that it is not possible to export/import smart playlists; smart playlists are converted to static lists on export.
